@@ -1,0 +1,2186 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00AAF7975B918ACB258CBA1A94D66BB2 /* CDStructureTable.h in Headers */ = {isa = PBXBuildFile; fileRef = ED1BDA2677AE8A62DFFF221DC2E91572 /* CDStructureTable.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		019B41B571DDA5D9C1CD4694E331BA4D /* dwarf_init_finish.c in Sources */ = {isa = PBXBuildFile; fileRef = E7D15758A163CEB49747BBFB2C07A8F4 /* dwarf_init_finish.c */; };
+		023D366A9F6BA40AAC4EF9FD4085900D /* WBBladesCrash-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67FA6601E42E7314ECBA48591BF1435E /* WBBladesCrash-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0246E199A797FD9003011D835EBEF2B2 /* WBBladesCMD.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9FD576128FE364E2F130E163590205B /* WBBladesCMD.mm */; };
+		0268281A02B84E8F46C7022FBBE99705 /* PPCModule.c in Sources */ = {isa = PBXBuildFile; fileRef = AB8DFA9C236F90CCC043C7B4D1C8E596 /* PPCModule.c */; };
+		02CC570A71338DECA9CEBA8F3D98F1C5 /* dwarf_query.c in Sources */ = {isa = PBXBuildFile; fileRef = 9F9604412310EAC67B75DD55B05F520C /* dwarf_query.c */; };
+		05D2E21A56C5C85FF5E3BC93BFA1B36B /* dwarf_peread.c in Sources */ = {isa = PBXBuildFile; fileRef = DF239E5D323DA1A47A462B88F11DBF3C /* dwarf_peread.c */; };
+		0657ED869BF2D5E43B980CBD97FD0314 /* mips.h in Headers */ = {isa = PBXBuildFile; fileRef = F3F27194828FCE133E2BD0C20C3812B2 /* mips.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		069432364D1950DDAEAA44B8219E7EB6 /* dwarf_loc.c in Sources */ = {isa = PBXBuildFile; fileRef = F7C5BEF108A49443594EB706EAD9F6EB /* dwarf_loc.c */; };
+		06EDB1B17F989E2E1446012C78B75419 /* dwarf_global.h in Headers */ = {isa = PBXBuildFile; fileRef = 4377A1D6D253FAB89708B305D6DB6DBF /* dwarf_global.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0790DDE07FB384F2A4A81F33007F38BB /* dwarf_str_offsets.c in Sources */ = {isa = PBXBuildFile; fileRef = 31B588EF59D36643AD1357839F779C4E /* dwarf_str_offsets.c */; };
+		07D6DB4C2564897722644436F745D4BE /* PPCPredicates.h in Headers */ = {isa = PBXBuildFile; fileRef = A00A48FE137C4308CB22405CB11F131C /* PPCPredicates.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0801A96E858C41844917C163B8F136B1 /* dwarf_vars.h in Headers */ = {isa = PBXBuildFile; fileRef = 571AFE5760022CB43A9659E3BC670FC9 /* dwarf_vars.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0A307A03ADFD4C5140CBAEB975DFF2AD /* systemz.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FC790D325633D0EA04587EBCA538CC2 /* systemz.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0D4B5EB6448FB3576D1A54C7909F3952 /* WBBladesCrash-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = CF02A09F046E2B9F6143FBCA326FDA69 /* WBBladesCrash-Bridging-Header.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0FDF5FEDE6424B3F3E6276876F84278F /* WBBladesTool.mm in Sources */ = {isa = PBXBuildFile; fileRef = CB99FA57DCFBC5398764286B1CFE1F17 /* WBBladesTool.mm */; };
+		108FF625AC241EB015961CB7D08BFDA8 /* WBBladesScanManager+CrashSymbol.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1243EC0E3DBB52FEA1574E29CEC5A068 /* WBBladesScanManager+CrashSymbol.mm */; };
+		10D745C39CEB97552180D8EDE38EE72F /* ARMBaseInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2424E3AF59F3C434A134470E4283B37D /* ARMBaseInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		12FBEAC2F397B2F813DBFE8FB89EEF69 /* dwarf_base_types.h in Headers */ = {isa = PBXBuildFile; fileRef = FE5ED105E282F693F578FFD970182217 /* dwarf_base_types.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		14555614E6DFB1D366EC20213E6B55B2 /* WBBMSymbolTake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1951A24F3E3080DEC12356C6A906697B /* WBBMSymbolTake.swift */; };
+		15E2616271AA40084AACD53F7EABA624 /* dwarf_elfstructs.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C615492B1AF989DBCDD3BDC5DF53D8C /* dwarf_elfstructs.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		177B4AFA6EF18E8A5206F778DD220D32 /* PPCInstPrinter.h in Headers */ = {isa = PBXBuildFile; fileRef = ED02FCD7F9849F6450406198EC64C75C /* PPCInstPrinter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1979D2B98360FF5CF62F318AC1A1882F /* ARMDisassembler.h in Headers */ = {isa = PBXBuildFile; fileRef = 335063A1BDC83561AA5B9FB526E19BF5 /* ARMDisassembler.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1988FAF86287203CECC4B84DA4BA9B2B /* dwarf_dsc.h in Headers */ = {isa = PBXBuildFile; fileRef = 64999D40F708ED2646CAFD85EE476F7F /* dwarf_dsc.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		19F0C52EA08476E5514BA36C41523F87 /* dwarf_gnu_index.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B6504AA680A97EF367EF295240F7161 /* dwarf_gnu_index.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1A092FB60DCFE66A689E28E2772C9CA7 /* X86ATTInstPrinter.c in Sources */ = {isa = PBXBuildFile; fileRef = 4AAB373EBB130D29006C8F644118E00C /* X86ATTInstPrinter.c */; };
+		1ACE23EB131C6289001288BECCBAC68A /* PPCMapping.c in Sources */ = {isa = PBXBuildFile; fileRef = 415021623AC9E43B0DE1A7D955A1B7F2 /* PPCMapping.c */; };
+		1B94CA09DED27996EDA2167E7538F313 /* dwarf_frame.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AD79AE05A6BD9FCC96B9C159730A180 /* dwarf_frame.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1E003DB199CB4DC31F4BB7ABFAE0A0F9 /* CDTypeParser.h in Headers */ = {isa = PBXBuildFile; fileRef = DDFE11B4DF351DEF5C19B32612E42E1F /* CDTypeParser.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1F690A238D684D62CBC084E040636BB0 /* AArch64BaseInfo.c in Sources */ = {isa = PBXBuildFile; fileRef = 29B901B5CC2543F248A8BF2675B04229 /* AArch64BaseInfo.c */; };
+		1F7F93F6E28F1941F719AA23E0C91638 /* PPCInstPrinter.c in Sources */ = {isa = PBXBuildFile; fileRef = BBDBB3E2A2036F8AC29AD017A1766310 /* PPCInstPrinter.c */; };
+		1FE005A4F31DF4FD4AA8CDB598911E7E /* WBBladesObjectHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AB6CCB7F5875A1D82CE1459C287C11 /* WBBladesObjectHeader.m */; };
+		2139BF21917BF84BA37C0E360CBE252D /* MCRegisterInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = AC36AF33C655E00180BEC20ECA26C896 /* MCRegisterInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2281D585E91A2D018B858DCD2214903C /* CDObjectiveCProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1FA5AD6C6C80448EB80503B79D1030 /* CDObjectiveCProcessor.m */; };
+		22E8362255C61820FE8983AD945164B4 /* dwarf_elf_access.h in Headers */ = {isa = PBXBuildFile; fileRef = 7148CD5327239C21E38531A080B0A7CD /* dwarf_elf_access.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		26372F9E1B13643D375139E25889131E /* dwarf_peread.h in Headers */ = {isa = PBXBuildFile; fileRef = B73477F01DC189E2D9FE3926163E2951 /* dwarf_peread.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		26981A549C31A2C1AD4BC0F57545E5C3 /* dwarf_string.c in Sources */ = {isa = PBXBuildFile; fileRef = A66865B80C7CFF4F7A0EAF4A429A9DFF /* dwarf_string.c */; };
+		27085F14F355B9312FBD380BB4BFBC6D /* X86DisassemblerDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = B1AC38B722BE22C33495ACE2DF4EBB30 /* X86DisassemblerDecoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		295BF9B065E7C24EF22E7885C67FF6F8 /* CDTextClassDumpVisitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A4C2B73CCBA058C5BEB7630F57FB82F /* CDTextClassDumpVisitor.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		297C93A8B8DDB6D9BB76A2E5929098A5 /* dwarf_opaque.h in Headers */ = {isa = PBXBuildFile; fileRef = D4EE725F90025D7EADA9BAABB82014DB /* dwarf_opaque.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		29C5245C370CD9B32BFF51DB45D56B98 /* AArch64InstPrinter.h in Headers */ = {isa = PBXBuildFile; fileRef = 07F87B11D80A0DD8E0357397D6346C44 /* AArch64InstPrinter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2BC3DCB1B4AC8C2E06B19295AECF0DE7 /* ArtilleryOfItaly-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E667981BC897F9EED4A7A45138CDE22 /* ArtilleryOfItaly-dummy.m */; };
+		2C0160BCCECCE90FA41E8ADD3D7E4228 /* SStream.h in Headers */ = {isa = PBXBuildFile; fileRef = DBC208C681DFDDF37FBEC8E1506D313F /* SStream.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2EB3C97A789A5D977EC813A9C6649098 /* ARMAddressingModes.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ABE40A55F6B7724EE2014400049515D /* ARMAddressingModes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3070278ECCF483A0B578C193A8366FE0 /* dwarf_frame2.c in Sources */ = {isa = PBXBuildFile; fileRef = 46DEAA38222D46A5AC42358DBDA8C0FC /* dwarf_frame2.c */; };
+		31137926B28103976ADB5E7EF0779461 /* myinttypes.h in Headers */ = {isa = PBXBuildFile; fileRef = FD6E73F08269825023372507533E0653 /* myinttypes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		31B64607BDF602E51AF5671AE972A67D /* dwarf_elfread.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A7600406AE35EE6EB16697FD849C2FA /* dwarf_elfread.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3229DD27AB5F6317F610EA9C110B2048 /* ARMModule.c in Sources */ = {isa = PBXBuildFile; fileRef = A2C4DC673DEC4C9F29B1F53B12D81509 /* ARMModule.c */; };
+		325681A32A8C4CFD56EA29BC7225BEA0 /* arm64.h in Headers */ = {isa = PBXBuildFile; fileRef = ED8D2119C0931C120E22DB124FB26680 /* arm64.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3339AA4C41425CB37F0D06411266314D /* X86Mapping.c in Sources */ = {isa = PBXBuildFile; fileRef = 0618B7BF13B24BCB038B4524D3E9F64C /* X86Mapping.c */; };
+		356ECE7AD1A65FB8938F09F25F21A87C /* dwarf_debugnames.c in Sources */ = {isa = PBXBuildFile; fileRef = D28E3DA5DACB32C77B6678B69A6DEE87 /* dwarf_debugnames.c */; };
+		37535F7D2D3BD2EACC8724893E52651E /* NSData-CDExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 85E1AF8D1A2B6E50B44B203D55B52F9A /* NSData-CDExtensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		375F7CF0B9E1560BD8A48DF90F03FA74 /* dwarf_gdbindex.c in Sources */ = {isa = PBXBuildFile; fileRef = 86D3F4DB4226753FD436CF012C2A7AB6 /* dwarf_gdbindex.c */; };
+		3814D473519730B4E2ABE1A63F91A6FF /* dwarf_funcs.h in Headers */ = {isa = PBXBuildFile; fileRef = D89090F4BAB7B85F76B1E258716515F1 /* dwarf_funcs.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		39A7A4D3F8BE2B5F28E501ECBB7A98D0 /* dwarf_object_detector.h in Headers */ = {isa = PBXBuildFile; fileRef = 63A282FE24E955D83712173414ABBE5D /* dwarf_object_detector.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3BC069807ACE0FF8B1237F798E43FC52 /* dwarf_ranges.c in Sources */ = {isa = PBXBuildFile; fileRef = 304C7102644467CA4A33B3E8ECD82B61 /* dwarf_ranges.c */; };
+		3BFBD4BA983CC1D731347753133507DA /* dwarf_vars.c in Sources */ = {isa = PBXBuildFile; fileRef = D344DB8FE86C41F55D69F494FE73DD5C /* dwarf_vars.c */; };
+		3E48A1FA7C2B14402D6B50B64AC758D8 /* WBBladesCrashManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991201A814F6D22CF97B9A46ED6FFE09 /* WBBladesCrashManager.swift */; };
+		40FE023D94B9C7CEDF545427DB1003DA /* WBBladesObject.h in Headers */ = {isa = PBXBuildFile; fileRef = F4A90B14A9CAF22D61D357363BCD42C1 /* WBBladesObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		415D5CF07695BB2803BB507729A0D26B /* dwarf_elf_defines.h in Headers */ = {isa = PBXBuildFile; fileRef = 40EAAC52BA1E0F378105A1C8C1A906A3 /* dwarf_elf_defines.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		41DD12E3F79827A43ADE4972099F8486 /* CDTypeParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 62012B4F942343F2AC49D3CC7EBCF6E2 /* CDTypeParser.m */; };
+		44DCFA3FE4A82CEDF6C70F22362F9AEC /* CDStructureTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F714F201975C9FB9E5F8201938780FE /* CDStructureTable.m */; };
+		46710BF03A460EA3FB13787DA94BBB3A /* dwarf_rnglists.h in Headers */ = {isa = PBXBuildFile; fileRef = FE1EEC130FB1EA0C77EE05C11F5D2525 /* dwarf_rnglists.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		46B9CC482BB85F02C259C5C694AF0ECA /* dwarf_harmless.h in Headers */ = {isa = PBXBuildFile; fileRef = F92401D026248A6F771E3DEE09876EB7 /* dwarf_harmless.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		47AC59697967004531E0E11876535B5A /* CDMethodType.m in Sources */ = {isa = PBXBuildFile; fileRef = F9967A4793F8FD9E7CD0486CB9D7C9F8 /* CDMethodType.m */; };
+		480DD02539D79CDE587C614196290208 /* WBBladesTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E28427173CA84D841D903A893904A93 /* WBBladesTool.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		484EFDE10D4E2076F2D6AC0BDE6EDE7A /* platform.h in Headers */ = {isa = PBXBuildFile; fileRef = FE236F91DC842BF31BCF3440EDFD6AFA /* platform.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		486B7ACE05E9B8FC906B31FF743B09A9 /* X86Disassembler.c in Sources */ = {isa = PBXBuildFile; fileRef = 5333E43056F5BB8CC9E07B7D48FC278C /* X86Disassembler.c */; };
+		4997C8AEA539FF05BA25959E87D30796 /* dwarf_pe_descr.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AF8C87ECAD02D222BC924B150FCF599 /* dwarf_pe_descr.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		49C276A371FE5E7EEAC35656D87B4282 /* dwarf_locationop_read.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AC7AC061444648D6FE7CBB8E487FE5D /* dwarf_locationop_read.c */; };
+		4C60926D1D10B78344C8E3468E62C620 /* WBBladesInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = A152D4AD491EE815E9B4052075E3FB61 /* WBBladesInterface.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4C83020BB7E60E46D0D671C81DE7B918 /* AArch64BaseInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = E431960B676954D3097FF241DFE4FA48 /* AArch64BaseInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4E9B73E02C15BABDBFF7AA1D4E5CDF2A /* Pods-CYClear-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E71CDD9D75C16CAE2F4E6DAD0AEFD24 /* Pods-CYClear-dummy.m */; };
+		4EEB13ABF3B0CB839EB2150C2E3C21A6 /* X86Module.c in Sources */ = {isa = PBXBuildFile; fileRef = 1D32F1D06B2350BCB3D56A234F1A5314 /* X86Module.c */; };
+		4F1B943BBDB5FEDC75AA1AFC54F762D6 /* WBBladesFileManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 30ACF4C908DDADA6F8F8AA7DBF468402 /* WBBladesFileManager.mm */; };
+		4F575396E9C02D5B7DA8EC23A22B6985 /* dwarf_error.c in Sources */ = {isa = PBXBuildFile; fileRef = 0B2EEFC90141C7089080A0F0F497D116 /* dwarf_error.c */; };
+		50D1C12F81C51E2D0E152784FB70F688 /* dwarf_tied_decls.h in Headers */ = {isa = PBXBuildFile; fileRef = 547D058C1684EA23501456E7BD7FF51F /* dwarf_tied_decls.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5195220E4D3BB27F8F012AB364F0C549 /* SStream.c in Sources */ = {isa = PBXBuildFile; fileRef = 04DC81F7E951E5A42A3C50CB8502D29C /* SStream.c */; };
+		5269BFA9AE770B3DAD0DCB72B1C4C1E1 /* cs.c in Sources */ = {isa = PBXBuildFile; fileRef = 1CD6D1F6C0B707A98D64F3902E3C2AF0 /* cs.c */; };
+		52839E9703F8D9F3E5D377DDCEFCE114 /* dwarf_macro5.h in Headers */ = {isa = PBXBuildFile; fileRef = 23329396FAA6174A1A0EF6800ADCC0B2 /* dwarf_macro5.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		537773A114EE23D757B6286E96865D7D /* WBBMScanLogTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F579B866A973D95797D08AEDF4EFB8 /* WBBMScanLogTool.swift */; };
+		5378B84750F018E93F5879D40F17E2D9 /* WBBMOutputFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B675773B607E6620485413901493875 /* WBBMOutputFile.swift */; };
+		547CD7EEB9ACC565D68C5FC085C636B2 /* Artillery.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCDF72039834D352DAE2043F723E69D /* Artillery.m */; };
+		54E4FF0FF2367653B7590B15288D3515 /* CDTypeFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 50C4BB87F0AB617D43565D7C8F29E5C0 /* CDTypeFormatter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		562989F6BE0B986E715378471528E1B3 /* WBBladesScanManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A6AC01444BE34D05D0A2BF82DA40178 /* WBBladesScanManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5790857F3DDAB84F832D8715FF1DE978 /* WBBladesStaticLibraryModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C675A493BAA307B437465D0506BED05 /* WBBladesStaticLibraryModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		57E922B1BD9AC38D3838FED88E5FD7A8 /* WBBMScanLogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95466158C26EBE3A13BAC6C094CB5DF /* WBBMScanLogManager.swift */; };
+		585174AEBE3B696ED8AA701DAE2BF0C3 /* dwarf_alloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 0694CDC89BF7E909960DA7B2F8C40EF3 /* dwarf_alloc.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		58F6601E843B9A4170F1B191EC322EEF /* dwarf_xu_index.c in Sources */ = {isa = PBXBuildFile; fileRef = 16554E5C151CA152E02B2F22CEDD37AA /* dwarf_xu_index.c */; };
+		593FC11E81C5D4F2C38650219D512C7E /* dwarf_elf_rel_detector.c in Sources */ = {isa = PBXBuildFile; fileRef = CF59B1B75EBD73073C34925783CFE4DE /* dwarf_elf_rel_detector.c */; };
+		59AED867E974D7CFD232DF980C92BD60 /* X86InstPrinter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A895BD3822F38A571BAB966F4EBF39D /* X86InstPrinter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5A4A9AAFD1F8BCD228A7D32B6C652A9E /* WBBladesScanManager+UnuseClassScan.h in Headers */ = {isa = PBXBuildFile; fileRef = C6BFC0ECFC337059A1DD4250F28E1DE0 /* WBBladesScanManager+UnuseClassScan.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5C49FBCBCE696497A21618288227FE8C /* WBBlades-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A1F37E538572207C832E53994150C8 /* WBBlades-dummy.m */; };
+		5C7848978067DD41AF09976AC9567A65 /* CDBalanceFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = E1AEF0FF6F637457E2C9B2E3A085E430 /* CDBalanceFormatter.m */; };
+		5CBDBF8C792F12D0AB0565F49E80F13B /* NSViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF126487469BAB1EB80A40FEBDEDBE37 /* NSViewController+Extension.swift */; };
+		5CF46C2713724FF70ED1A52AAA0C564B /* ppc.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FB868B45001EDA37369681D53E66650 /* ppc.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5F10A9092E812BF85D03D532F4A0CCF7 /* dwarf_gnu_index.c in Sources */ = {isa = PBXBuildFile; fileRef = 948D846CA35B55A1CBC4891D036AF588 /* dwarf_gnu_index.c */; };
+		5F440333F3D3899BD672FAD22761EBB3 /* Artillery.h in Headers */ = {isa = PBXBuildFile; fileRef = CF28F4FB371142185E7CA6954AA92623 /* Artillery.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		60241CE47065452E9F82E50B3DF88D7C /* dwarf_abbrev.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BAF721116B02E7B3CCACEDAB9A95126 /* dwarf_abbrev.c */; };
+		6032A47EDD2A19EAC2B237BF14AB4C77 /* CDTextClassDumpVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1225F688200E8D9820E42E95F7DE7AEF /* CDTextClassDumpVisitor.m */; };
+		60C7D08192B9C0E6B5E0C0C293CB586D /* dwarf_object_detector.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C3FDB72C6001CB80B71388FF6E9DC /* dwarf_object_detector.c */; };
+		62E85E3E8262028B2E46F5A73BD92B46 /* PPCDisassembler.h in Headers */ = {isa = PBXBuildFile; fileRef = 9735EA4E44A65640B6BD05BAFA441BAB /* PPCDisassembler.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6382883846A7A4689AA73E4F7EED83CB /* dwarf_groups.c in Sources */ = {isa = PBXBuildFile; fileRef = 6A704CF8ED4CD427E3187E7327F628E9 /* dwarf_groups.c */; };
+		63E02336964706A5FE214501AF6197E0 /* dwarf_memcpy_swap.c in Sources */ = {isa = PBXBuildFile; fileRef = 29CD222C3B3D16F15829464BF7B5D021 /* dwarf_memcpy_swap.c */; };
+		64830F5F062F13377F9C1883EA8BA350 /* osxkernel_inttypes.h in Headers */ = {isa = PBXBuildFile; fileRef = CDAB1B69D31837DAE1E541353208E079 /* osxkernel_inttypes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		648B865446255868B08D6B5F538F37E2 /* dwarf_machoread.c in Sources */ = {isa = PBXBuildFile; fileRef = 0B74C20CA7D60FD69145EDB6700EF22D /* dwarf_machoread.c */; };
+		653DE4AF151D199B0F9976B5D1FDED53 /* X86IntelInstPrinter.c in Sources */ = {isa = PBXBuildFile; fileRef = FF300A587783809591FD2CBEA9C2646E /* X86IntelInstPrinter.c */; };
+		66E523D83ECB1F11CA6DD2E7832BF03C /* dwarf_object_read_common.c in Sources */ = {isa = PBXBuildFile; fileRef = 4588BC7C0C56227A168AB84A3314CF4B /* dwarf_object_read_common.c */; };
+		66EFAF9005E4687123B9A29D0D9D12CB /* dwarf_elf_rel_detector.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F459559EF85A9C148F6FA6E9B920F6F /* dwarf_elf_rel_detector.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		67D5F793E8BA816F2B7BF6CC5EEDA59B /* ARMMapping.c in Sources */ = {isa = PBXBuildFile; fileRef = 336123BD583E01C13A04D02AD49CA6FC /* ARMMapping.c */; };
+		685B3C477D2C114C3D1044C80025DF53 /* cs_priv.h in Headers */ = {isa = PBXBuildFile; fileRef = A27D0C7417F125D522FB004A63049560 /* cs_priv.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		68B2F06474D093EFD05AA486BE72E30C /* CDType.h in Headers */ = {isa = PBXBuildFile; fileRef = C62D052F9D4CA253B5D2C2839F38466A /* CDType.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		68D4E670280BC944483C604457DEBA67 /* WBBladesFileManager+StaticLibs.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AADC6319EEA5D2D16FD87DCF65E4FD1 /* WBBladesFileManager+StaticLibs.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6BFCEAD530CA81CA5FF83A43F6AF46C1 /* dwarf_types.c in Sources */ = {isa = PBXBuildFile; fileRef = A397B29EB5B50BD280706A697E0EC657 /* dwarf_types.c */; };
+		6DA29932940C341ED4F3DDC64661FC07 /* WBBladesScanManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = A59C2DC7DB094F1A08A4B2F4F0599C40 /* WBBladesScanManager.mm */; };
+		6DA3D626135AEF1933D03A6525AA008A /* CDOCInstanceVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 86317DD832A635CBED8974E0CB8DD350 /* CDOCInstanceVariable.m */; };
+		6F7C01F4EA301F0DD9E4927530B94720 /* dwarf_error.h in Headers */ = {isa = PBXBuildFile; fileRef = D65DF11D488222D64448D5CB187D82B0 /* dwarf_error.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6FA00AEEC5FCAB31E600D919696463EF /* WBBMScanSystemLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD184CAD0782D0A3403A9892ED8A73B5 /* WBBMScanSystemLog.swift */; };
+		6FC54CB994AD7B7CC69BE915104040D3 /* PPCMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = 539AA7AB65C4240E0454E4EB97D52964 /* PPCMapping.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		70CDAF22C9684B898513910E82C718AF /* AArch64InstPrinter.c in Sources */ = {isa = PBXBuildFile; fileRef = 5976A621227DF90B6B7158222B2E512E /* AArch64InstPrinter.c */; };
+		717AEC83729D4BA5BBA37F2CC6EF5D27 /* WBBladesScanManager+AutoHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FEF0C8A10F187638A2853940A6CEA3D /* WBBladesScanManager+AutoHook.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		771D1FB5F629050C64729449DF8DF913 /* CDVisitor.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8804553383837C479023C8EE409264 /* CDVisitor.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		783AD16CE16F22E4B530488EC5722F1D /* WBBladesObject.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB06A55DDA776C1F76C15DEE917FB95 /* WBBladesObject.m */; };
+		78B9C45E96E5F3F1D55D15A5A61DCD40 /* CDClassDump.h in Headers */ = {isa = PBXBuildFile; fileRef = 80D392F4887E4C69EB4D00C98EDD2413 /* CDClassDump.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7A9E0B11D7CC8994F8550CC1BB6871AB /* X86Disassembler.h in Headers */ = {isa = PBXBuildFile; fileRef = 90AC831902B28BB50CA7217EB941878E /* X86Disassembler.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7B9F1BDFFC7BB351704AC4F2077C9707 /* ArtilleryModels.h in Headers */ = {isa = PBXBuildFile; fileRef = 67C2175C4A42735C90281A2717D67CCD /* ArtilleryModels.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7E05CA4AE6BB73EDB5686B1C41AD268D /* WBBladesScanManager+StaticLibs.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EC7DE21E307015C880AE5DF43820E8E /* WBBladesScanManager+StaticLibs.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7ED3A4658D32C04B40544B2238462540 /* dwarf_macro.h in Headers */ = {isa = PBXBuildFile; fileRef = 977338A28DEAFAE4F32BC7B652A253CE /* dwarf_macro.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7F8EC050D2E20E1462B3ABEECEDA2492 /* CDTypeLexer.m in Sources */ = {isa = PBXBuildFile; fileRef = 121388F527745A2BA99CE687A294F0EA /* CDTypeLexer.m */; };
+		7FAF50F47513A77D3DA50F6CC8EA73A7 /* CDVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B3610793C3B3982542239FBD880A1C /* CDVisitor.m */; };
+		805EA33BC0C0F1925758BB98B84603C1 /* CDObjectiveCProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = C7C70633134B6079CED969D25CEA896D /* CDObjectiveCProcessor.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		80A41119062AF059E423958FCEC4D85A /* dwarf_dsc.c in Sources */ = {isa = PBXBuildFile; fileRef = DDB8E19762DBFD57752C3D3889A05C3A /* dwarf_dsc.c */; };
+		81247456A7C60FE166D11F9659FF07F2 /* CDOCClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 756B0F84B142714E99137D6E566706A7 /* CDOCClass.m */; };
+		819068CE3ED514DAAA1E30622FD458AD /* WBBMSymbolTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E29D3C1CF52CE43E8C8BBA57235401A /* WBBMSymbolTool.swift */; };
+		81EE10DEAB786678357B36B4D629D920 /* ARMInstPrinter.c in Sources */ = {isa = PBXBuildFile; fileRef = DBC27AF216BE5892871DB18D5BC3B384 /* ARMInstPrinter.c */; };
+		8462F3901452903AE2AFF5B54A76D83E /* capstone.h in Headers */ = {isa = PBXBuildFile; fileRef = 47BB5C760A9CB6566F383FD15877862E /* capstone.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		84847F8B69F1E6C1162C3CCD6A46EDA5 /* CDClassDump.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C09433935DF699333BE7551E516C80 /* CDClassDump.m */; };
+		8499D4DF6E3EEA4006D5C80305127A55 /* WBBladesCMD.h in Headers */ = {isa = PBXBuildFile; fileRef = B81636157137547E98DBC12DB1AE04DC /* WBBladesCMD.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		84AB5197A0C0629BA7B0C5FF64BEA4B7 /* WBBladesCrash-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB3B54ACF270F12BE89471C258935DD /* WBBladesCrash-dummy.m */; };
+		87523E4FDBE81EA980F1CD6CDFC61082 /* WBBladesDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CC5C223953FFFF2D8B82084B001BA5F /* WBBladesDefines.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		87AE6407AD0911D232A58B48829B5741 /* WBBladesSymTab.h in Headers */ = {isa = PBXBuildFile; fileRef = 6848F024DF67151BD03683B3EA60DE08 /* WBBladesSymTab.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		88BF52F6E52DC431DCAA7FABDD576763 /* Pods-CYClear-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 85C547CF93F6D06CAF2901F3A8DA7F2F /* Pods-CYClear-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8918C99F677784C0E572AE4E328C8F79 /* CDStructureInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9256A487BD97CB494261E2F5A1064C18 /* CDStructureInfo.m */; };
+		8A438F75744DFE62E9F137367D26EA8B /* dwarf_safe_strcpy.c in Sources */ = {isa = PBXBuildFile; fileRef = 8F6B8A0C70EFB6EEDC22E6E91F4D0528 /* dwarf_safe_strcpy.c */; };
+		8A89E198881DF4333C89B6A7FCD2F5DE /* MCFixedLenDisassembler.h in Headers */ = {isa = PBXBuildFile; fileRef = F3446500CA128972B4C7700D34AFEF09 /* MCFixedLenDisassembler.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8B4542D6D7EDFB0651BB426E2125CFF6 /* CDTypeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D15200A6BEC730272CB196B3CE4782 /* CDTypeFormatter.m */; };
+		8BEEA9E24C20682082EF10697603C655 /* WBBladesLinkManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 60D68CA6759F7DBC21B148F482E73A4B /* WBBladesLinkManager.mm */; };
+		8CB5436B86CE7351DC37B122317E7CFC /* dwarf_macho_loader.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F63C2E58DE137631F50B2E35C346566 /* dwarf_macho_loader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8D57F90458D41D4397B4251A908B6E53 /* WBBladesFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 00AB021163D113443426F1042E1C2C84 /* WBBladesFileManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8E26FDD749CE29B5C096E31701D19F84 /* MCInstrDesc.c in Sources */ = {isa = PBXBuildFile; fileRef = 26B723AFD32DA99FCE2C80EEF5E15B72 /* MCInstrDesc.c */; };
+		8E972F81F03465F19036F8F4DB0FB8AF /* dwarf_util.c in Sources */ = {isa = PBXBuildFile; fileRef = CB48FB3A42E7D88878F53E4BFEBCFE46 /* dwarf_util.c */; };
+		8ECEFC9BDD6831BA1BCD772241442E83 /* dwarf_gdbindex.h in Headers */ = {isa = PBXBuildFile; fileRef = AFCE05EB0D1F8C64B13473633543728D /* dwarf_gdbindex.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8F7906DEE2F36E52C12BF7A898B08E95 /* dwarf_xu_index.h in Headers */ = {isa = PBXBuildFile; fileRef = 5246239559770035B1E8239BD68A6325 /* dwarf_xu_index.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		90F31542C3001C6CA6EAAC6662B3DA43 /* NSData-CDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F49C94A1E3F7E7E33B28258E7991F84 /* NSData-CDExtensions.m */; };
+		926D3FDC77CC8BC075119E056F10AEA0 /* dwarf_line.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B7F18BAA95843D5F978646D00557231 /* dwarf_line.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		92BD3F13DD650EE20D3F8C514B981AD3 /* dwarf_debug_sup.c in Sources */ = {isa = PBXBuildFile; fileRef = 7DD4BC1F18F2C06F995D7D7AA6F80754 /* dwarf_debug_sup.c */; };
+		934BEAA56F08BAB2B801494FD48CCE9B /* WBBladesStringTab.h in Headers */ = {isa = PBXBuildFile; fileRef = 177C74ED60BD3C7B18A1DDF6A438C141 /* WBBladesStringTab.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		95675D9DCBA7C9F179918A3813A9D523 /* dwarf_loclists.c in Sources */ = {isa = PBXBuildFile; fileRef = C709020FBB9C33E9E376EA9BB4F7401C /* dwarf_loclists.c */; };
+		96B2445880B537C1574337EC6A40684D /* WBBlades-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 449DB1977D0796731B0F9637445D46F3 /* WBBlades-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		97BB30C2B16833EE8947ACF4B631AB3A /* WBBladesStaticLibraryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD418D14163598CF73C2C7CD5BEC265 /* WBBladesStaticLibraryModel.m */; };
+		988010C0C3E6F87F2DEFC9E6040951A7 /* WBBladesObjectHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 124245A0EE9E8C1E66DE4F71C17BB667 /* WBBladesObjectHeader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9999540D4377C562D8CB10354656D118 /* X86BaseInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 35E132AA8B9116A837D8A8E010C63F46 /* X86BaseInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9A75122DEF5050BF3D7686B5D5D3E404 /* dwarf_crc32.c in Sources */ = {isa = PBXBuildFile; fileRef = 5F00E01F694B7943C05F6E6449BBB499 /* dwarf_crc32.c */; };
+		9B21028D4C39EE0BE008794A579ED279 /* MCInst.c in Sources */ = {isa = PBXBuildFile; fileRef = 75ACA6D5DDD3F5A341BFD653EF1C523D /* MCInst.c */; };
+		9B8C10B64652AA3BDA66C69F936FDDD0 /* libdwarf_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 30368C95D883A42E0E6AFA99485BECA0 /* libdwarf_private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9BA0F67C76B7D863AEC8CEA59AC8BFF0 /* dwarf_rnglists.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C9BB8223AF8DC2E9F030ADE22D30FA8 /* dwarf_rnglists.c */; };
+		9BC0464016342EDA8090A90461709B45 /* LEB128.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB7E371C180A1BD59238B9B1E6C6660 /* LEB128.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9C05484D9637C1D2CD4544A6B513BDF9 /* NSScanner-CDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C58B382D4980E99849F8CD8AE419C124 /* NSScanner-CDExtensions.m */; };
+		9D9F2DE2BC1678787AF5D93318441C68 /* dwarf_die_deliv.h in Headers */ = {isa = PBXBuildFile; fileRef = 86AEECBBE5544B504FB86F9E3FA6458D /* dwarf_die_deliv.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9F00AFE18A829FDB12F3CE9BD6389F7E /* dwarf_util.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EDBA75B077B600E214DAC44F2D877BD /* dwarf_util.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A056D45B8F8C5145FC55B13F7B52DE8C /* WBBMLightSymbolTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DA56C13C11580A7C2416A102930491 /* WBBMLightSymbolTool.swift */; };
+		A0CD81DC95E5C3E4B18B4F7DC0428CD4 /* WBBMScanHuaweiLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1563917A8975F558EC0C406F6981D77C /* WBBMScanHuaweiLog.swift */; };
+		A16BDB4714A0FF3881181D53DE12FCF9 /* dwarf_debugnames.h in Headers */ = {isa = PBXBuildFile; fileRef = 10AF615B1ADBCCC1D5CFE7D631C00946 /* dwarf_debugnames.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A27BD7FC7A3447044A5935B10C91C2B6 /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 209042F790FD8D41B0B40611134C1840 /* utils.c */; };
+		A3D6E60EE6632E75267D36AE73712103 /* WBBladesStringTab.m in Sources */ = {isa = PBXBuildFile; fileRef = 2964E5FD79E414D1A606BABB0902DD7E /* WBBladesStringTab.m */; };
+		A63D53453188B3D96BEA24823526BE8E /* x86.h in Headers */ = {isa = PBXBuildFile; fileRef = B3D65A014FB52445DD3A6818001532C9 /* x86.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A68CEC7FBF297626126CBE1977CC4AD1 /* dwarf_weaks.h in Headers */ = {isa = PBXBuildFile; fileRef = C39E0100003575BA2BB1DEEF2A934D6F /* dwarf_weaks.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A6C75E14B3B019809C8BE371775453B2 /* arm.h in Headers */ = {isa = PBXBuildFile; fileRef = F42324E3BE4AE3F742D541D520E7F765 /* arm.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A7E0E9DC9F57F80B5C151B0B7D744124 /* WBBMSymbolSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0A90696C8BAF80BD7B5E2323E30C85 /* WBBMSymbolSearch.swift */; };
+		A83FE78147F61E1751E61815847BE1AA /* dwarf_reading.h in Headers */ = {isa = PBXBuildFile; fileRef = 552F3060D884B521AEC408BFA3866A1B /* dwarf_reading.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A8A02AF97D043849EC2D26507F876E7E /* CDTypeName.h in Headers */ = {isa = PBXBuildFile; fileRef = 728F82D3D0772EA6096C5213211D9DE9 /* CDTypeName.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A8D886C25B423D44D671BA0B6866E4EC /* WBBladesInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 467C899BDD9C3CA19C6AFDB370F62BD6 /* WBBladesInterface.m */; };
+		A948208F4E908A4263AE000ABFEC94DD /* ARMDisassembler.c in Sources */ = {isa = PBXBuildFile; fileRef = 14C3513F391597C91C3E48BEC1BF127D /* ARMDisassembler.c */; };
+		AAB75F0561545335332FE8672570D775 /* NSString-CDExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 545A3969CA1FF369FEA134AFC7C9AD01 /* NSString-CDExtensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AC1099CEACE8C9F83E7000248B19E1EE /* PPCDisassembler.c in Sources */ = {isa = PBXBuildFile; fileRef = 95CF2667D3A2318F4FDE9A3F9575AA7E /* PPCDisassembler.c */; };
+		AD13A4FEF24888A2C52B11ED73DB67A3 /* dwarf_alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 0CCBBD93A073BF3A66541D6A7D43B35E /* dwarf_alloc.c */; };
+		AD2A3D0A396B2C462E9D56FADDC29AF6 /* dwarf_names.c in Sources */ = {isa = PBXBuildFile; fileRef = 936858FB611FA3817DF71151659D4109 /* dwarf_names.c */; };
+		AD421916182461A8A33953DED4730B10 /* AArch64Mapping.c in Sources */ = {isa = PBXBuildFile; fileRef = 31850FBE9BEF795319E4005E72D0036D /* AArch64Mapping.c */; };
+		ADA003630FA2ADE128691E67E92A785F /* STPrivilegedTask.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F0DF9979E3C55D07EC2011C67E7B73 /* STPrivilegedTask.m */; };
+		AEDD749073C35AB9816353904C176E6F /* ChainFixUpsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEBD278293E1256F6CC5CE1D248E976 /* ChainFixUpsHelper.m */; };
+		AFDF42863EDBB18BD0163BFFC93E5C6F /* AArch64AddressingModes.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B0BA555D96CEE90658F95DE979D58E4 /* AArch64AddressingModes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AFE4B72796C8DA803662F688B345DAD4 /* X86DisassemblerDecoderCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = B34C113D3A0DEA058B5E0A513CE81CE8 /* X86DisassemblerDecoderCommon.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B1737247D03839D4C4A9A24892DCACDF /* dwarf_line_table_reader_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 39E0E1628872FD447CDAC1869E4FAEE3 /* dwarf_line_table_reader_common.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B2FBCF21E908EE2D6B72FB72E9ABE3BC /* dwarf_object_read_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 49B7180154A0B8E706BFC55DB96063E3 /* dwarf_object_read_common.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B5D060F37DABD5D17227BF7B732FA382 /* dwarf_arange.h in Headers */ = {isa = PBXBuildFile; fileRef = 13E4D19F3AE3449E29CDB51C7E8C3B92 /* dwarf_arange.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B60CCF94260D1CFE41A084E60CA028DD /* MCRegisterInfo.c in Sources */ = {isa = PBXBuildFile; fileRef = 1CDE50173C4CAFDBABB3A7F61B9E2FD5 /* MCRegisterInfo.c */; };
+		B638F25636D545E3882979AFFD3D4DD7 /* CDOCClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 181344ED65C8CB893421F51579370B66 /* CDOCClass.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B66977CCA9CCE432770F24A0DC631AB5 /* dwarf_die_deliv.c in Sources */ = {isa = PBXBuildFile; fileRef = 74A2871A425FF623A8A938ABCA882E91 /* dwarf_die_deliv.c */; };
+		B72701AFEB25A33E1D9AFE749C184AA7 /* dwarf_harmless.c in Sources */ = {isa = PBXBuildFile; fileRef = E93314B22B1CB5A45B0FACA06249D259 /* dwarf_harmless.c */; };
+		B72AB3D6A235F3D3F56463DDB83FEE79 /* dwarf_weaks.c in Sources */ = {isa = PBXBuildFile; fileRef = 1E336C59DE54FD7125953E188DA2E5BA /* dwarf_weaks.c */; };
+		B731827B0DAEA5ED5279439E9EE1958E /* AArch64Disassembler.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D3AF0A5EE0E6F0D4FAE6EA7A69BAFA5 /* AArch64Disassembler.c */; };
+		B8E6E9DADB4EDD66CB10D3FED55FFE1F /* dwarf_generic_init.c in Sources */ = {isa = PBXBuildFile; fileRef = D0A71642548E4F96F657447AA77C9C43 /* dwarf_generic_init.c */; };
+		B9B545B68B2BCE919480E7C6DBFD3BB5 /* dwarf_tied.c in Sources */ = {isa = PBXBuildFile; fileRef = 71650E02DFC9FF70326D0F50433B378B /* dwarf_tied.c */; };
+		BAC79BB737DFDFB5B8960DC661512F63 /* WBBladesScanManager+UnuseClassScan.mm in Sources */ = {isa = PBXBuildFile; fileRef = E7D6DE3F5A2C394E676EC9481D51A076 /* WBBladesScanManager+UnuseClassScan.mm */; };
+		BC8A41FFB38C25CE58BCBD4C228B2C28 /* CDOCProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = F2AA107145A9E6C3E08DF73E2CA4D5AB /* CDOCProperty.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BE7818EFB37BAA92F780ADBE00A5A36D /* CDTypeController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8678FA468DFF48A08AF7A05388384661 /* CDTypeController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BE7BF59D1706422F70D978AA97A996DE /* WBBladesLinkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 25FE96DD3504DC9E7D4BD865C3377738 /* WBBladesLinkManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BF5F656148C4057C0984388A8379AEB7 /* inttypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 99DCE28FEA44DF8F69955E856341E5D7 /* inttypes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C01CD1C952C4B1D1AB1066E9C79B5714 /* dwarf_elf_load_headers.c in Sources */ = {isa = PBXBuildFile; fileRef = B4604D0DB577F8B3282E09B55750A3AD /* dwarf_elf_load_headers.c */; };
+		C03B5502B8993F46C2570E535BB84935 /* CDStructureInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = CA9CAE57B2560661776B88ED8D1209F2 /* CDStructureInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C04E864542079D1A17C946B14F783C7A /* CDTypeController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF923EDA99001FCAF4EE2EBC639E3FB /* CDTypeController.m */; };
+		C1584A724BE4945393F7C3E384034A01 /* dwarf_frame.c in Sources */ = {isa = PBXBuildFile; fileRef = 4FEE64741FE3CF25E55ED34EBED73242 /* dwarf_frame.c */; };
+		C20784EC8817DDCE842DB5C5DE92512B /* CDTypeName.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A50DC4948B8C4F735305A3364F3AC73 /* CDTypeName.m */; };
+		C224890306578470C439574007770291 /* ARMInstPrinter.h in Headers */ = {isa = PBXBuildFile; fileRef = 27B9AE12060214E4324A91009E11B458 /* ARMInstPrinter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C2509D361B2275EBE271AAFBB02C9208 /* NSString-CDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8D3F33F769824E85690460DF7E0E1F /* NSString-CDExtensions.m */; };
+		C266F67772CF8B92AAFCD4A84DAA87DB /* AArch64Disassembler.h in Headers */ = {isa = PBXBuildFile; fileRef = 372DCA224A9D14E4E77673B16E6255FD /* AArch64Disassembler.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C289BDBFA2A248FEAEB116CA6ECD1CBD /* CDType.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF95C2873AD96D6DC5AB9F2E13B60CC /* CDType.m */; };
+		C376ACA39628A254E01304DABF8AD9F6 /* dwarf_line.c in Sources */ = {isa = PBXBuildFile; fileRef = FD4344695A876D9C3F4C604F686C8F48 /* dwarf_line.c */; };
+		C41ABFE65558E3365BCE1F00796D53FC /* dwarf_arange.c in Sources */ = {isa = PBXBuildFile; fileRef = 0638F7A187AB779070637B097777B2C7 /* dwarf_arange.c */; };
+		C5E24A63B128EF4CE350C15437B7DF15 /* ChainFixUpsHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = EAD0680F17140128BBC2E9D2F744B63F /* ChainFixUpsHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C71A33B160260534B681AA962C17B066 /* dwarf_abbrev.h in Headers */ = {isa = PBXBuildFile; fileRef = 90B60690D9F2771996C73E4F807B176C /* dwarf_abbrev.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C7D49D1F4EEF8EE58848CAEE58165547 /* dwarf_macro.c in Sources */ = {isa = PBXBuildFile; fileRef = 5EE8D408F135373D361F0CA84548418E /* dwarf_macro.c */; };
+		C8048ABA1FB03D214799900B10BB8B30 /* MCInst.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C70B390136271B89D25EEE9AE2B0FA /* MCInst.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C814F58E2E30D428954D242DAB7B9E77 /* CDBalanceFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = D2A6239B3347957610EC6015B88005F2 /* CDBalanceFormatter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C87F7B1926E889DF410D2DAF583F61B3 /* WBBladesCrashModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF563EFA9987D21D46D9BC06CE6BB53F /* WBBladesCrashModel.swift */; };
+		C9F8C6693A68894D8AA6FF12726DC88A /* dwarf_tsearchhash.c in Sources */ = {isa = PBXBuildFile; fileRef = CCB2004C8341861543616F1E87559E90 /* dwarf_tsearchhash.c */; };
+		CA1C1AA9B50BE0246B9CDEE22BFA6523 /* MCDisassembler.h in Headers */ = {isa = PBXBuildFile; fileRef = BFBDF2B9BA3FF5CF2DDF00CC652654CD /* MCDisassembler.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CA98AFBFFC4F68237DF3A43754BF845F /* AArch64Module.c in Sources */ = {isa = PBXBuildFile; fileRef = 8539D1CBCFA48B619747526BA0457ED2 /* AArch64Module.c */; };
+		CACD05E8D0FA35699DA1347D5E05CEB1 /* X86Mapping.h in Headers */ = {isa = PBXBuildFile; fileRef = AE7B89C1570F1273C33D251CA691C0B9 /* X86Mapping.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CBEC2C4AAD7A24F3CFB4601F8161BF90 /* dwarf_safe_strcpy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C17A8D5BD1AAE90F5292C016ED0A534 /* dwarf_safe_strcpy.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CBFB468B16FA55FF4E347E4F677E7183 /* CDOCProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D21B3B522583070DF315F2889AD0534 /* CDOCProperty.m */; };
+		CC90A2F20EE89C147466E03EBE238C17 /* dwarf_form_class_names.c in Sources */ = {isa = PBXBuildFile; fileRef = E0CF1B481A840C137CEA0310F9BEE1E4 /* dwarf_form_class_names.c */; };
+		CCDA5D772B83FDC3FACF24FA3AAA919D /* CDMethodType.h in Headers */ = {isa = PBXBuildFile; fileRef = 31256FA6D51C5729AFEC2790E5FBE61E /* CDMethodType.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CDB93C50B51613D54292AA8609DEA75A /* WBBMScanBuglyLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5150D743CE7A7237AB5DC3DA1F91EC3E /* WBBMScanBuglyLog.swift */; };
+		CDE4336795BAE37709A1145BCD9EB632 /* AArch64Mapping.h in Headers */ = {isa = PBXBuildFile; fileRef = F789DCDF643D6EDABA8E58501FC82C8C /* AArch64Mapping.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CFAB456C2013180BD02048638D3B5968 /* NSScanner-CDExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3681797E3E4C8B67B662E7839F14E136 /* NSScanner-CDExtensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D0559D1B7B8440419692817B09B5F177 /* dwarf_debuglink.c in Sources */ = {isa = PBXBuildFile; fileRef = C48987A5414F69BAAC0AC40E285DDD10 /* dwarf_debuglink.c */; };
+		D0F299F1B552FD395556A22EF1091C50 /* xcore.h in Headers */ = {isa = PBXBuildFile; fileRef = B1D2D09ED0CB8EED8A2A4DC3A5C96248 /* xcore.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D10537A476D5981EC022B92A8A6BC920 /* WBBMScanLogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284889077589F534031EDC6FD38F9342 /* WBBMScanLogModel.swift */; };
+		D132C4851BDC780330F5B9DAFDA119DE /* ARMMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B045D5BE82AE4A0EEAB76B720B3EE51 /* ARMMapping.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D2D4C131EB0A4BB8997C1083A10111C6 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = F963E09F29BE4144E7CC653295850064 /* config.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D2DCD3460557D8703C36AF2B1D442A9F /* dwarf_errmsg_list.h in Headers */ = {isa = PBXBuildFile; fileRef = EA5CEF3CE377A3865FAB5E4E854BBCF3 /* dwarf_errmsg_list.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D4E3B11083F698D550CE331350669573 /* sparc.h in Headers */ = {isa = PBXBuildFile; fileRef = A78869C80129DD193169F128C100621D /* sparc.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D65D68CD2F75ACB8688F43C75F441699 /* X86DisassemblerDecoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 4D54D51E65ABD21F1A20ED1E1460A87B /* X86DisassemblerDecoder.c */; };
+		D760438E5015CBE1B032E19FF14C6841 /* dwarf_tsearch.h in Headers */ = {isa = PBXBuildFile; fileRef = 304E78030AF075E4B820D2946AF5A435 /* dwarf_tsearch.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D977BE27107929E4701A9E7F9C70ED3B /* MCInstrDesc.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CA4318A6071C68935B6AF6044AC668C /* MCInstrDesc.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D9A481323D0BDB38008296212D7B3113 /* dwarf_global.c in Sources */ = {isa = PBXBuildFile; fileRef = A59BB81EDA4AABE970735B3957E3A00D /* dwarf_global.c */; };
+		DAA235F36695F18CB1C9BCF646BFAA53 /* dwarf_crc.c in Sources */ = {isa = PBXBuildFile; fileRef = 437B00D27D3567AE34727F4D97A8207D /* dwarf_crc.c */; };
+		DADA2D7F6B3BF2221E5E4602055A97E9 /* dwarf_elfread.c in Sources */ = {isa = PBXBuildFile; fileRef = E69FF8A61803445C401B77D34EBFED16 /* dwarf_elfread.c */; };
+		DCDE0240C92FFB233EDA686C4267734F /* ArtilleryOfItaly.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CEF261B24E823A7DB1D83DC58A89AD8 /* ArtilleryOfItaly.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DD1A057E0FF45072146C3A05B5506C09 /* dwarf_memcpy_swap.h in Headers */ = {isa = PBXBuildFile; fileRef = 0117EC0C97E36F3327A86870E675B3C4 /* dwarf_memcpy_swap.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DD89FCC2C607F1F8BA36C662BE263980 /* dwarf_funcs.c in Sources */ = {isa = PBXBuildFile; fileRef = C1B8CFD5A2D7C33AA58376FCEFCB532D /* dwarf_funcs.c */; };
+		DEAA481A23CADAE86C8CE4E187949291 /* dwarf_machoread.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D7E0B0562C0597406747FF62D39834E /* dwarf_machoread.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DF7915FE34C58D11F5ADA09ECE6ACADB /* dwarf_debuglink.h in Headers */ = {isa = PBXBuildFile; fileRef = BB155E17D10F87F0C78595C8A46AA9E5 /* dwarf_debuglink.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DFE96D8AECA75EE261C1DF23D575D011 /* dwarf.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C0802E4BFB032F5FD04E7185BA2B3D5 /* dwarf.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E053D92AC556E30FFB2051FB7BC15012 /* dwarf_loc.h in Headers */ = {isa = PBXBuildFile; fileRef = B03E7C9D27E6E412FEFE6277D569979E /* dwarf_loc.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E10362F6805C649EC5773CD84A8DA66D /* WBBladesScanManager+CrashSymbol.h in Headers */ = {isa = PBXBuildFile; fileRef = FC258A9121956EAD53F5BBCB027E467D /* WBBladesScanManager+CrashSymbol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E46459F43C4E4DAD9D5250B72FBEDF26 /* dwarf_macro5.c in Sources */ = {isa = PBXBuildFile; fileRef = 30E57E58A2804FB6CD4D8585596245B1 /* dwarf_macro5.c */; };
+		E496191518DE932D0324B2D6855234F8 /* dwarf_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 2171D70119BF0BE4FD62CAF4C0BE8078 /* dwarf_types.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E4C1716E752CE0D19F3CC341CBE1EA6D /* dwarf_str_offsets.h in Headers */ = {isa = PBXBuildFile; fileRef = 41A1A33EEB903F7E4B675D6EBDFC5E74 /* dwarf_str_offsets.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E4E2F82115C01A802D4B13A45067756F /* dwarf_stringsection.c in Sources */ = {isa = PBXBuildFile; fileRef = 81E98DAC1D28AE24C0D7C13275C8305E /* dwarf_stringsection.c */; };
+		E5E6973EBE892925BDDBF368B5293626 /* MathExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FBDC43A625FFC54B5A7D35773B78775 /* MathExtras.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E897CA627BE5D4E5847DCF9C8C346E31 /* utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 61232F7582CC62D7AB23F1F3D73E3F5A /* utils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E8E905F1DFFEC2EF27946478BB2EAFCC /* dwarf_print_lines.c in Sources */ = {isa = PBXBuildFile; fileRef = EAB515F481F56D9B1E22DD789479FB4E /* dwarf_print_lines.c */; };
+		EA906AD0ED932981882AA1A49F4C2205 /* WBBladesFileManager+StaticLibs.mm in Sources */ = {isa = PBXBuildFile; fileRef = 44F8406044315FBC17C00D41799225AC /* WBBladesFileManager+StaticLibs.mm */; };
+		EBA535EB5F5706ADAEA11AE8C59835E0 /* WBBladesScanManager+StaticLibs.mm in Sources */ = {isa = PBXBuildFile; fileRef = F702C7C332D9709D2B939CB2678C9224 /* WBBladesScanManager+StaticLibs.mm */; };
+		EC09D2528071CF6B803C3BD0E55C0047 /* WBBMShellObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F80D15926E5E7A2C07D441FDA8E42EB /* WBBMShellObject.swift */; };
+		EE6C24119FDBD128827D88AB9C93B665 /* WBCrashTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B65638974736D09F8C148C8A93832C /* WBCrashTool.swift */; };
+		EF4BBDDAE45D0DC861DF69DE3104CDF3 /* dwarf_fission_to_cu.c in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BE47A019BE062915CD4998A2CB3D2 /* dwarf_fission_to_cu.c */; };
+		F297184C5F261933B07EC65C2C021DFE /* dwarf_form.c in Sources */ = {isa = PBXBuildFile; fileRef = A01FF38560EA12AB89CB77ECE060B311 /* dwarf_form.c */; };
+		F36D637772314E0CB0AC0264531BEEE5 /* STPrivilegedTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 578383B1246C30C7287ED1070B918ED9 /* STPrivilegedTask.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F4059106F7A5B6939A33162207C59DE2 /* ArtilleryModels.m in Sources */ = {isa = PBXBuildFile; fileRef = D411B29C4F9AFB8C0C5646F34B72E6C9 /* ArtilleryModels.m */; };
+		F75BE725DD208C042C294CBCCE09AB32 /* WBBladesSymTab.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BB95DA148BD323C07E184916BAF508 /* WBBladesSymTab.m */; };
+		F78BA36D756CC22D0928AB8192255FDE /* CDOCInstanceVariable.h in Headers */ = {isa = PBXBuildFile; fileRef = FC8E3FB2E372F4BB8163A0228BE71596 /* CDOCInstanceVariable.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F8415F76FA0B3AB4C252862F24396D85 /* dwarf_find_sigref.c in Sources */ = {isa = PBXBuildFile; fileRef = 67534A8130CDC9265A6F386889516B77 /* dwarf_find_sigref.c */; };
+		FA92689FBA7314962B706981980143D8 /* CDTypeLexer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DD83502D9A4F219C2E3340645366E96 /* CDTypeLexer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FF0DA5AE5344C0BC126CA4A62E21AA82 /* WBBladesScanManager+AutoHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 75EF4475076A9D96FDF3DBE5F89014B1 /* WBBladesScanManager+AutoHook.mm */; };
+		FF18D439E1BCB1D13E7664073822192F /* libdwarf.h in Headers */ = {isa = PBXBuildFile; fileRef = CE33A7137A2044F255C064DD9638472D /* libdwarf.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FF2F49BD011D74FC4E4E33D1DFE9DD7D /* dwarf_leb.c in Sources */ = {isa = PBXBuildFile; fileRef = DEACFD0159F0F1B36BC54B9FC2EB7076 /* dwarf_leb.c */; };
+		FFC7952014909B997E4DE806BA8D8A48 /* dwarf_pubtypes.c in Sources */ = {isa = PBXBuildFile; fileRef = 93C25EDFC6D04A66A28B5E5D9BBFCF7B /* dwarf_pubtypes.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63E28F6D8731E54287668FC92802C27B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6A142AEB1B8D4431EF8F850124A0910;
+			remoteInfo = WBBlades;
+		};
+		656CE942210F8937EAEC8E7CF2076EE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B378281B801AFD517BEAC3EBC7B6F27B;
+			remoteInfo = ArtilleryOfItaly;
+		};
+		895ECD78C96065E69A0E9239C15B262E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0476538A94CBD3DE8CDA74B633333B0D;
+			remoteInfo = WBBladesCrash;
+		};
+		95222B697E7247DD94495B54B3BEE48D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0476538A94CBD3DE8CDA74B633333B0D;
+			remoteInfo = WBBladesCrash;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00AB021163D113443426F1042E1C2C84 /* WBBladesFileManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBBladesFileManager.h; path = Tools/WBBladesFileManager.h; sourceTree = "<group>"; };
+		0117EC0C97E36F3327A86870E675B3C4 /* dwarf_memcpy_swap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_memcpy_swap.h; sourceTree = "<group>"; };
+		01ACBFCED05AC52803795714D80772D6 /* WBBladesCrash.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WBBladesCrash.modulemap; sourceTree = "<group>"; };
+		04C09433935DF699333BE7551E516C80 /* CDClassDump.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDClassDump.m; path = ClassDump/CDClassDump.m; sourceTree = "<group>"; };
+		04DC81F7E951E5A42A3C50CB8502D29C /* SStream.c */ = {isa = PBXFileReference; includeInIndex = 1; name = SStream.c; path = Capstone/SStream.c; sourceTree = "<group>"; };
+		0618B7BF13B24BCB038B4524D3E9F64C /* X86Mapping.c */ = {isa = PBXFileReference; includeInIndex = 1; path = X86Mapping.c; sourceTree = "<group>"; };
+		0638F7A187AB779070637B097777B2C7 /* dwarf_arange.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_arange.c; sourceTree = "<group>"; };
+		0694CDC89BF7E909960DA7B2F8C40EF3 /* dwarf_alloc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_alloc.h; sourceTree = "<group>"; };
+		07F579B866A973D95797D08AEDF4EFB8 /* WBBMScanLogTool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WBBMScanLogTool.swift; sourceTree = "<group>"; };
+		07F87B11D80A0DD8E0357397D6346C44 /* AArch64InstPrinter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AArch64InstPrinter.h; sourceTree = "<group>"; };
+		09C70B390136271B89D25EEE9AE2B0FA /* MCInst.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MCInst.h; path = Capstone/MCInst.h; sourceTree = "<group>"; };
+		09D15200A6BEC730272CB196B3CE4782 /* CDTypeFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDTypeFormatter.m; path = ClassDump/CDTypeFormatter.m; sourceTree = "<group>"; };
+		0AF8C87ECAD02D222BC924B150FCF599 /* dwarf_pe_descr.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_pe_descr.h; sourceTree = "<group>"; };
+		0B2EEFC90141C7089080A0F0F497D116 /* dwarf_error.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_error.c; sourceTree = "<group>"; };
+		0B74C20CA7D60FD69145EDB6700EF22D /* dwarf_machoread.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_machoread.c; sourceTree = "<group>"; };
+		0CCBBD93A073BF3A66541D6A7D43B35E /* dwarf_alloc.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_alloc.c; sourceTree = "<group>"; };
+		0DD83502D9A4F219C2E3340645366E96 /* CDTypeLexer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDTypeLexer.h; path = ClassDump/CDTypeLexer.h; sourceTree = "<group>"; };
+		0E28427173CA84D841D903A893904A93 /* WBBladesTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBBladesTool.h; path = Tools/WBBladesTool.h; sourceTree = "<group>"; };
+		0E4C3FDB72C6001CB80B71388FF6E9DC /* dwarf_object_detector.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_object_detector.c; sourceTree = "<group>"; };
+		0EC7DE21E307015C880AE5DF43820E8E /* WBBladesScanManager+StaticLibs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WBBladesScanManager+StaticLibs.h"; path = "Scan/WBBladesScanManager+StaticLibs.h"; sourceTree = "<group>"; };
+		0FC790D325633D0EA04587EBCA538CC2 /* systemz.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = systemz.h; sourceTree = "<group>"; };
+		0FEBD278293E1256F6CC5CE1D248E976 /* ChainFixUpsHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ChainFixUpsHelper.m; path = Tools/ChainFixUpsHelper.m; sourceTree = "<group>"; };
+		0FEF0C8A10F187638A2853940A6CEA3D /* WBBladesScanManager+AutoHook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WBBladesScanManager+AutoHook.h"; path = "Tools/WBBladesScanManager+AutoHook.h"; sourceTree = "<group>"; };
+		10AF615B1ADBCCC1D5CFE7D631C00946 /* dwarf_debugnames.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_debugnames.h; sourceTree = "<group>"; };
+		10E24B349743FA5C741A72C125294DF2 /* ArtilleryOfItaly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ArtilleryOfItaly.debug.xcconfig; sourceTree = "<group>"; };
+		121388F527745A2BA99CE687A294F0EA /* CDTypeLexer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDTypeLexer.m; path = ClassDump/CDTypeLexer.m; sourceTree = "<group>"; };
+		1225F688200E8D9820E42E95F7DE7AEF /* CDTextClassDumpVisitor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDTextClassDumpVisitor.m; path = ClassDump/CDTextClassDumpVisitor.m; sourceTree = "<group>"; };
+		124245A0EE9E8C1E66DE4F71C17BB667 /* WBBladesObjectHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBBladesObjectHeader.h; path = Model/WBBladesObjectHeader.h; sourceTree = "<group>"; };
+		1243EC0E3DBB52FEA1574E29CEC5A068 /* WBBladesScanManager+CrashSymbol.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "WBBladesScanManager+CrashSymbol.mm"; path = "Scan/WBBladesScanManager+CrashSymbol.mm"; sourceTree = "<group>"; };
+		13E4D19F3AE3449E29CDB51C7E8C3B92 /* dwarf_arange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_arange.h; sourceTree = "<group>"; };
+		14C3513F391597C91C3E48BEC1BF127D /* ARMDisassembler.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ARMDisassembler.c; sourceTree = "<group>"; };
+		1563917A8975F558EC0C406F6981D77C /* WBBMScanHuaweiLog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WBBMScanHuaweiLog.swift; sourceTree = "<group>"; };
+		16554E5C151CA152E02B2F22CEDD37AA /* dwarf_xu_index.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_xu_index.c; sourceTree = "<group>"; };
+		177C74ED60BD3C7B18A1DDF6A438C141 /* WBBladesStringTab.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBBladesStringTab.h; path = Model/WBBladesStringTab.h; sourceTree = "<group>"; };
+		181344ED65C8CB893421F51579370B66 /* CDOCClass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDOCClass.h; path = ClassDump/CDOCClass.h; sourceTree = "<group>"; };
+		1951A24F3E3080DEC12356C6A906697B /* WBBMSymbolTake.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WBBMSymbolTake.swift; sourceTree = "<group>"; };
+		1A4C2B73CCBA058C5BEB7630F57FB82F /* CDTextClassDumpVisitor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDTextClassDumpVisitor.h; path = ClassDump/CDTextClassDumpVisitor.h; sourceTree = "<group>"; };
+		1AD79AE05A6BD9FCC96B9C159730A180 /* dwarf_frame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_frame.h; sourceTree = "<group>"; };
+		1B045D5BE82AE4A0EEAB76B720B3EE51 /* ARMMapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ARMMapping.h; sourceTree = "<group>"; };
+		1CD6D1F6C0B707A98D64F3902E3C2AF0 /* cs.c */ = {isa = PBXFileReference; includeInIndex = 1; name = cs.c; path = Capstone/cs.c; sourceTree = "<group>"; };
+		1CDE50173C4CAFDBABB3A7F61B9E2FD5 /* MCRegisterInfo.c */ = {isa = PBXFileReference; includeInIndex = 1; name = MCRegisterInfo.c; path = Capstone/MCRegisterInfo.c; sourceTree = "<group>"; };
+		1D32F1D06B2350BCB3D56A234F1A5314 /* X86Module.c */ = {isa = PBXFileReference; includeInIndex = 1; path = X86Module.c; sourceTree = "<group>"; };
+		1E336C59DE54FD7125953E188DA2E5BA /* dwarf_weaks.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_weaks.c; sourceTree = "<group>"; };
+		209042F790FD8D41B0B40611134C1840 /* utils.c */ = {isa = PBXFileReference; includeInIndex = 1; name = utils.c; path = Capstone/utils.c; sourceTree = "<group>"; };
+		2171D70119BF0BE4FD62CAF4C0BE8078 /* dwarf_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_types.h; sourceTree = "<group>"; };
+		23329396FAA6174A1A0EF6800ADCC0B2 /* dwarf_macro5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_macro5.h; sourceTree = "<group>"; };
+		2424E3AF59F3C434A134470E4283B37D /* ARMBaseInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ARMBaseInfo.h; sourceTree = "<group>"; };
+		25FE96DD3504DC9E7D4BD865C3377738 /* WBBladesLinkManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBBladesLinkManager.h; path = Link/WBBladesLinkManager.h; sourceTree = "<group>"; };
+		26B723AFD32DA99FCE2C80EEF5E15B72 /* MCInstrDesc.c */ = {isa = PBXFileReference; includeInIndex = 1; name = MCInstrDesc.c; path = Capstone/MCInstrDesc.c; sourceTree = "<group>"; };
+		27B9AE12060214E4324A91009E11B458 /* ARMInstPrinter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ARMInstPrinter.h; sourceTree = "<group>"; };
+		284889077589F534031EDC6FD38F9342 /* WBBMScanLogModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WBBMScanLogModel.swift; sourceTree = "<group>"; };
+		2964E5FD79E414D1A606BABB0902DD7E /* WBBladesStringTab.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WBBladesStringTab.m; path = Model/WBBladesStringTab.m; sourceTree = "<group>"; };
+		29B901B5CC2543F248A8BF2675B04229 /* AArch64BaseInfo.c */ = {isa = PBXFileReference; includeInIndex = 1; path = AArch64BaseInfo.c; sourceTree = "<group>"; };
+		29CD222C3B3D16F15829464BF7B5D021 /* dwarf_memcpy_swap.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_memcpy_swap.c; sourceTree = "<group>"; };
+		2A0A90696C8BAF80BD7B5E2323E30C85 /* WBBMSymbolSearch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WBBMSymbolSearch.swift; sourceTree = "<group>"; };
+		2C675A493BAA307B437465D0506BED05 /* WBBladesStaticLibraryModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBBladesStaticLibraryModel.h; path = Tools/WBBladesStaticLibraryModel.h; sourceTree = "<group>"; };
+		2C8A1549F6536166A61D29AD288B69CB /* Pods-CYClear-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CYClear-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2C9BB8223AF8DC2E9F030ADE22D30FA8 /* dwarf_rnglists.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_rnglists.c; sourceTree = "<group>"; };
+		2D3AF0A5EE0E6F0D4FAE6EA7A69BAFA5 /* AArch64Disassembler.c */ = {isa = PBXFileReference; includeInIndex = 1; path = AArch64Disassembler.c; sourceTree = "<group>"; };
+		2E71CDD9D75C16CAE2F4E6DAD0AEFD24 /* Pods-CYClear-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CYClear-dummy.m"; sourceTree = "<group>"; };
+		2F63C2E58DE137631F50B2E35C346566 /* dwarf_macho_loader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_macho_loader.h; sourceTree = "<group>"; };
+		30368C95D883A42E0E6AFA99485BECA0 /* libdwarf_private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = libdwarf_private.h; sourceTree = "<group>"; };
+		304C7102644467CA4A33B3E8ECD82B61 /* dwarf_ranges.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_ranges.c; sourceTree = "<group>"; };
+		304E78030AF075E4B820D2946AF5A435 /* dwarf_tsearch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_tsearch.h; sourceTree = "<group>"; };
+		30ACF4C908DDADA6F8F8AA7DBF468402 /* WBBladesFileManager.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = WBBladesFileManager.mm; path = Tools/WBBladesFileManager.mm; sourceTree = "<group>"; };
+		30E57E58A2804FB6CD4D8585596245B1 /* dwarf_macro5.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_macro5.c; sourceTree = "<group>"; };
+		31256FA6D51C5729AFEC2790E5FBE61E /* CDMethodType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDMethodType.h; path = ClassDump/CDMethodType.h; sourceTree = "<group>"; };
+		31850FBE9BEF795319E4005E72D0036D /* AArch64Mapping.c */ = {isa = PBXFileReference; includeInIndex = 1; path = AArch64Mapping.c; sourceTree = "<group>"; };
+		31B588EF59D36643AD1357839F779C4E /* dwarf_str_offsets.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_str_offsets.c; sourceTree = "<group>"; };
+		335063A1BDC83561AA5B9FB526E19BF5 /* ARMDisassembler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ARMDisassembler.h; sourceTree = "<group>"; };
+		336123BD583E01C13A04D02AD49CA6FC /* ARMMapping.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ARMMapping.c; sourceTree = "<group>"; };
+		35E132AA8B9116A837D8A8E010C63F46 /* X86BaseInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = X86BaseInfo.h; sourceTree = "<group>"; };
+		3681797E3E4C8B67B662E7839F14E136 /* NSScanner-CDExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSScanner-CDExtensions.h"; path = "ClassDump/NSScanner-CDExtensions.h"; sourceTree = "<group>"; };
+		372DCA224A9D14E4E77673B16E6255FD /* AArch64Disassembler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AArch64Disassembler.h; sourceTree = "<group>"; };
+		377A59AFC33CCAAB42806A1DF715BFD3 /* WBBlades.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WBBlades.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		39E0E1628872FD447CDAC1869E4FAEE3 /* dwarf_line_table_reader_common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_line_table_reader_common.h; sourceTree = "<group>"; };
+		3ABE40A55F6B7724EE2014400049515D /* ARMAddressingModes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ARMAddressingModes.h; sourceTree = "<group>"; };
+		3B8D3F33F769824E85690460DF7E0E1F /* NSString-CDExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString-CDExtensions.m"; path = "ClassDump/NSString-CDExtensions.m"; sourceTree = "<group>"; };
+		3CEF261B24E823A7DB1D83DC58A89AD8 /* ArtilleryOfItaly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ArtilleryOfItaly.h; path = ArtilleryOfItaly/ArtilleryOfItaly/ArtilleryOfItaly.h; sourceTree = "<group>"; };
+		3D6BE58ECD7E31A07DFC6B17E7A0475E /* WBBladesCrash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WBBladesCrash.release.xcconfig; sourceTree = "<group>"; };
+		3E29D3C1CF52CE43E8C8BBA57235401A /* WBBMSymbolTool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WBBMSymbolTool.swift; sourceTree = "<group>"; };
+		40EAAC52BA1E0F378105A1C8C1A906A3 /* dwarf_elf_defines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_elf_defines.h; sourceTree = "<group>"; };
+		415021623AC9E43B0DE1A7D955A1B7F2 /* PPCMapping.c */ = {isa = PBXFileReference; includeInIndex = 1; path = PPCMapping.c; sourceTree = "<group>"; };
+		41A1A33EEB903F7E4B675D6EBDFC5E74 /* dwarf_str_offsets.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_str_offsets.h; sourceTree = "<group>"; };
+		4377A1D6D253FAB89708B305D6DB6DBF /* dwarf_global.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_global.h; sourceTree = "<group>"; };
+		437B00D27D3567AE34727F4D97A8207D /* dwarf_crc.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_crc.c; sourceTree = "<group>"; };
+		442AA7F438A7091A0F21771F6AD2037B /* WBBladesCrash-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WBBladesCrash-prefix.pch"; sourceTree = "<group>"; };
+		444419423C5A8F85764C5800EA00692B /* WBBlades-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WBBlades-prefix.pch"; sourceTree = "<group>"; };
+		449DB1977D0796731B0F9637445D46F3 /* WBBlades-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WBBlades-umbrella.h"; sourceTree = "<group>"; };
+		44F8406044315FBC17C00D41799225AC /* WBBladesFileManager+StaticLibs.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "WBBladesFileManager+StaticLibs.mm"; path = "Tools/WBBladesFileManager+StaticLibs.mm"; sourceTree = "<group>"; };
+		4588BC7C0C56227A168AB84A3314CF4B /* dwarf_object_read_common.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_object_read_common.c; sourceTree = "<group>"; };
+		467C899BDD9C3CA19C6AFDB370F62BD6 /* WBBladesInterface.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WBBladesInterface.m; path = Tools/WBBladesInterface.m; sourceTree = "<group>"; };
+		46DEAA38222D46A5AC42358DBDA8C0FC /* dwarf_frame2.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_frame2.c; sourceTree = "<group>"; };
+		47BB5C760A9CB6566F383FD15877862E /* capstone.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = capstone.h; sourceTree = "<group>"; };
+		49B7180154A0B8E706BFC55DB96063E3 /* dwarf_object_read_common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_object_read_common.h; sourceTree = "<group>"; };
+		4A7600406AE35EE6EB16697FD849C2FA /* dwarf_elfread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_elfread.h; sourceTree = "<group>"; };
+		4AAB373EBB130D29006C8F644118E00C /* X86ATTInstPrinter.c */ = {isa = PBXFileReference; includeInIndex = 1; path = X86ATTInstPrinter.c; sourceTree = "<group>"; };
+		4B675773B607E6620485413901493875 /* WBBMOutputFile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WBBMOutputFile.swift; sourceTree = "<group>"; };
+		4BB7E371C180A1BD59238B9B1E6C6660 /* LEB128.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LEB128.h; path = Capstone/LEB128.h; sourceTree = "<group>"; };
+		4C615492B1AF989DBCDD3BDC5DF53D8C /* dwarf_elfstructs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_elfstructs.h; sourceTree = "<group>"; };
+		4CA4318A6071C68935B6AF6044AC668C /* MCInstrDesc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MCInstrDesc.h; path = Capstone/MCInstrDesc.h; sourceTree = "<group>"; };
+		4D21B3B522583070DF315F2889AD0534 /* CDOCProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDOCProperty.m; path = ClassDump/CDOCProperty.m; sourceTree = "<group>"; };
+		4D54D51E65ABD21F1A20ED1E1460A87B /* X86DisassemblerDecoder.c */ = {isa = PBXFileReference; includeInIndex = 1; path = X86DisassemblerDecoder.c; sourceTree = "<group>"; };
+		4E1FA5AD6C6C80448EB80503B79D1030 /* CDObjectiveCProcessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDObjectiveCProcessor.m; path = ClassDump/CDObjectiveCProcessor.m; sourceTree = "<group>"; };
+		4F80D15926E5E7A2C07D441FDA8E42EB /* WBBMShellObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WBBMShellObject.swift; sourceTree = "<group>"; };
+		4FEE64741FE3CF25E55ED34EBED73242 /* dwarf_frame.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_frame.c; sourceTree = "<group>"; };
+		50C4BB87F0AB617D43565D7C8F29E5C0 /* CDTypeFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDTypeFormatter.h; path = ClassDump/CDTypeFormatter.h; sourceTree = "<group>"; };
+		5150D743CE7A7237AB5DC3DA1F91EC3E /* WBBMScanBuglyLog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WBBMScanBuglyLog.swift; sourceTree = "<group>"; };
+		515E9D39D2760FF363085AEF5728FBF3 /* dsymutil */ = {isa = PBXFileReference; includeInIndex = 1; name = dsymutil; path = WBBladesCrash/Resource/dsymutil; sourceTree = "<group>"; };
+		5246239559770035B1E8239BD68A6325 /* dwarf_xu_index.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_xu_index.h; sourceTree = "<group>"; };
+		5333E43056F5BB8CC9E07B7D48FC278C /* X86Disassembler.c */ = {isa = PBXFileReference; includeInIndex = 1; path = X86Disassembler.c; sourceTree = "<group>"; };
+		539AA7AB65C4240E0454E4EB97D52964 /* PPCMapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PPCMapping.h; sourceTree = "<group>"; };
+		545A3969CA1FF369FEA134AFC7C9AD01 /* NSString-CDExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString-CDExtensions.h"; path = "ClassDump/NSString-CDExtensions.h"; sourceTree = "<group>"; };
+		547D058C1684EA23501456E7BD7FF51F /* dwarf_tied_decls.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_tied_decls.h; sourceTree = "<group>"; };
+		552F3060D884B521AEC408BFA3866A1B /* dwarf_reading.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_reading.h; sourceTree = "<group>"; };
+		571AFE5760022CB43A9659E3BC670FC9 /* dwarf_vars.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_vars.h; sourceTree = "<group>"; };
+		578383B1246C30C7287ED1070B918ED9 /* STPrivilegedTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPrivilegedTask.h; path = Tools/STPrivilegedTask.h; sourceTree = "<group>"; };
+		58E8F9DD818577BA4CF0E5E2B4DCCAF0 /* Pods-CYClear.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CYClear.debug.xcconfig"; sourceTree = "<group>"; };
+		5976A621227DF90B6B7158222B2E512E /* AArch64InstPrinter.c */ = {isa = PBXFileReference; includeInIndex = 1; path = AArch64InstPrinter.c; sourceTree = "<group>"; };
+		5C17A8D5BD1AAE90F5292C016ED0A534 /* dwarf_safe_strcpy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_safe_strcpy.h; sourceTree = "<group>"; };
+		5C28262440E9CECBF585E3867ED82D4A /* ArtilleryOfItaly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ArtilleryOfItaly.release.xcconfig; sourceTree = "<group>"; };
+		5CC5C223953FFFF2D8B82084B001BA5F /* WBBladesDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBBladesDefines.h; path = Tools/WBBladesDefines.h; sourceTree = "<group>"; };
+		5D3BE47A019BE062915CD4998A2CB3D2 /* dwarf_fission_to_cu.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_fission_to_cu.c; sourceTree = "<group>"; };
+		5E667981BC897F9EED4A7A45138CDE22 /* ArtilleryOfItaly-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ArtilleryOfItaly-dummy.m"; sourceTree = "<group>"; };
+		5EDBA75B077B600E214DAC44F2D877BD /* dwarf_util.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_util.h; sourceTree = "<group>"; };
+		5EE8D408F135373D361F0CA84548418E /* dwarf_macro.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_macro.c; sourceTree = "<group>"; };
+		5F00E01F694B7943C05F6E6449BBB499 /* dwarf_crc32.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_crc32.c; sourceTree = "<group>"; };
+		5F459559EF85A9C148F6FA6E9B920F6F /* dwarf_elf_rel_detector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_elf_rel_detector.h; sourceTree = "<group>"; };
+		5F508103977D4BED93C3F1B447EA87E1 /* WBBlades.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WBBlades.release.xcconfig; sourceTree = "<group>"; };
+		5F714F201975C9FB9E5F8201938780FE /* CDStructureTable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDStructureTable.m; path = ClassDump/CDStructureTable.m; sourceTree = "<group>"; };
+		5FBDC43A625FFC54B5A7D35773B78775 /* MathExtras.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MathExtras.h; path = Capstone/MathExtras.h; sourceTree = "<group>"; };
+		60D68CA6759F7DBC21B148F482E73A4B /* WBBladesLinkManager.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = WBBladesLinkManager.mm; path = Link/WBBladesLinkManager.mm; sourceTree = "<group>"; };
+		61232F7582CC62D7AB23F1F3D73E3F5A /* utils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = utils.h; path = Capstone/utils.h; sourceTree = "<group>"; };
+		62012B4F942343F2AC49D3CC7EBCF6E2 /* CDTypeParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDTypeParser.m; path = ClassDump/CDTypeParser.m; sourceTree = "<group>"; };
+		62A2D6E4B8B2D8B8D6A677DA0D918E54 /* WBBlades.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WBBlades.debug.xcconfig; sourceTree = "<group>"; };
+		63A282FE24E955D83712173414ABBE5D /* dwarf_object_detector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_object_detector.h; sourceTree = "<group>"; };
+		64999D40F708ED2646CAFD85EE476F7F /* dwarf_dsc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_dsc.h; sourceTree = "<group>"; };
+		67534A8130CDC9265A6F386889516B77 /* dwarf_find_sigref.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_find_sigref.c; sourceTree = "<group>"; };
+		67C2175C4A42735C90281A2717D67CCD /* ArtilleryModels.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ArtilleryModels.h; path = ArtilleryOfItaly/ArtilleryOfItaly/ArtilleryModels.h; sourceTree = "<group>"; };
+		67FA6601E42E7314ECBA48591BF1435E /* WBBladesCrash-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WBBladesCrash-umbrella.h"; sourceTree = "<group>"; };
+		6848F024DF67151BD03683B3EA60DE08 /* WBBladesSymTab.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBBladesSymTab.h; path = Model/WBBladesSymTab.h; sourceTree = "<group>"; };
+		6A704CF8ED4CD427E3187E7327F628E9 /* dwarf_groups.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_groups.c; sourceTree = "<group>"; };
+		6B7F18BAA95843D5F978646D00557231 /* dwarf_line.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_line.h; sourceTree = "<group>"; };
+		6D7E0B0562C0597406747FF62D39834E /* dwarf_machoread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_machoread.h; sourceTree = "<group>"; };
+		6F49C94A1E3F7E7E33B28258E7991F84 /* NSData-CDExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData-CDExtensions.m"; path = "ClassDump/NSData-CDExtensions.m"; sourceTree = "<group>"; };
+		7148CD5327239C21E38531A080B0A7CD /* dwarf_elf_access.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_elf_access.h; sourceTree = "<group>"; };
+		71650E02DFC9FF70326D0F50433B378B /* dwarf_tied.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_tied.c; sourceTree = "<group>"; };
+		728F82D3D0772EA6096C5213211D9DE9 /* CDTypeName.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDTypeName.h; path = ClassDump/CDTypeName.h; sourceTree = "<group>"; };
+		72C5EE28275392D74638E22C706B16B0 /* Pods-CYClear.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CYClear.release.xcconfig"; sourceTree = "<group>"; };
+		72CDE7A38AEF594231A1CC73D5C181B9 /* ArtilleryOfItaly */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = ArtilleryOfItaly; path = libArtilleryOfItaly.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		74A2871A425FF623A8A938ABCA882E91 /* dwarf_die_deliv.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_die_deliv.c; sourceTree = "<group>"; };
+		756B0F84B142714E99137D6E566706A7 /* CDOCClass.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDOCClass.m; path = ClassDump/CDOCClass.m; sourceTree = "<group>"; };
+		75ACA6D5DDD3F5A341BFD653EF1C523D /* MCInst.c */ = {isa = PBXFileReference; includeInIndex = 1; name = MCInst.c; path = Capstone/MCInst.c; sourceTree = "<group>"; };
+		75EF4475076A9D96FDF3DBE5F89014B1 /* WBBladesScanManager+AutoHook.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "WBBladesScanManager+AutoHook.mm"; path = "Tools/WBBladesScanManager+AutoHook.mm"; sourceTree = "<group>"; };
+		77A1F37E538572207C832E53994150C8 /* WBBlades-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WBBlades-dummy.m"; sourceTree = "<group>"; };
+		7A6AC01444BE34D05D0A2BF82DA40178 /* WBBladesScanManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBBladesScanManager.h; path = Scan/WBBladesScanManager.h; sourceTree = "<group>"; };
+		7A895BD3822F38A571BAB966F4EBF39D /* X86InstPrinter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = X86InstPrinter.h; sourceTree = "<group>"; };
+		7B6504AA680A97EF367EF295240F7161 /* dwarf_gnu_index.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_gnu_index.h; sourceTree = "<group>"; };
+		7BAF721116B02E7B3CCACEDAB9A95126 /* dwarf_abbrev.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_abbrev.c; sourceTree = "<group>"; };
+		7DB3B54ACF270F12BE89471C258935DD /* WBBladesCrash-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WBBladesCrash-dummy.m"; sourceTree = "<group>"; };
+		7DD4BC1F18F2C06F995D7D7AA6F80754 /* dwarf_debug_sup.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_debug_sup.c; sourceTree = "<group>"; };
+		7E1D9AE3082D71328CBB9B9B013CFFC4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = ArtilleryOfItaly/ArtilleryOfItaly/Info.plist; sourceTree = "<group>"; };
+		7FA46AC00772567749B1B11315C94AFC /* Pods-CYClear-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CYClear-acknowledgements.plist"; sourceTree = "<group>"; };
+		80D392F4887E4C69EB4D00C98EDD2413 /* CDClassDump.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDClassDump.h; path = ClassDump/CDClassDump.h; sourceTree = "<group>"; };
+		81E98DAC1D28AE24C0D7C13275C8305E /* dwarf_stringsection.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_stringsection.c; sourceTree = "<group>"; };
+		8539D1CBCFA48B619747526BA0457ED2 /* AArch64Module.c */ = {isa = PBXFileReference; includeInIndex = 1; path = AArch64Module.c; sourceTree = "<group>"; };
+		85C547CF93F6D06CAF2901F3A8DA7F2F /* Pods-CYClear-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CYClear-umbrella.h"; sourceTree = "<group>"; };
+		85E1AF8D1A2B6E50B44B203D55B52F9A /* NSData-CDExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData-CDExtensions.h"; path = "ClassDump/NSData-CDExtensions.h"; sourceTree = "<group>"; };
+		86317DD832A635CBED8974E0CB8DD350 /* CDOCInstanceVariable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDOCInstanceVariable.m; path = ClassDump/CDOCInstanceVariable.m; sourceTree = "<group>"; };
+		8678FA468DFF48A08AF7A05388384661 /* CDTypeController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDTypeController.h; path = ClassDump/CDTypeController.h; sourceTree = "<group>"; };
+		86AEECBBE5544B504FB86F9E3FA6458D /* dwarf_die_deliv.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_die_deliv.h; sourceTree = "<group>"; };
+		86D3F4DB4226753FD436CF012C2A7AB6 /* dwarf_gdbindex.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_gdbindex.c; sourceTree = "<group>"; };
+		86E418BE7AB8DCA27E9CEA298043018C /* Pods-CYClear */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-CYClear"; path = "libPods-CYClear.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87A0509D67464BC5A0D2ACE952003DDC /* WBBladesCrash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WBBladesCrash.debug.xcconfig; sourceTree = "<group>"; };
+		8A50DC4948B8C4F735305A3364F3AC73 /* CDTypeName.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDTypeName.m; path = ClassDump/CDTypeName.m; sourceTree = "<group>"; };
+		8BD418D14163598CF73C2C7CD5BEC265 /* WBBladesStaticLibraryModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WBBladesStaticLibraryModel.m; path = Tools/WBBladesStaticLibraryModel.m; sourceTree = "<group>"; };
+		8C0802E4BFB032F5FD04E7185BA2B3D5 /* dwarf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf.h; sourceTree = "<group>"; };
+		8F6B8A0C70EFB6EEDC22E6E91F4D0528 /* dwarf_safe_strcpy.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_safe_strcpy.c; sourceTree = "<group>"; };
+		8FB868B45001EDA37369681D53E66650 /* ppc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ppc.h; sourceTree = "<group>"; };
+		90AC831902B28BB50CA7217EB941878E /* X86Disassembler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = X86Disassembler.h; sourceTree = "<group>"; };
+		90B60690D9F2771996C73E4F807B176C /* dwarf_abbrev.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_abbrev.h; sourceTree = "<group>"; };
+		91AB6CCB7F5875A1D82CE1459C287C11 /* WBBladesObjectHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WBBladesObjectHeader.m; path = Model/WBBladesObjectHeader.m; sourceTree = "<group>"; };
+		9256A487BD97CB494261E2F5A1064C18 /* CDStructureInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDStructureInfo.m; path = ClassDump/CDStructureInfo.m; sourceTree = "<group>"; };
+		936858FB611FA3817DF71151659D4109 /* dwarf_names.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_names.c; sourceTree = "<group>"; };
+		93C25EDFC6D04A66A28B5E5D9BBFCF7B /* dwarf_pubtypes.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_pubtypes.c; sourceTree = "<group>"; };
+		948D846CA35B55A1CBC4891D036AF588 /* dwarf_gnu_index.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_gnu_index.c; sourceTree = "<group>"; };
+		95CF2667D3A2318F4FDE9A3F9575AA7E /* PPCDisassembler.c */ = {isa = PBXFileReference; includeInIndex = 1; path = PPCDisassembler.c; sourceTree = "<group>"; };
+		9735EA4E44A65640B6BD05BAFA441BAB /* PPCDisassembler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PPCDisassembler.h; sourceTree = "<group>"; };
+		977338A28DEAFAE4F32BC7B652A253CE /* dwarf_macro.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_macro.h; sourceTree = "<group>"; };
+		991201A814F6D22CF97B9A46ED6FFE09 /* WBBladesCrashManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WBBladesCrashManager.swift; path = WBBladesCrash/WBBladesCrashManager.swift; sourceTree = "<group>"; };
+		99DCE28FEA44DF8F69955E856341E5D7 /* inttypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = inttypes.h; path = Capstone/inttypes.h; sourceTree = "<group>"; };
+		9AADC6319EEA5D2D16FD87DCF65E4FD1 /* WBBladesFileManager+StaticLibs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WBBladesFileManager+StaticLibs.h"; path = "Tools/WBBladesFileManager+StaticLibs.h"; sourceTree = "<group>"; };
+		9AC7AC061444648D6FE7CBB8E487FE5D /* dwarf_locationop_read.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_locationop_read.c; sourceTree = "<group>"; };
+		9B0BA555D96CEE90658F95DE979D58E4 /* AArch64AddressingModes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AArch64AddressingModes.h; sourceTree = "<group>"; };
+		9B6F89C0B1232645FF57719CDEE514BE /* WBBlades.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WBBlades.modulemap; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F9604412310EAC67B75DD55B05F520C /* dwarf_query.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_query.c; sourceTree = "<group>"; };
+		9FE528D5CFBA2EF57461C3139880F24E /* Pods-CYClear.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CYClear.modulemap"; sourceTree = "<group>"; };
+		A00A48FE137C4308CB22405CB11F131C /* PPCPredicates.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PPCPredicates.h; sourceTree = "<group>"; };
+		A01FF38560EA12AB89CB77ECE060B311 /* dwarf_form.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_form.c; sourceTree = "<group>"; };
+		A152D4AD491EE815E9B4052075E3FB61 /* WBBladesInterface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBBladesInterface.h; path = Tools/WBBladesInterface.h; sourceTree = "<group>"; };
+		A27D0C7417F125D522FB004A63049560 /* cs_priv.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cs_priv.h; path = Capstone/cs_priv.h; sourceTree = "<group>"; };
+		A2C4DC673DEC4C9F29B1F53B12D81509 /* ARMModule.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ARMModule.c; sourceTree = "<group>"; };
+		A397B29EB5B50BD280706A697E0EC657 /* dwarf_types.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_types.c; sourceTree = "<group>"; };
+		A59BB81EDA4AABE970735B3957E3A00D /* dwarf_global.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_global.c; sourceTree = "<group>"; };
+		A59C2DC7DB094F1A08A4B2F4F0599C40 /* WBBladesScanManager.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = WBBladesScanManager.mm; path = Scan/WBBladesScanManager.mm; sourceTree = "<group>"; };
+		A66865B80C7CFF4F7A0EAF4A429A9DFF /* dwarf_string.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_string.c; sourceTree = "<group>"; };
+		A78869C80129DD193169F128C100621D /* sparc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = sparc.h; sourceTree = "<group>"; };
+		A8F0DF9979E3C55D07EC2011C67E7B73 /* STPrivilegedTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPrivilegedTask.m; path = Tools/STPrivilegedTask.m; sourceTree = "<group>"; };
+		AB8DFA9C236F90CCC043C7B4D1C8E596 /* PPCModule.c */ = {isa = PBXFileReference; includeInIndex = 1; path = PPCModule.c; sourceTree = "<group>"; };
+		AC36AF33C655E00180BEC20ECA26C896 /* MCRegisterInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MCRegisterInfo.h; path = Capstone/MCRegisterInfo.h; sourceTree = "<group>"; };
+		ACB06A55DDA776C1F76C15DEE917FB95 /* WBBladesObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WBBladesObject.m; path = Model/WBBladesObject.m; sourceTree = "<group>"; };
+		AE7B89C1570F1273C33D251CA691C0B9 /* X86Mapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = X86Mapping.h; sourceTree = "<group>"; };
+		AFCE05EB0D1F8C64B13473633543728D /* dwarf_gdbindex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_gdbindex.h; sourceTree = "<group>"; };
+		B03E7C9D27E6E412FEFE6277D569979E /* dwarf_loc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_loc.h; sourceTree = "<group>"; };
+		B1AC38B722BE22C33495ACE2DF4EBB30 /* X86DisassemblerDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = X86DisassemblerDecoder.h; sourceTree = "<group>"; };
+		B1D2D09ED0CB8EED8A2A4DC3A5C96248 /* xcore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = xcore.h; sourceTree = "<group>"; };
+		B34C113D3A0DEA058B5E0A513CE81CE8 /* X86DisassemblerDecoderCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = X86DisassemblerDecoderCommon.h; sourceTree = "<group>"; };
+		B3D65A014FB52445DD3A6818001532C9 /* x86.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = x86.h; sourceTree = "<group>"; };
+		B4604D0DB577F8B3282E09B55750A3AD /* dwarf_elf_load_headers.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_elf_load_headers.c; sourceTree = "<group>"; };
+		B5BB95DA148BD323C07E184916BAF508 /* WBBladesSymTab.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WBBladesSymTab.m; path = Model/WBBladesSymTab.m; sourceTree = "<group>"; };
+		B5ED7AF186FC9BCB6B93A003EA6E8256 /* ArtilleryOfItaly.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ArtilleryOfItaly.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B71AA068AD19B8D753C82B4F2C4858A9 /* ArtilleryOfItaly-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ArtilleryOfItaly-prefix.pch"; sourceTree = "<group>"; };
+		B73477F01DC189E2D9FE3926163E2951 /* dwarf_peread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_peread.h; sourceTree = "<group>"; };
+		B81636157137547E98DBC12DB1AE04DC /* WBBladesCMD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBBladesCMD.h; path = Tools/WBBladesCMD.h; sourceTree = "<group>"; };
+		B9FD576128FE364E2F130E163590205B /* WBBladesCMD.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = WBBladesCMD.mm; path = Tools/WBBladesCMD.mm; sourceTree = "<group>"; };
+		BB155E17D10F87F0C78595C8A46AA9E5 /* dwarf_debuglink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_debuglink.h; sourceTree = "<group>"; };
+		BBDBB3E2A2036F8AC29AD017A1766310 /* PPCInstPrinter.c */ = {isa = PBXFileReference; includeInIndex = 1; path = PPCInstPrinter.c; sourceTree = "<group>"; };
+		BD184CAD0782D0A3403A9892ED8A73B5 /* WBBMScanSystemLog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WBBMScanSystemLog.swift; sourceTree = "<group>"; };
+		BF563EFA9987D21D46D9BC06CE6BB53F /* WBBladesCrashModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WBBladesCrashModel.swift; path = WBBladesCrash/WBBladesCrashModel.swift; sourceTree = "<group>"; };
+		BFBDF2B9BA3FF5CF2DDF00CC652654CD /* MCDisassembler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MCDisassembler.h; path = Capstone/MCDisassembler.h; sourceTree = "<group>"; };
+		C1B8CFD5A2D7C33AA58376FCEFCB532D /* dwarf_funcs.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_funcs.c; sourceTree = "<group>"; };
+		C39E0100003575BA2BB1DEEF2A934D6F /* dwarf_weaks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_weaks.h; sourceTree = "<group>"; };
+		C48987A5414F69BAAC0AC40E285DDD10 /* dwarf_debuglink.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_debuglink.c; sourceTree = "<group>"; };
+		C58B382D4980E99849F8CD8AE419C124 /* NSScanner-CDExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSScanner-CDExtensions.m"; path = "ClassDump/NSScanner-CDExtensions.m"; sourceTree = "<group>"; };
+		C62D052F9D4CA253B5D2C2839F38466A /* CDType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDType.h; path = ClassDump/CDType.h; sourceTree = "<group>"; };
+		C6BFC0ECFC337059A1DD4250F28E1DE0 /* WBBladesScanManager+UnuseClassScan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WBBladesScanManager+UnuseClassScan.h"; path = "Scan/WBBladesScanManager+UnuseClassScan.h"; sourceTree = "<group>"; };
+		C709020FBB9C33E9E376EA9BB4F7401C /* dwarf_loclists.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_loclists.c; sourceTree = "<group>"; };
+		C7C70633134B6079CED969D25CEA896D /* CDObjectiveCProcessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDObjectiveCProcessor.h; path = ClassDump/CDObjectiveCProcessor.h; sourceTree = "<group>"; };
+		C95466158C26EBE3A13BAC6C094CB5DF /* WBBMScanLogManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WBBMScanLogManager.swift; sourceTree = "<group>"; };
+		CA9CAE57B2560661776B88ED8D1209F2 /* CDStructureInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDStructureInfo.h; path = ClassDump/CDStructureInfo.h; sourceTree = "<group>"; };
+		CB48FB3A42E7D88878F53E4BFEBCFE46 /* dwarf_util.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_util.c; sourceTree = "<group>"; };
+		CB99FA57DCFBC5398764286B1CFE1F17 /* WBBladesTool.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = WBBladesTool.mm; path = Tools/WBBladesTool.mm; sourceTree = "<group>"; };
+		CCB2004C8341861543616F1E87559E90 /* dwarf_tsearchhash.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_tsearchhash.c; sourceTree = "<group>"; };
+		CDAB1B69D31837DAE1E541353208E079 /* osxkernel_inttypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = osxkernel_inttypes.h; path = Capstone/osxkernel_inttypes.h; sourceTree = "<group>"; };
+		CDF923EDA99001FCAF4EE2EBC639E3FB /* CDTypeController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDTypeController.m; path = ClassDump/CDTypeController.m; sourceTree = "<group>"; };
+		CE33A7137A2044F255C064DD9638472D /* libdwarf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = libdwarf.h; sourceTree = "<group>"; };
+		CF02A09F046E2B9F6143FBCA326FDA69 /* WBBladesCrash-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WBBladesCrash-Bridging-Header.h"; path = "WBBladesCrash/WBBladesCrash-Bridging-Header.h"; sourceTree = "<group>"; };
+		CF28F4FB371142185E7CA6954AA92623 /* Artillery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Artillery.h; path = ArtilleryOfItaly/ArtilleryOfItaly/Artillery.h; sourceTree = "<group>"; };
+		CF59B1B75EBD73073C34925783CFE4DE /* dwarf_elf_rel_detector.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_elf_rel_detector.c; sourceTree = "<group>"; };
+		D0A71642548E4F96F657447AA77C9C43 /* dwarf_generic_init.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_generic_init.c; sourceTree = "<group>"; };
+		D28E3DA5DACB32C77B6678B69A6DEE87 /* dwarf_debugnames.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_debugnames.c; sourceTree = "<group>"; };
+		D2A6239B3347957610EC6015B88005F2 /* CDBalanceFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDBalanceFormatter.h; path = ClassDump/CDBalanceFormatter.h; sourceTree = "<group>"; };
+		D344DB8FE86C41F55D69F494FE73DD5C /* dwarf_vars.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_vars.c; sourceTree = "<group>"; };
+		D411B29C4F9AFB8C0C5646F34B72E6C9 /* ArtilleryModels.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ArtilleryModels.m; path = ArtilleryOfItaly/ArtilleryOfItaly/ArtilleryModels.m; sourceTree = "<group>"; };
+		D4EE725F90025D7EADA9BAABB82014DB /* dwarf_opaque.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_opaque.h; sourceTree = "<group>"; };
+		D65DF11D488222D64448D5CB187D82B0 /* dwarf_error.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_error.h; sourceTree = "<group>"; };
+		D89090F4BAB7B85F76B1E258716515F1 /* dwarf_funcs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_funcs.h; sourceTree = "<group>"; };
+		D9B65638974736D09F8C148C8A93832C /* WBCrashTool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WBCrashTool.swift; path = Tools/WBCrashTool.swift; sourceTree = "<group>"; };
+		DBC208C681DFDDF37FBEC8E1506D313F /* SStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SStream.h; path = Capstone/SStream.h; sourceTree = "<group>"; };
+		DBC27AF216BE5892871DB18D5BC3B384 /* ARMInstPrinter.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ARMInstPrinter.c; sourceTree = "<group>"; };
+		DC8804553383837C479023C8EE409264 /* CDVisitor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDVisitor.h; path = ClassDump/CDVisitor.h; sourceTree = "<group>"; };
+		DDB8E19762DBFD57752C3D3889A05C3A /* dwarf_dsc.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_dsc.c; sourceTree = "<group>"; };
+		DDFE11B4DF351DEF5C19B32612E42E1F /* CDTypeParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDTypeParser.h; path = ClassDump/CDTypeParser.h; sourceTree = "<group>"; };
+		DEACFD0159F0F1B36BC54B9FC2EB7076 /* dwarf_leb.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_leb.c; sourceTree = "<group>"; };
+		DF239E5D323DA1A47A462B88F11DBF3C /* dwarf_peread.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_peread.c; sourceTree = "<group>"; };
+		E0CF1B481A840C137CEA0310F9BEE1E4 /* dwarf_form_class_names.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_form_class_names.c; sourceTree = "<group>"; };
+		E1AEF0FF6F637457E2C9B2E3A085E430 /* CDBalanceFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDBalanceFormatter.m; path = ClassDump/CDBalanceFormatter.m; sourceTree = "<group>"; };
+		E431960B676954D3097FF241DFE4FA48 /* AArch64BaseInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AArch64BaseInfo.h; sourceTree = "<group>"; };
+		E4DA56C13C11580A7C2416A102930491 /* WBBMLightSymbolTool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WBBMLightSymbolTool.swift; sourceTree = "<group>"; };
+		E69FF8A61803445C401B77D34EBFED16 /* dwarf_elfread.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_elfread.c; sourceTree = "<group>"; };
+		E7D15758A163CEB49747BBFB2C07A8F4 /* dwarf_init_finish.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_init_finish.c; sourceTree = "<group>"; };
+		E7D6DE3F5A2C394E676EC9481D51A076 /* WBBladesScanManager+UnuseClassScan.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "WBBladesScanManager+UnuseClassScan.mm"; path = "Scan/WBBladesScanManager+UnuseClassScan.mm"; sourceTree = "<group>"; };
+		E93314B22B1CB5A45B0FACA06249D259 /* dwarf_harmless.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_harmless.c; sourceTree = "<group>"; };
+		E9B3610793C3B3982542239FBD880A1C /* CDVisitor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDVisitor.m; path = ClassDump/CDVisitor.m; sourceTree = "<group>"; };
+		EA5CEF3CE377A3865FAB5E4E854BBCF3 /* dwarf_errmsg_list.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_errmsg_list.h; sourceTree = "<group>"; };
+		EAB515F481F56D9B1E22DD789479FB4E /* dwarf_print_lines.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_print_lines.c; sourceTree = "<group>"; };
+		EAD0680F17140128BBC2E9D2F744B63F /* ChainFixUpsHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChainFixUpsHelper.h; path = Tools/ChainFixUpsHelper.h; sourceTree = "<group>"; };
+		EAF95C2873AD96D6DC5AB9F2E13B60CC /* CDType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDType.m; path = ClassDump/CDType.m; sourceTree = "<group>"; };
+		ECCDF72039834D352DAE2043F723E69D /* Artillery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Artillery.m; path = ArtilleryOfItaly/ArtilleryOfItaly/Artillery.m; sourceTree = "<group>"; };
+		ED02FCD7F9849F6450406198EC64C75C /* PPCInstPrinter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PPCInstPrinter.h; sourceTree = "<group>"; };
+		ED1BDA2677AE8A62DFFF221DC2E91572 /* CDStructureTable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDStructureTable.h; path = ClassDump/CDStructureTable.h; sourceTree = "<group>"; };
+		ED8D2119C0931C120E22DB124FB26680 /* arm64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = arm64.h; sourceTree = "<group>"; };
+		EF095EE194DDBE95FB4043180E011738 /* WBBladesCrash.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WBBladesCrash.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		EF126487469BAB1EB80A40FEBDEDBE37 /* NSViewController+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSViewController+Extension.swift"; path = "WBBladesCrash/NSViewController+Extension.swift"; sourceTree = "<group>"; };
+		F2AA107145A9E6C3E08DF73E2CA4D5AB /* CDOCProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDOCProperty.h; path = ClassDump/CDOCProperty.h; sourceTree = "<group>"; };
+		F338D1F16C33E5F6F50DAEA7117F4084 /* WBBladesCrash */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = WBBladesCrash; path = libWBBladesCrash.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3446500CA128972B4C7700D34AFEF09 /* MCFixedLenDisassembler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MCFixedLenDisassembler.h; path = Capstone/MCFixedLenDisassembler.h; sourceTree = "<group>"; };
+		F3F27194828FCE133E2BD0C20C3812B2 /* mips.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = mips.h; sourceTree = "<group>"; };
+		F42324E3BE4AE3F742D541D520E7F765 /* arm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = arm.h; sourceTree = "<group>"; };
+		F4A90B14A9CAF22D61D357363BCD42C1 /* WBBladesObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBBladesObject.h; path = Model/WBBladesObject.h; sourceTree = "<group>"; };
+		F702C7C332D9709D2B939CB2678C9224 /* WBBladesScanManager+StaticLibs.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "WBBladesScanManager+StaticLibs.mm"; path = "Scan/WBBladesScanManager+StaticLibs.mm"; sourceTree = "<group>"; };
+		F789DCDF643D6EDABA8E58501FC82C8C /* AArch64Mapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AArch64Mapping.h; sourceTree = "<group>"; };
+		F7C5BEF108A49443594EB706EAD9F6EB /* dwarf_loc.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_loc.c; sourceTree = "<group>"; };
+		F92401D026248A6F771E3DEE09876EB7 /* dwarf_harmless.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_harmless.h; sourceTree = "<group>"; };
+		F963E09F29BE4144E7CC653295850064 /* config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		F9967A4793F8FD9E7CD0486CB9D7C9F8 /* CDMethodType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDMethodType.m; path = ClassDump/CDMethodType.m; sourceTree = "<group>"; };
+		FA742A571754FE11148C30EC85F31D98 /* WBBlades */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = WBBlades; path = libWBBlades.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC1648D35219D417CF2FEAC96BCCFFF5 /* Pods-CYClear-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CYClear-resources.sh"; sourceTree = "<group>"; };
+		FC258A9121956EAD53F5BBCB027E467D /* WBBladesScanManager+CrashSymbol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WBBladesScanManager+CrashSymbol.h"; path = "Scan/WBBladesScanManager+CrashSymbol.h"; sourceTree = "<group>"; };
+		FC8E3FB2E372F4BB8163A0228BE71596 /* CDOCInstanceVariable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDOCInstanceVariable.h; path = ClassDump/CDOCInstanceVariable.h; sourceTree = "<group>"; };
+		FD4344695A876D9C3F4C604F686C8F48 /* dwarf_line.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dwarf_line.c; sourceTree = "<group>"; };
+		FD6E73F08269825023372507533E0653 /* myinttypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = myinttypes.h; path = Capstone/myinttypes.h; sourceTree = "<group>"; };
+		FE1EEC130FB1EA0C77EE05C11F5D2525 /* dwarf_rnglists.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_rnglists.h; sourceTree = "<group>"; };
+		FE236F91DC842BF31BCF3440EDFD6AFA /* platform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = platform.h; sourceTree = "<group>"; };
+		FE5ED105E282F693F578FFD970182217 /* dwarf_base_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dwarf_base_types.h; sourceTree = "<group>"; };
+		FF300A587783809591FD2CBEA9C2646E /* X86IntelInstPrinter.c */ = {isa = PBXFileReference; includeInIndex = 1; path = X86IntelInstPrinter.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1DD653610309B575DB2F4408112C9FD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51D0FE0E2A47B8A42EDEA6EFA3FDDEEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53905A17CEC9A3BBE29E84CD0703EA02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		750DF5DC88FE029CB8E4F71173923511 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00688AA3B924DA4BBF73AD7F0D9C8B74 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				EAD0680F17140128BBC2E9D2F744B63F /* ChainFixUpsHelper.h */,
+				0FEBD278293E1256F6CC5CE1D248E976 /* ChainFixUpsHelper.m */,
+				578383B1246C30C7287ED1070B918ED9 /* STPrivilegedTask.h */,
+				A8F0DF9979E3C55D07EC2011C67E7B73 /* STPrivilegedTask.m */,
+				B81636157137547E98DBC12DB1AE04DC /* WBBladesCMD.h */,
+				B9FD576128FE364E2F130E163590205B /* WBBladesCMD.mm */,
+				5CC5C223953FFFF2D8B82084B001BA5F /* WBBladesDefines.h */,
+				00AB021163D113443426F1042E1C2C84 /* WBBladesFileManager.h */,
+				30ACF4C908DDADA6F8F8AA7DBF468402 /* WBBladesFileManager.mm */,
+				9AADC6319EEA5D2D16FD87DCF65E4FD1 /* WBBladesFileManager+StaticLibs.h */,
+				44F8406044315FBC17C00D41799225AC /* WBBladesFileManager+StaticLibs.mm */,
+				A152D4AD491EE815E9B4052075E3FB61 /* WBBladesInterface.h */,
+				467C899BDD9C3CA19C6AFDB370F62BD6 /* WBBladesInterface.m */,
+				0FEF0C8A10F187638A2853940A6CEA3D /* WBBladesScanManager+AutoHook.h */,
+				75EF4475076A9D96FDF3DBE5F89014B1 /* WBBladesScanManager+AutoHook.mm */,
+				2C675A493BAA307B437465D0506BED05 /* WBBladesStaticLibraryModel.h */,
+				8BD418D14163598CF73C2C7CD5BEC265 /* WBBladesStaticLibraryModel.m */,
+				0E28427173CA84D841D903A893904A93 /* WBBladesTool.h */,
+				CB99FA57DCFBC5398764286B1CFE1F17 /* WBBladesTool.mm */,
+				D9B65638974736D09F8C148C8A93832C /* WBCrashTool.swift */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		020D9B7DB53353995BA2CA7A39E927EE /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67CCA0743D1053C4C68D69A88D55E01B /* ArtilleryOfItaly */,
+				7BFB2C4A6CB8033D423EC8E00208E97F /* WBBlades */,
+				2DAE1A101997CC219920C68CF4AA0B15 /* WBBladesCrash */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		028B913689EF6F26A55C4C45826B0787 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				B5ED7AF186FC9BCB6B93A003EA6E8256 /* ArtilleryOfItaly.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		135411F145F937E9AEF5D3E555B7521F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9B6F89C0B1232645FF57719CDEE514BE /* WBBlades.modulemap */,
+				77A1F37E538572207C832E53994150C8 /* WBBlades-dummy.m */,
+				444419423C5A8F85764C5800EA00692B /* WBBlades-prefix.pch */,
+				449DB1977D0796731B0F9637445D46F3 /* WBBlades-umbrella.h */,
+				62A2D6E4B8B2D8B8D6A677DA0D918E54 /* WBBlades.debug.xcconfig */,
+				5F508103977D4BED93C3F1B447EA87E1 /* WBBlades.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Pods/Target Support Files/WBBlades";
+			sourceTree = "<group>";
+		};
+		22A396CED23AFA3F6286435AE4580FC7 /* WBBMAnalyze */ = {
+			isa = PBXGroup;
+			children = (
+				4F80D15926E5E7A2C07D441FDA8E42EB /* WBBMShellObject.swift */,
+			);
+			name = WBBMAnalyze;
+			path = WBBladesCrash/WBBMAnalyze;
+			sourceTree = "<group>";
+		};
+		286D7F517B4133EB8308538923DB5245 /* AArch64 */ = {
+			isa = PBXGroup;
+			children = (
+				9B0BA555D96CEE90658F95DE979D58E4 /* AArch64AddressingModes.h */,
+				29B901B5CC2543F248A8BF2675B04229 /* AArch64BaseInfo.c */,
+				E431960B676954D3097FF241DFE4FA48 /* AArch64BaseInfo.h */,
+				2D3AF0A5EE0E6F0D4FAE6EA7A69BAFA5 /* AArch64Disassembler.c */,
+				372DCA224A9D14E4E77673B16E6255FD /* AArch64Disassembler.h */,
+				5976A621227DF90B6B7158222B2E512E /* AArch64InstPrinter.c */,
+				07F87B11D80A0DD8E0357397D6346C44 /* AArch64InstPrinter.h */,
+				31850FBE9BEF795319E4005E72D0036D /* AArch64Mapping.c */,
+				F789DCDF643D6EDABA8E58501FC82C8C /* AArch64Mapping.h */,
+				8539D1CBCFA48B619747526BA0457ED2 /* AArch64Module.c */,
+			);
+			name = AArch64;
+			path = AArch64;
+			sourceTree = "<group>";
+		};
+		2DAE1A101997CC219920C68CF4AA0B15 /* WBBladesCrash */ = {
+			isa = PBXGroup;
+			children = (
+				515E9D39D2760FF363085AEF5728FBF3 /* dsymutil */,
+				EF126487469BAB1EB80A40FEBDEDBE37 /* NSViewController+Extension.swift */,
+				CF02A09F046E2B9F6143FBCA326FDA69 /* WBBladesCrash-Bridging-Header.h */,
+				991201A814F6D22CF97B9A46ED6FFE09 /* WBBladesCrashManager.swift */,
+				BF563EFA9987D21D46D9BC06CE6BB53F /* WBBladesCrashModel.swift */,
+				5FA284386AE3E3AFC3A4CE6AD7F58DB0 /* Pod */,
+				41EC28BF3BBDDCE3DEEFF7AA33A443C6 /* Support Files */,
+				22A396CED23AFA3F6286435AE4580FC7 /* WBBMAnalyze */,
+				5A0F67297A102A1A991C1AB629BF0F12 /* WBBMFileManager */,
+				9ADFCD63F3E11A4D7C3D223518F0D7F8 /* WBBMScanLog */,
+				5EB8E3D2EBB235F1494E83B87B473BE3 /* WBBMSymbol */,
+			);
+			name = WBBladesCrash;
+			path = ../WBBladesCrash;
+			sourceTree = "<group>";
+		};
+		3DFD8BE9A1FC0E2836567BC14E7B4AAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72CDE7A38AEF594231A1CC73D5C181B9 /* ArtilleryOfItaly */,
+				86E418BE7AB8DCA27E9CEA298043018C /* Pods-CYClear */,
+				FA742A571754FE11148C30EC85F31D98 /* WBBlades */,
+				F338D1F16C33E5F6F50DAEA7117F4084 /* WBBladesCrash */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		400B252991EF83A3FCF9DB2454E38658 /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				7A6AC01444BE34D05D0A2BF82DA40178 /* WBBladesScanManager.h */,
+				A59C2DC7DB094F1A08A4B2F4F0599C40 /* WBBladesScanManager.mm */,
+				FC258A9121956EAD53F5BBCB027E467D /* WBBladesScanManager+CrashSymbol.h */,
+				1243EC0E3DBB52FEA1574E29CEC5A068 /* WBBladesScanManager+CrashSymbol.mm */,
+				0EC7DE21E307015C880AE5DF43820E8E /* WBBladesScanManager+StaticLibs.h */,
+				F702C7C332D9709D2B939CB2678C9224 /* WBBladesScanManager+StaticLibs.mm */,
+				C6BFC0ECFC337059A1DD4250F28E1DE0 /* WBBladesScanManager+UnuseClassScan.h */,
+				E7D6DE3F5A2C394E676EC9481D51A076 /* WBBladesScanManager+UnuseClassScan.mm */,
+			);
+			name = Scan;
+			sourceTree = "<group>";
+		};
+		41EC28BF3BBDDCE3DEEFF7AA33A443C6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				01ACBFCED05AC52803795714D80772D6 /* WBBladesCrash.modulemap */,
+				7DB3B54ACF270F12BE89471C258935DD /* WBBladesCrash-dummy.m */,
+				442AA7F438A7091A0F21771F6AD2037B /* WBBladesCrash-prefix.pch */,
+				67FA6601E42E7314ECBA48591BF1435E /* WBBladesCrash-umbrella.h */,
+				87A0509D67464BC5A0D2ACE952003DDC /* WBBladesCrash.debug.xcconfig */,
+				3D6BE58ECD7E31A07DFC6B17E7A0475E /* WBBladesCrash.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Pods/Target Support Files/WBBladesCrash";
+			sourceTree = "<group>";
+		};
+		51266323CA461378813076E9DC5C7776 /* Link */ = {
+			isa = PBXGroup;
+			children = (
+				25FE96DD3504DC9E7D4BD865C3377738 /* WBBladesLinkManager.h */,
+				60D68CA6759F7DBC21B148F482E73A4B /* WBBladesLinkManager.mm */,
+			);
+			name = Link;
+			sourceTree = "<group>";
+		};
+		58DDC3B2F6A24844CC165EF483E00E91 /* PowerPC */ = {
+			isa = PBXGroup;
+			children = (
+				95CF2667D3A2318F4FDE9A3F9575AA7E /* PPCDisassembler.c */,
+				9735EA4E44A65640B6BD05BAFA441BAB /* PPCDisassembler.h */,
+				BBDBB3E2A2036F8AC29AD017A1766310 /* PPCInstPrinter.c */,
+				ED02FCD7F9849F6450406198EC64C75C /* PPCInstPrinter.h */,
+				415021623AC9E43B0DE1A7D955A1B7F2 /* PPCMapping.c */,
+				539AA7AB65C4240E0454E4EB97D52964 /* PPCMapping.h */,
+				AB8DFA9C236F90CCC043C7B4D1C8E596 /* PPCModule.c */,
+				A00A48FE137C4308CB22405CB11F131C /* PPCPredicates.h */,
+			);
+			name = PowerPC;
+			path = PowerPC;
+			sourceTree = "<group>";
+		};
+		5A0F67297A102A1A991C1AB629BF0F12 /* WBBMFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				4B675773B607E6620485413901493875 /* WBBMOutputFile.swift */,
+			);
+			name = WBBMFileManager;
+			path = WBBladesCrash/WBBMFileManager;
+			sourceTree = "<group>";
+		};
+		5EB8E3D2EBB235F1494E83B87B473BE3 /* WBBMSymbol */ = {
+			isa = PBXGroup;
+			children = (
+				E4DA56C13C11580A7C2416A102930491 /* WBBMLightSymbolTool.swift */,
+				2A0A90696C8BAF80BD7B5E2323E30C85 /* WBBMSymbolSearch.swift */,
+				1951A24F3E3080DEC12356C6A906697B /* WBBMSymbolTake.swift */,
+				3E29D3C1CF52CE43E8C8BBA57235401A /* WBBMSymbolTool.swift */,
+			);
+			name = WBBMSymbol;
+			path = WBBladesCrash/WBBMSymbol;
+			sourceTree = "<group>";
+		};
+		5FA284386AE3E3AFC3A4CE6AD7F58DB0 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				EF095EE194DDBE95FB4043180E011738 /* WBBladesCrash.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		65182B186ED795C790EBE8FCE5A3A938 /* ARM */ = {
+			isa = PBXGroup;
+			children = (
+				3ABE40A55F6B7724EE2014400049515D /* ARMAddressingModes.h */,
+				2424E3AF59F3C434A134470E4283B37D /* ARMBaseInfo.h */,
+				14C3513F391597C91C3E48BEC1BF127D /* ARMDisassembler.c */,
+				335063A1BDC83561AA5B9FB526E19BF5 /* ARMDisassembler.h */,
+				DBC27AF216BE5892871DB18D5BC3B384 /* ARMInstPrinter.c */,
+				27B9AE12060214E4324A91009E11B458 /* ARMInstPrinter.h */,
+				336123BD583E01C13A04D02AD49CA6FC /* ARMMapping.c */,
+				1B045D5BE82AE4A0EEAB76B720B3EE51 /* ARMMapping.h */,
+				A2C4DC673DEC4C9F29B1F53B12D81509 /* ARMModule.c */,
+			);
+			name = ARM;
+			path = ARM;
+			sourceTree = "<group>";
+		};
+		67CCA0743D1053C4C68D69A88D55E01B /* ArtilleryOfItaly */ = {
+			isa = PBXGroup;
+			children = (
+				CF28F4FB371142185E7CA6954AA92623 /* Artillery.h */,
+				ECCDF72039834D352DAE2043F723E69D /* Artillery.m */,
+				67C2175C4A42735C90281A2717D67CCD /* ArtilleryModels.h */,
+				D411B29C4F9AFB8C0C5646F34B72E6C9 /* ArtilleryModels.m */,
+				3CEF261B24E823A7DB1D83DC58A89AD8 /* ArtilleryOfItaly.h */,
+				7E1D9AE3082D71328CBB9B9B013CFFC4 /* Info.plist */,
+				F1622EC65F408C9F6606764B87F14553 /* Header Files */,
+				028B913689EF6F26A55C4C45826B0787 /* Pod */,
+				A457825F5DC8451DA8B6B93499DD5122 /* Source Files */,
+				90870845C76F868506E29C2A169AC33F /* Support Files */,
+			);
+			name = ArtilleryOfItaly;
+			path = ../ArtilleryOfItaly;
+			sourceTree = "<group>";
+		};
+		7BFB2C4A6CB8033D423EC8E00208E97F /* WBBlades */ = {
+			isa = PBXGroup;
+			children = (
+				907004F7FF982BA00AB2AB95FB7367CD /* Capstone */,
+				A164CD46B6BA83859986E191F0DE0850 /* ClassDump */,
+				51266323CA461378813076E9DC5C7776 /* Link */,
+				8FCE84F58703C7383D73BDFC42FDF69C /* Model */,
+				D83A3BFDCCAD9E3875454F4FFD168234 /* Pod */,
+				400B252991EF83A3FCF9DB2454E38658 /* Scan */,
+				135411F145F937E9AEF5D3E555B7521F /* Support Files */,
+				00688AA3B924DA4BBF73AD7F0D9C8B74 /* Tools */,
+			);
+			name = WBBlades;
+			path = ../WBBlades;
+			sourceTree = "<group>";
+		};
+		89F11DD0E957A4FAC960664AE3454099 /* Pods-CYClear */ = {
+			isa = PBXGroup;
+			children = (
+				9FE528D5CFBA2EF57461C3139880F24E /* Pods-CYClear.modulemap */,
+				2C8A1549F6536166A61D29AD288B69CB /* Pods-CYClear-acknowledgements.markdown */,
+				7FA46AC00772567749B1B11315C94AFC /* Pods-CYClear-acknowledgements.plist */,
+				2E71CDD9D75C16CAE2F4E6DAD0AEFD24 /* Pods-CYClear-dummy.m */,
+				FC1648D35219D417CF2FEAC96BCCFFF5 /* Pods-CYClear-resources.sh */,
+				85C547CF93F6D06CAF2901F3A8DA7F2F /* Pods-CYClear-umbrella.h */,
+				58E8F9DD818577BA4CF0E5E2B4DCCAF0 /* Pods-CYClear.debug.xcconfig */,
+				72C5EE28275392D74638E22C706B16B0 /* Pods-CYClear.release.xcconfig */,
+			);
+			name = "Pods-CYClear";
+			path = "Target Support Files/Pods-CYClear";
+			sourceTree = "<group>";
+		};
+		8FCE84F58703C7383D73BDFC42FDF69C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4A90B14A9CAF22D61D357363BCD42C1 /* WBBladesObject.h */,
+				ACB06A55DDA776C1F76C15DEE917FB95 /* WBBladesObject.m */,
+				124245A0EE9E8C1E66DE4F71C17BB667 /* WBBladesObjectHeader.h */,
+				91AB6CCB7F5875A1D82CE1459C287C11 /* WBBladesObjectHeader.m */,
+				177C74ED60BD3C7B18A1DDF6A438C141 /* WBBladesStringTab.h */,
+				2964E5FD79E414D1A606BABB0902DD7E /* WBBladesStringTab.m */,
+				6848F024DF67151BD03683B3EA60DE08 /* WBBladesSymTab.h */,
+				B5BB95DA148BD323C07E184916BAF508 /* WBBladesSymTab.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		907004F7FF982BA00AB2AB95FB7367CD /* Capstone */ = {
+			isa = PBXGroup;
+			children = (
+				1CD6D1F6C0B707A98D64F3902E3C2AF0 /* cs.c */,
+				A27D0C7417F125D522FB004A63049560 /* cs_priv.h */,
+				99DCE28FEA44DF8F69955E856341E5D7 /* inttypes.h */,
+				4BB7E371C180A1BD59238B9B1E6C6660 /* LEB128.h */,
+				5FBDC43A625FFC54B5A7D35773B78775 /* MathExtras.h */,
+				BFBDF2B9BA3FF5CF2DDF00CC652654CD /* MCDisassembler.h */,
+				F3446500CA128972B4C7700D34AFEF09 /* MCFixedLenDisassembler.h */,
+				75ACA6D5DDD3F5A341BFD653EF1C523D /* MCInst.c */,
+				09C70B390136271B89D25EEE9AE2B0FA /* MCInst.h */,
+				26B723AFD32DA99FCE2C80EEF5E15B72 /* MCInstrDesc.c */,
+				4CA4318A6071C68935B6AF6044AC668C /* MCInstrDesc.h */,
+				1CDE50173C4CAFDBABB3A7F61B9E2FD5 /* MCRegisterInfo.c */,
+				AC36AF33C655E00180BEC20ECA26C896 /* MCRegisterInfo.h */,
+				FD6E73F08269825023372507533E0653 /* myinttypes.h */,
+				CDAB1B69D31837DAE1E541353208E079 /* osxkernel_inttypes.h */,
+				04DC81F7E951E5A42A3C50CB8502D29C /* SStream.c */,
+				DBC208C681DFDDF37FBEC8E1506D313F /* SStream.h */,
+				209042F790FD8D41B0B40611134C1840 /* utils.c */,
+				61232F7582CC62D7AB23F1F3D73E3F5A /* utils.h */,
+				DBCBD968D1DC43C4F4F86BE52262CE4D /* arch */,
+				E097C99193DC3E6B6C780E0C0F37204F /* include */,
+			);
+			name = Capstone;
+			sourceTree = "<group>";
+		};
+		90870845C76F868506E29C2A169AC33F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E667981BC897F9EED4A7A45138CDE22 /* ArtilleryOfItaly-dummy.m */,
+				B71AA068AD19B8D753C82B4F2C4858A9 /* ArtilleryOfItaly-prefix.pch */,
+				10E24B349743FA5C741A72C125294DF2 /* ArtilleryOfItaly.debug.xcconfig */,
+				5C28262440E9CECBF585E3867ED82D4A /* ArtilleryOfItaly.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Pods/Target Support Files/ArtilleryOfItaly";
+			sourceTree = "<group>";
+		};
+		994BB2A69B04AA2134C83F60358A2AED /* X86 */ = {
+			isa = PBXGroup;
+			children = (
+				4AAB373EBB130D29006C8F644118E00C /* X86ATTInstPrinter.c */,
+				35E132AA8B9116A837D8A8E010C63F46 /* X86BaseInfo.h */,
+				5333E43056F5BB8CC9E07B7D48FC278C /* X86Disassembler.c */,
+				90AC831902B28BB50CA7217EB941878E /* X86Disassembler.h */,
+				4D54D51E65ABD21F1A20ED1E1460A87B /* X86DisassemblerDecoder.c */,
+				B1AC38B722BE22C33495ACE2DF4EBB30 /* X86DisassemblerDecoder.h */,
+				B34C113D3A0DEA058B5E0A513CE81CE8 /* X86DisassemblerDecoderCommon.h */,
+				7A895BD3822F38A571BAB966F4EBF39D /* X86InstPrinter.h */,
+				FF300A587783809591FD2CBEA9C2646E /* X86IntelInstPrinter.c */,
+				0618B7BF13B24BCB038B4524D3E9F64C /* X86Mapping.c */,
+				AE7B89C1570F1273C33D251CA691C0B9 /* X86Mapping.h */,
+				1D32F1D06B2350BCB3D56A234F1A5314 /* X86Module.c */,
+			);
+			name = X86;
+			path = X86;
+			sourceTree = "<group>";
+		};
+		9ADFCD63F3E11A4D7C3D223518F0D7F8 /* WBBMScanLog */ = {
+			isa = PBXGroup;
+			children = (
+				5150D743CE7A7237AB5DC3DA1F91EC3E /* WBBMScanBuglyLog.swift */,
+				1563917A8975F558EC0C406F6981D77C /* WBBMScanHuaweiLog.swift */,
+				C95466158C26EBE3A13BAC6C094CB5DF /* WBBMScanLogManager.swift */,
+				284889077589F534031EDC6FD38F9342 /* WBBMScanLogModel.swift */,
+				07F579B866A973D95797D08AEDF4EFB8 /* WBBMScanLogTool.swift */,
+				BD184CAD0782D0A3403A9892ED8A73B5 /* WBBMScanSystemLog.swift */,
+			);
+			name = WBBMScanLog;
+			path = WBBladesCrash/WBBMScanLog;
+			sourceTree = "<group>";
+		};
+		A164CD46B6BA83859986E191F0DE0850 /* ClassDump */ = {
+			isa = PBXGroup;
+			children = (
+				D2A6239B3347957610EC6015B88005F2 /* CDBalanceFormatter.h */,
+				E1AEF0FF6F637457E2C9B2E3A085E430 /* CDBalanceFormatter.m */,
+				80D392F4887E4C69EB4D00C98EDD2413 /* CDClassDump.h */,
+				04C09433935DF699333BE7551E516C80 /* CDClassDump.m */,
+				31256FA6D51C5729AFEC2790E5FBE61E /* CDMethodType.h */,
+				F9967A4793F8FD9E7CD0486CB9D7C9F8 /* CDMethodType.m */,
+				C7C70633134B6079CED969D25CEA896D /* CDObjectiveCProcessor.h */,
+				4E1FA5AD6C6C80448EB80503B79D1030 /* CDObjectiveCProcessor.m */,
+				181344ED65C8CB893421F51579370B66 /* CDOCClass.h */,
+				756B0F84B142714E99137D6E566706A7 /* CDOCClass.m */,
+				FC8E3FB2E372F4BB8163A0228BE71596 /* CDOCInstanceVariable.h */,
+				86317DD832A635CBED8974E0CB8DD350 /* CDOCInstanceVariable.m */,
+				F2AA107145A9E6C3E08DF73E2CA4D5AB /* CDOCProperty.h */,
+				4D21B3B522583070DF315F2889AD0534 /* CDOCProperty.m */,
+				CA9CAE57B2560661776B88ED8D1209F2 /* CDStructureInfo.h */,
+				9256A487BD97CB494261E2F5A1064C18 /* CDStructureInfo.m */,
+				ED1BDA2677AE8A62DFFF221DC2E91572 /* CDStructureTable.h */,
+				5F714F201975C9FB9E5F8201938780FE /* CDStructureTable.m */,
+				1A4C2B73CCBA058C5BEB7630F57FB82F /* CDTextClassDumpVisitor.h */,
+				1225F688200E8D9820E42E95F7DE7AEF /* CDTextClassDumpVisitor.m */,
+				C62D052F9D4CA253B5D2C2839F38466A /* CDType.h */,
+				EAF95C2873AD96D6DC5AB9F2E13B60CC /* CDType.m */,
+				8678FA468DFF48A08AF7A05388384661 /* CDTypeController.h */,
+				CDF923EDA99001FCAF4EE2EBC639E3FB /* CDTypeController.m */,
+				50C4BB87F0AB617D43565D7C8F29E5C0 /* CDTypeFormatter.h */,
+				09D15200A6BEC730272CB196B3CE4782 /* CDTypeFormatter.m */,
+				0DD83502D9A4F219C2E3340645366E96 /* CDTypeLexer.h */,
+				121388F527745A2BA99CE687A294F0EA /* CDTypeLexer.m */,
+				728F82D3D0772EA6096C5213211D9DE9 /* CDTypeName.h */,
+				8A50DC4948B8C4F735305A3364F3AC73 /* CDTypeName.m */,
+				DDFE11B4DF351DEF5C19B32612E42E1F /* CDTypeParser.h */,
+				62012B4F942343F2AC49D3CC7EBCF6E2 /* CDTypeParser.m */,
+				DC8804553383837C479023C8EE409264 /* CDVisitor.h */,
+				E9B3610793C3B3982542239FBD880A1C /* CDVisitor.m */,
+				85E1AF8D1A2B6E50B44B203D55B52F9A /* NSData-CDExtensions.h */,
+				6F49C94A1E3F7E7E33B28258E7991F84 /* NSData-CDExtensions.m */,
+				3681797E3E4C8B67B662E7839F14E136 /* NSScanner-CDExtensions.h */,
+				C58B382D4980E99849F8CD8AE419C124 /* NSScanner-CDExtensions.m */,
+				545A3969CA1FF369FEA134AFC7C9AD01 /* NSString-CDExtensions.h */,
+				3B8D3F33F769824E85690460DF7E0E1F /* NSString-CDExtensions.m */,
+			);
+			name = ClassDump;
+			sourceTree = "<group>";
+		};
+		A457825F5DC8451DA8B6B93499DD5122 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				7BAF721116B02E7B3CCACEDAB9A95126 /* dwarf_abbrev.c */,
+				0CCBBD93A073BF3A66541D6A7D43B35E /* dwarf_alloc.c */,
+				0638F7A187AB779070637B097777B2C7 /* dwarf_arange.c */,
+				437B00D27D3567AE34727F4D97A8207D /* dwarf_crc.c */,
+				5F00E01F694B7943C05F6E6449BBB499 /* dwarf_crc32.c */,
+				7DD4BC1F18F2C06F995D7D7AA6F80754 /* dwarf_debug_sup.c */,
+				C48987A5414F69BAAC0AC40E285DDD10 /* dwarf_debuglink.c */,
+				D28E3DA5DACB32C77B6678B69A6DEE87 /* dwarf_debugnames.c */,
+				74A2871A425FF623A8A938ABCA882E91 /* dwarf_die_deliv.c */,
+				DDB8E19762DBFD57752C3D3889A05C3A /* dwarf_dsc.c */,
+				B4604D0DB577F8B3282E09B55750A3AD /* dwarf_elf_load_headers.c */,
+				CF59B1B75EBD73073C34925783CFE4DE /* dwarf_elf_rel_detector.c */,
+				E69FF8A61803445C401B77D34EBFED16 /* dwarf_elfread.c */,
+				0B2EEFC90141C7089080A0F0F497D116 /* dwarf_error.c */,
+				67534A8130CDC9265A6F386889516B77 /* dwarf_find_sigref.c */,
+				5D3BE47A019BE062915CD4998A2CB3D2 /* dwarf_fission_to_cu.c */,
+				A01FF38560EA12AB89CB77ECE060B311 /* dwarf_form.c */,
+				E0CF1B481A840C137CEA0310F9BEE1E4 /* dwarf_form_class_names.c */,
+				4FEE64741FE3CF25E55ED34EBED73242 /* dwarf_frame.c */,
+				46DEAA38222D46A5AC42358DBDA8C0FC /* dwarf_frame2.c */,
+				C1B8CFD5A2D7C33AA58376FCEFCB532D /* dwarf_funcs.c */,
+				86D3F4DB4226753FD436CF012C2A7AB6 /* dwarf_gdbindex.c */,
+				D0A71642548E4F96F657447AA77C9C43 /* dwarf_generic_init.c */,
+				A59BB81EDA4AABE970735B3957E3A00D /* dwarf_global.c */,
+				948D846CA35B55A1CBC4891D036AF588 /* dwarf_gnu_index.c */,
+				6A704CF8ED4CD427E3187E7327F628E9 /* dwarf_groups.c */,
+				E93314B22B1CB5A45B0FACA06249D259 /* dwarf_harmless.c */,
+				E7D15758A163CEB49747BBFB2C07A8F4 /* dwarf_init_finish.c */,
+				DEACFD0159F0F1B36BC54B9FC2EB7076 /* dwarf_leb.c */,
+				FD4344695A876D9C3F4C604F686C8F48 /* dwarf_line.c */,
+				F7C5BEF108A49443594EB706EAD9F6EB /* dwarf_loc.c */,
+				9AC7AC061444648D6FE7CBB8E487FE5D /* dwarf_locationop_read.c */,
+				C709020FBB9C33E9E376EA9BB4F7401C /* dwarf_loclists.c */,
+				0B74C20CA7D60FD69145EDB6700EF22D /* dwarf_machoread.c */,
+				5EE8D408F135373D361F0CA84548418E /* dwarf_macro.c */,
+				30E57E58A2804FB6CD4D8585596245B1 /* dwarf_macro5.c */,
+				29CD222C3B3D16F15829464BF7B5D021 /* dwarf_memcpy_swap.c */,
+				936858FB611FA3817DF71151659D4109 /* dwarf_names.c */,
+				0E4C3FDB72C6001CB80B71388FF6E9DC /* dwarf_object_detector.c */,
+				4588BC7C0C56227A168AB84A3314CF4B /* dwarf_object_read_common.c */,
+				DF239E5D323DA1A47A462B88F11DBF3C /* dwarf_peread.c */,
+				EAB515F481F56D9B1E22DD789479FB4E /* dwarf_print_lines.c */,
+				93C25EDFC6D04A66A28B5E5D9BBFCF7B /* dwarf_pubtypes.c */,
+				9F9604412310EAC67B75DD55B05F520C /* dwarf_query.c */,
+				304C7102644467CA4A33B3E8ECD82B61 /* dwarf_ranges.c */,
+				2C9BB8223AF8DC2E9F030ADE22D30FA8 /* dwarf_rnglists.c */,
+				8F6B8A0C70EFB6EEDC22E6E91F4D0528 /* dwarf_safe_strcpy.c */,
+				31B588EF59D36643AD1357839F779C4E /* dwarf_str_offsets.c */,
+				A66865B80C7CFF4F7A0EAF4A429A9DFF /* dwarf_string.c */,
+				81E98DAC1D28AE24C0D7C13275C8305E /* dwarf_stringsection.c */,
+				71650E02DFC9FF70326D0F50433B378B /* dwarf_tied.c */,
+				CCB2004C8341861543616F1E87559E90 /* dwarf_tsearchhash.c */,
+				A397B29EB5B50BD280706A697E0EC657 /* dwarf_types.c */,
+				CB48FB3A42E7D88878F53E4BFEBCFE46 /* dwarf_util.c */,
+				D344DB8FE86C41F55D69F494FE73DD5C /* dwarf_vars.c */,
+				1E336C59DE54FD7125953E188DA2E5BA /* dwarf_weaks.c */,
+				16554E5C151CA152E02B2F22CEDD37AA /* dwarf_xu_index.c */,
+			);
+			name = "Source Files";
+			path = "ArtilleryOfItaly/ArtilleryOfItaly/Source Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				020D9B7DB53353995BA2CA7A39E927EE /* Development Pods */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				3DFD8BE9A1FC0E2836567BC14E7B4AAD /* Products */,
+				FF14EB40026B92D7039D240B1C8EACA2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D83A3BFDCCAD9E3875454F4FFD168234 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				377A59AFC33CCAAB42806A1DF715BFD3 /* WBBlades.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBCBD968D1DC43C4F4F86BE52262CE4D /* arch */ = {
+			isa = PBXGroup;
+			children = (
+				286D7F517B4133EB8308538923DB5245 /* AArch64 */,
+				65182B186ED795C790EBE8FCE5A3A938 /* ARM */,
+				58DDC3B2F6A24844CC165EF483E00E91 /* PowerPC */,
+				994BB2A69B04AA2134C83F60358A2AED /* X86 */,
+			);
+			name = arch;
+			path = Capstone/arch;
+			sourceTree = "<group>";
+		};
+		E097C99193DC3E6B6C780E0C0F37204F /* include */ = {
+			isa = PBXGroup;
+			children = (
+				F42324E3BE4AE3F742D541D520E7F765 /* arm.h */,
+				ED8D2119C0931C120E22DB124FB26680 /* arm64.h */,
+				47BB5C760A9CB6566F383FD15877862E /* capstone.h */,
+				F3F27194828FCE133E2BD0C20C3812B2 /* mips.h */,
+				FE236F91DC842BF31BCF3440EDFD6AFA /* platform.h */,
+				8FB868B45001EDA37369681D53E66650 /* ppc.h */,
+				A78869C80129DD193169F128C100621D /* sparc.h */,
+				0FC790D325633D0EA04587EBCA538CC2 /* systemz.h */,
+				B3D65A014FB52445DD3A6818001532C9 /* x86.h */,
+				B1D2D09ED0CB8EED8A2A4DC3A5C96248 /* xcore.h */,
+			);
+			name = include;
+			path = Capstone/include;
+			sourceTree = "<group>";
+		};
+		F1622EC65F408C9F6606764B87F14553 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				F963E09F29BE4144E7CC653295850064 /* config.h */,
+				8C0802E4BFB032F5FD04E7185BA2B3D5 /* dwarf.h */,
+				90B60690D9F2771996C73E4F807B176C /* dwarf_abbrev.h */,
+				0694CDC89BF7E909960DA7B2F8C40EF3 /* dwarf_alloc.h */,
+				13E4D19F3AE3449E29CDB51C7E8C3B92 /* dwarf_arange.h */,
+				FE5ED105E282F693F578FFD970182217 /* dwarf_base_types.h */,
+				BB155E17D10F87F0C78595C8A46AA9E5 /* dwarf_debuglink.h */,
+				10AF615B1ADBCCC1D5CFE7D631C00946 /* dwarf_debugnames.h */,
+				86AEECBBE5544B504FB86F9E3FA6458D /* dwarf_die_deliv.h */,
+				64999D40F708ED2646CAFD85EE476F7F /* dwarf_dsc.h */,
+				7148CD5327239C21E38531A080B0A7CD /* dwarf_elf_access.h */,
+				40EAAC52BA1E0F378105A1C8C1A906A3 /* dwarf_elf_defines.h */,
+				5F459559EF85A9C148F6FA6E9B920F6F /* dwarf_elf_rel_detector.h */,
+				4A7600406AE35EE6EB16697FD849C2FA /* dwarf_elfread.h */,
+				4C615492B1AF989DBCDD3BDC5DF53D8C /* dwarf_elfstructs.h */,
+				EA5CEF3CE377A3865FAB5E4E854BBCF3 /* dwarf_errmsg_list.h */,
+				D65DF11D488222D64448D5CB187D82B0 /* dwarf_error.h */,
+				1AD79AE05A6BD9FCC96B9C159730A180 /* dwarf_frame.h */,
+				D89090F4BAB7B85F76B1E258716515F1 /* dwarf_funcs.h */,
+				AFCE05EB0D1F8C64B13473633543728D /* dwarf_gdbindex.h */,
+				4377A1D6D253FAB89708B305D6DB6DBF /* dwarf_global.h */,
+				7B6504AA680A97EF367EF295240F7161 /* dwarf_gnu_index.h */,
+				F92401D026248A6F771E3DEE09876EB7 /* dwarf_harmless.h */,
+				6B7F18BAA95843D5F978646D00557231 /* dwarf_line.h */,
+				39E0E1628872FD447CDAC1869E4FAEE3 /* dwarf_line_table_reader_common.h */,
+				B03E7C9D27E6E412FEFE6277D569979E /* dwarf_loc.h */,
+				2F63C2E58DE137631F50B2E35C346566 /* dwarf_macho_loader.h */,
+				6D7E0B0562C0597406747FF62D39834E /* dwarf_machoread.h */,
+				977338A28DEAFAE4F32BC7B652A253CE /* dwarf_macro.h */,
+				23329396FAA6174A1A0EF6800ADCC0B2 /* dwarf_macro5.h */,
+				0117EC0C97E36F3327A86870E675B3C4 /* dwarf_memcpy_swap.h */,
+				63A282FE24E955D83712173414ABBE5D /* dwarf_object_detector.h */,
+				49B7180154A0B8E706BFC55DB96063E3 /* dwarf_object_read_common.h */,
+				D4EE725F90025D7EADA9BAABB82014DB /* dwarf_opaque.h */,
+				0AF8C87ECAD02D222BC924B150FCF599 /* dwarf_pe_descr.h */,
+				B73477F01DC189E2D9FE3926163E2951 /* dwarf_peread.h */,
+				552F3060D884B521AEC408BFA3866A1B /* dwarf_reading.h */,
+				FE1EEC130FB1EA0C77EE05C11F5D2525 /* dwarf_rnglists.h */,
+				5C17A8D5BD1AAE90F5292C016ED0A534 /* dwarf_safe_strcpy.h */,
+				41A1A33EEB903F7E4B675D6EBDFC5E74 /* dwarf_str_offsets.h */,
+				547D058C1684EA23501456E7BD7FF51F /* dwarf_tied_decls.h */,
+				304E78030AF075E4B820D2946AF5A435 /* dwarf_tsearch.h */,
+				2171D70119BF0BE4FD62CAF4C0BE8078 /* dwarf_types.h */,
+				5EDBA75B077B600E214DAC44F2D877BD /* dwarf_util.h */,
+				571AFE5760022CB43A9659E3BC670FC9 /* dwarf_vars.h */,
+				C39E0100003575BA2BB1DEEF2A934D6F /* dwarf_weaks.h */,
+				5246239559770035B1E8239BD68A6325 /* dwarf_xu_index.h */,
+				CE33A7137A2044F255C064DD9638472D /* libdwarf.h */,
+				30368C95D883A42E0E6AFA99485BECA0 /* libdwarf_private.h */,
+			);
+			name = "Header Files";
+			path = "ArtilleryOfItaly/ArtilleryOfItaly/Header Files";
+			sourceTree = "<group>";
+		};
+		FF14EB40026B92D7039D240B1C8EACA2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				89F11DD0E957A4FAC960664AE3454099 /* Pods-CYClear */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		938D9F39242B4AB8721FD90D0596D766 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D4B5EB6448FB3576D1A54C7909F3952 /* WBBladesCrash-Bridging-Header.h in Headers */,
+				023D366A9F6BA40AAC4EF9FD4085900D /* WBBladesCrash-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DACD905595F61EC588E319E745FA7510 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F440333F3D3899BD672FAD22761EBB3 /* Artillery.h in Headers */,
+				7B9F1BDFFC7BB351704AC4F2077C9707 /* ArtilleryModels.h in Headers */,
+				DCDE0240C92FFB233EDA686C4267734F /* ArtilleryOfItaly.h in Headers */,
+				D2D4C131EB0A4BB8997C1083A10111C6 /* config.h in Headers */,
+				DFE96D8AECA75EE261C1DF23D575D011 /* dwarf.h in Headers */,
+				C71A33B160260534B681AA962C17B066 /* dwarf_abbrev.h in Headers */,
+				585174AEBE3B696ED8AA701DAE2BF0C3 /* dwarf_alloc.h in Headers */,
+				B5D060F37DABD5D17227BF7B732FA382 /* dwarf_arange.h in Headers */,
+				12FBEAC2F397B2F813DBFE8FB89EEF69 /* dwarf_base_types.h in Headers */,
+				DF7915FE34C58D11F5ADA09ECE6ACADB /* dwarf_debuglink.h in Headers */,
+				A16BDB4714A0FF3881181D53DE12FCF9 /* dwarf_debugnames.h in Headers */,
+				9D9F2DE2BC1678787AF5D93318441C68 /* dwarf_die_deliv.h in Headers */,
+				1988FAF86287203CECC4B84DA4BA9B2B /* dwarf_dsc.h in Headers */,
+				22E8362255C61820FE8983AD945164B4 /* dwarf_elf_access.h in Headers */,
+				415D5CF07695BB2803BB507729A0D26B /* dwarf_elf_defines.h in Headers */,
+				66EFAF9005E4687123B9A29D0D9D12CB /* dwarf_elf_rel_detector.h in Headers */,
+				31B64607BDF602E51AF5671AE972A67D /* dwarf_elfread.h in Headers */,
+				15E2616271AA40084AACD53F7EABA624 /* dwarf_elfstructs.h in Headers */,
+				D2DCD3460557D8703C36AF2B1D442A9F /* dwarf_errmsg_list.h in Headers */,
+				6F7C01F4EA301F0DD9E4927530B94720 /* dwarf_error.h in Headers */,
+				1B94CA09DED27996EDA2167E7538F313 /* dwarf_frame.h in Headers */,
+				3814D473519730B4E2ABE1A63F91A6FF /* dwarf_funcs.h in Headers */,
+				8ECEFC9BDD6831BA1BCD772241442E83 /* dwarf_gdbindex.h in Headers */,
+				06EDB1B17F989E2E1446012C78B75419 /* dwarf_global.h in Headers */,
+				19F0C52EA08476E5514BA36C41523F87 /* dwarf_gnu_index.h in Headers */,
+				46B9CC482BB85F02C259C5C694AF0ECA /* dwarf_harmless.h in Headers */,
+				926D3FDC77CC8BC075119E056F10AEA0 /* dwarf_line.h in Headers */,
+				B1737247D03839D4C4A9A24892DCACDF /* dwarf_line_table_reader_common.h in Headers */,
+				E053D92AC556E30FFB2051FB7BC15012 /* dwarf_loc.h in Headers */,
+				8CB5436B86CE7351DC37B122317E7CFC /* dwarf_macho_loader.h in Headers */,
+				DEAA481A23CADAE86C8CE4E187949291 /* dwarf_machoread.h in Headers */,
+				7ED3A4658D32C04B40544B2238462540 /* dwarf_macro.h in Headers */,
+				52839E9703F8D9F3E5D377DDCEFCE114 /* dwarf_macro5.h in Headers */,
+				DD1A057E0FF45072146C3A05B5506C09 /* dwarf_memcpy_swap.h in Headers */,
+				39A7A4D3F8BE2B5F28E501ECBB7A98D0 /* dwarf_object_detector.h in Headers */,
+				B2FBCF21E908EE2D6B72FB72E9ABE3BC /* dwarf_object_read_common.h in Headers */,
+				297C93A8B8DDB6D9BB76A2E5929098A5 /* dwarf_opaque.h in Headers */,
+				4997C8AEA539FF05BA25959E87D30796 /* dwarf_pe_descr.h in Headers */,
+				26372F9E1B13643D375139E25889131E /* dwarf_peread.h in Headers */,
+				A83FE78147F61E1751E61815847BE1AA /* dwarf_reading.h in Headers */,
+				46710BF03A460EA3FB13787DA94BBB3A /* dwarf_rnglists.h in Headers */,
+				CBEC2C4AAD7A24F3CFB4601F8161BF90 /* dwarf_safe_strcpy.h in Headers */,
+				E4C1716E752CE0D19F3CC341CBE1EA6D /* dwarf_str_offsets.h in Headers */,
+				50D1C12F81C51E2D0E152784FB70F688 /* dwarf_tied_decls.h in Headers */,
+				D760438E5015CBE1B032E19FF14C6841 /* dwarf_tsearch.h in Headers */,
+				E496191518DE932D0324B2D6855234F8 /* dwarf_types.h in Headers */,
+				9F00AFE18A829FDB12F3CE9BD6389F7E /* dwarf_util.h in Headers */,
+				0801A96E858C41844917C163B8F136B1 /* dwarf_vars.h in Headers */,
+				A68CEC7FBF297626126CBE1977CC4AD1 /* dwarf_weaks.h in Headers */,
+				8F7906DEE2F36E52C12BF7A898B08E95 /* dwarf_xu_index.h in Headers */,
+				FF18D439E1BCB1D13E7664073822192F /* libdwarf.h in Headers */,
+				9B8C10B64652AA3BDA66C69F936FDDD0 /* libdwarf_private.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1834452AF72657115B6E6517E508324 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFDF42863EDBB18BD0163BFFC93E5C6F /* AArch64AddressingModes.h in Headers */,
+				4C83020BB7E60E46D0D671C81DE7B918 /* AArch64BaseInfo.h in Headers */,
+				C266F67772CF8B92AAFCD4A84DAA87DB /* AArch64Disassembler.h in Headers */,
+				29C5245C370CD9B32BFF51DB45D56B98 /* AArch64InstPrinter.h in Headers */,
+				CDE4336795BAE37709A1145BCD9EB632 /* AArch64Mapping.h in Headers */,
+				A6C75E14B3B019809C8BE371775453B2 /* arm.h in Headers */,
+				325681A32A8C4CFD56EA29BC7225BEA0 /* arm64.h in Headers */,
+				2EB3C97A789A5D977EC813A9C6649098 /* ARMAddressingModes.h in Headers */,
+				10D745C39CEB97552180D8EDE38EE72F /* ARMBaseInfo.h in Headers */,
+				1979D2B98360FF5CF62F318AC1A1882F /* ARMDisassembler.h in Headers */,
+				C224890306578470C439574007770291 /* ARMInstPrinter.h in Headers */,
+				D132C4851BDC780330F5B9DAFDA119DE /* ARMMapping.h in Headers */,
+				8462F3901452903AE2AFF5B54A76D83E /* capstone.h in Headers */,
+				C814F58E2E30D428954D242DAB7B9E77 /* CDBalanceFormatter.h in Headers */,
+				78B9C45E96E5F3F1D55D15A5A61DCD40 /* CDClassDump.h in Headers */,
+				CCDA5D772B83FDC3FACF24FA3AAA919D /* CDMethodType.h in Headers */,
+				805EA33BC0C0F1925758BB98B84603C1 /* CDObjectiveCProcessor.h in Headers */,
+				B638F25636D545E3882979AFFD3D4DD7 /* CDOCClass.h in Headers */,
+				F78BA36D756CC22D0928AB8192255FDE /* CDOCInstanceVariable.h in Headers */,
+				BC8A41FFB38C25CE58BCBD4C228B2C28 /* CDOCProperty.h in Headers */,
+				C03B5502B8993F46C2570E535BB84935 /* CDStructureInfo.h in Headers */,
+				00AAF7975B918ACB258CBA1A94D66BB2 /* CDStructureTable.h in Headers */,
+				295BF9B065E7C24EF22E7885C67FF6F8 /* CDTextClassDumpVisitor.h in Headers */,
+				68B2F06474D093EFD05AA486BE72E30C /* CDType.h in Headers */,
+				BE7818EFB37BAA92F780ADBE00A5A36D /* CDTypeController.h in Headers */,
+				54E4FF0FF2367653B7590B15288D3515 /* CDTypeFormatter.h in Headers */,
+				FA92689FBA7314962B706981980143D8 /* CDTypeLexer.h in Headers */,
+				A8A02AF97D043849EC2D26507F876E7E /* CDTypeName.h in Headers */,
+				1E003DB199CB4DC31F4BB7ABFAE0A0F9 /* CDTypeParser.h in Headers */,
+				771D1FB5F629050C64729449DF8DF913 /* CDVisitor.h in Headers */,
+				C5E24A63B128EF4CE350C15437B7DF15 /* ChainFixUpsHelper.h in Headers */,
+				685B3C477D2C114C3D1044C80025DF53 /* cs_priv.h in Headers */,
+				BF5F656148C4057C0984388A8379AEB7 /* inttypes.h in Headers */,
+				9BC0464016342EDA8090A90461709B45 /* LEB128.h in Headers */,
+				E5E6973EBE892925BDDBF368B5293626 /* MathExtras.h in Headers */,
+				CA1C1AA9B50BE0246B9CDEE22BFA6523 /* MCDisassembler.h in Headers */,
+				8A89E198881DF4333C89B6A7FCD2F5DE /* MCFixedLenDisassembler.h in Headers */,
+				C8048ABA1FB03D214799900B10BB8B30 /* MCInst.h in Headers */,
+				D977BE27107929E4701A9E7F9C70ED3B /* MCInstrDesc.h in Headers */,
+				2139BF21917BF84BA37C0E360CBE252D /* MCRegisterInfo.h in Headers */,
+				0657ED869BF2D5E43B980CBD97FD0314 /* mips.h in Headers */,
+				31137926B28103976ADB5E7EF0779461 /* myinttypes.h in Headers */,
+				37535F7D2D3BD2EACC8724893E52651E /* NSData-CDExtensions.h in Headers */,
+				CFAB456C2013180BD02048638D3B5968 /* NSScanner-CDExtensions.h in Headers */,
+				AAB75F0561545335332FE8672570D775 /* NSString-CDExtensions.h in Headers */,
+				64830F5F062F13377F9C1883EA8BA350 /* osxkernel_inttypes.h in Headers */,
+				484EFDE10D4E2076F2D6AC0BDE6EDE7A /* platform.h in Headers */,
+				5CF46C2713724FF70ED1A52AAA0C564B /* ppc.h in Headers */,
+				62E85E3E8262028B2E46F5A73BD92B46 /* PPCDisassembler.h in Headers */,
+				177B4AFA6EF18E8A5206F778DD220D32 /* PPCInstPrinter.h in Headers */,
+				6FC54CB994AD7B7CC69BE915104040D3 /* PPCMapping.h in Headers */,
+				07D6DB4C2564897722644436F745D4BE /* PPCPredicates.h in Headers */,
+				D4E3B11083F698D550CE331350669573 /* sparc.h in Headers */,
+				2C0160BCCECCE90FA41E8ADD3D7E4228 /* SStream.h in Headers */,
+				F36D637772314E0CB0AC0264531BEEE5 /* STPrivilegedTask.h in Headers */,
+				0A307A03ADFD4C5140CBAEB975DFF2AD /* systemz.h in Headers */,
+				E897CA627BE5D4E5847DCF9C8C346E31 /* utils.h in Headers */,
+				96B2445880B537C1574337EC6A40684D /* WBBlades-umbrella.h in Headers */,
+				8499D4DF6E3EEA4006D5C80305127A55 /* WBBladesCMD.h in Headers */,
+				87523E4FDBE81EA980F1CD6CDFC61082 /* WBBladesDefines.h in Headers */,
+				8D57F90458D41D4397B4251A908B6E53 /* WBBladesFileManager.h in Headers */,
+				68D4E670280BC944483C604457DEBA67 /* WBBladesFileManager+StaticLibs.h in Headers */,
+				4C60926D1D10B78344C8E3468E62C620 /* WBBladesInterface.h in Headers */,
+				BE7BF59D1706422F70D978AA97A996DE /* WBBladesLinkManager.h in Headers */,
+				40FE023D94B9C7CEDF545427DB1003DA /* WBBladesObject.h in Headers */,
+				988010C0C3E6F87F2DEFC9E6040951A7 /* WBBladesObjectHeader.h in Headers */,
+				562989F6BE0B986E715378471528E1B3 /* WBBladesScanManager.h in Headers */,
+				717AEC83729D4BA5BBA37F2CC6EF5D27 /* WBBladesScanManager+AutoHook.h in Headers */,
+				E10362F6805C649EC5773CD84A8DA66D /* WBBladesScanManager+CrashSymbol.h in Headers */,
+				7E05CA4AE6BB73EDB5686B1C41AD268D /* WBBladesScanManager+StaticLibs.h in Headers */,
+				5A4A9AAFD1F8BCD228A7D32B6C652A9E /* WBBladesScanManager+UnuseClassScan.h in Headers */,
+				5790857F3DDAB84F832D8715FF1DE978 /* WBBladesStaticLibraryModel.h in Headers */,
+				934BEAA56F08BAB2B801494FD48CCE9B /* WBBladesStringTab.h in Headers */,
+				87AE6407AD0911D232A58B48829B5741 /* WBBladesSymTab.h in Headers */,
+				480DD02539D79CDE587C614196290208 /* WBBladesTool.h in Headers */,
+				A63D53453188B3D96BEA24823526BE8E /* x86.h in Headers */,
+				9999540D4377C562D8CB10354656D118 /* X86BaseInfo.h in Headers */,
+				7A9E0B11D7CC8994F8550CC1BB6871AB /* X86Disassembler.h in Headers */,
+				27085F14F355B9312FBD380BB4BFBC6D /* X86DisassemblerDecoder.h in Headers */,
+				AFE4B72796C8DA803662F688B345DAD4 /* X86DisassemblerDecoderCommon.h in Headers */,
+				59AED867E974D7CFD232DF980C92BD60 /* X86InstPrinter.h in Headers */,
+				CACD05E8D0FA35699DA1347D5E05CEB1 /* X86Mapping.h in Headers */,
+				D0F299F1B552FD395556A22EF1091C50 /* xcore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F73701DAA7C34C1EAC3A5CCD02A9C84F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88BF52F6E52DC431DCAA7FABDD576763 /* Pods-CYClear-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0476538A94CBD3DE8CDA74B633333B0D /* WBBladesCrash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8C1097AC2A087BC5A6743D826CBC2CC /* Build configuration list for PBXNativeTarget "WBBladesCrash" */;
+			buildPhases = (
+				938D9F39242B4AB8721FD90D0596D766 /* Headers */,
+				B8B87353B31B7A20D7227A74845E6B5C /* Sources */,
+				51D0FE0E2A47B8A42EDEA6EFA3FDDEEC /* Frameworks */,
+				DE0F4A7BDEA095A9DDF537977292038E /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WBBladesCrash;
+			productName = WBBladesCrash;
+			productReference = F338D1F16C33E5F6F50DAEA7117F4084 /* WBBladesCrash */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A6A142AEB1B8D4431EF8F850124A0910 /* WBBlades */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87727CBEB9A773BA2D810C63283E1B62 /* Build configuration list for PBXNativeTarget "WBBlades" */;
+			buildPhases = (
+				F1834452AF72657115B6E6517E508324 /* Headers */,
+				8C9078F7895299B4CD313ACB0C4BE7AC /* Sources */,
+				53905A17CEC9A3BBE29E84CD0703EA02 /* Frameworks */,
+				A240E59946BB32AB62B35DC632D34340 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				755F0D7F253605355FD278F9EDF5DD3A /* PBXTargetDependency */,
+			);
+			name = WBBlades;
+			productName = WBBlades;
+			productReference = FA742A571754FE11148C30EC85F31D98 /* WBBlades */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B378281B801AFD517BEAC3EBC7B6F27B /* ArtilleryOfItaly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 326EB3605C66417AEA059E1A6085ACCE /* Build configuration list for PBXNativeTarget "ArtilleryOfItaly" */;
+			buildPhases = (
+				DACD905595F61EC588E319E745FA7510 /* Headers */,
+				30811B7BD7F11CFB3868AE9086353C9C /* Sources */,
+				1DD653610309B575DB2F4408112C9FD6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArtilleryOfItaly;
+			productName = ArtilleryOfItaly;
+			productReference = 72CDE7A38AEF594231A1CC73D5C181B9 /* ArtilleryOfItaly */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DD050CBE6BFF50E7875D8F7BA089755D /* Pods-CYClear */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70DA3D4750028D9FDDD471652CAFA3F8 /* Build configuration list for PBXNativeTarget "Pods-CYClear" */;
+			buildPhases = (
+				F73701DAA7C34C1EAC3A5CCD02A9C84F /* Headers */,
+				1CA3D694FC09A79BCBCD7121A19C1AF6 /* Sources */,
+				750DF5DC88FE029CB8E4F71173923511 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FD7615BFEDC8DFEC9A954B96EF191A1 /* PBXTargetDependency */,
+				7193D82A716730462F8480794D14470F /* PBXTargetDependency */,
+				6DD3282C88D6A956448E06390BA9659D /* PBXTargetDependency */,
+			);
+			name = "Pods-CYClear";
+			productName = "Pods-CYClear";
+			productReference = 86E418BE7AB8DCA27E9CEA298043018C /* Pods-CYClear */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 16.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3DFD8BE9A1FC0E2836567BC14E7B4AAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B378281B801AFD517BEAC3EBC7B6F27B /* ArtilleryOfItaly */,
+				DD050CBE6BFF50E7875D8F7BA089755D /* Pods-CYClear */,
+				A6A142AEB1B8D4431EF8F850124A0910 /* WBBlades */,
+				0476538A94CBD3DE8CDA74B633333B0D /* WBBladesCrash */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A240E59946BB32AB62B35DC632D34340 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/WBBlades/WBBlades.modulemap",
+				"${PODS_ROOT}/Headers/Public/WBBlades/WBBlades-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/WBBlades-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/WBBlades/WBBlades.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/WBBlades/WBBlades-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+		DE0F4A7BDEA095A9DDF537977292038E /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/WBBladesCrash/WBBladesCrash.modulemap",
+				"${PODS_ROOT}/Headers/Public/WBBladesCrash/WBBladesCrash-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/WBBladesCrash-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/WBBladesCrash/WBBladesCrash.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/WBBladesCrash/WBBladesCrash-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CA3D694FC09A79BCBCD7121A19C1AF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E9B73E02C15BABDBFF7AA1D4E5CDF2A /* Pods-CYClear-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30811B7BD7F11CFB3868AE9086353C9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				547CD7EEB9ACC565D68C5FC085C636B2 /* Artillery.m in Sources */,
+				F4059106F7A5B6939A33162207C59DE2 /* ArtilleryModels.m in Sources */,
+				2BC3DCB1B4AC8C2E06B19295AECF0DE7 /* ArtilleryOfItaly-dummy.m in Sources */,
+				60241CE47065452E9F82E50B3DF88D7C /* dwarf_abbrev.c in Sources */,
+				AD13A4FEF24888A2C52B11ED73DB67A3 /* dwarf_alloc.c in Sources */,
+				C41ABFE65558E3365BCE1F00796D53FC /* dwarf_arange.c in Sources */,
+				DAA235F36695F18CB1C9BCF646BFAA53 /* dwarf_crc.c in Sources */,
+				9A75122DEF5050BF3D7686B5D5D3E404 /* dwarf_crc32.c in Sources */,
+				92BD3F13DD650EE20D3F8C514B981AD3 /* dwarf_debug_sup.c in Sources */,
+				D0559D1B7B8440419692817B09B5F177 /* dwarf_debuglink.c in Sources */,
+				356ECE7AD1A65FB8938F09F25F21A87C /* dwarf_debugnames.c in Sources */,
+				B66977CCA9CCE432770F24A0DC631AB5 /* dwarf_die_deliv.c in Sources */,
+				80A41119062AF059E423958FCEC4D85A /* dwarf_dsc.c in Sources */,
+				C01CD1C952C4B1D1AB1066E9C79B5714 /* dwarf_elf_load_headers.c in Sources */,
+				593FC11E81C5D4F2C38650219D512C7E /* dwarf_elf_rel_detector.c in Sources */,
+				DADA2D7F6B3BF2221E5E4602055A97E9 /* dwarf_elfread.c in Sources */,
+				4F575396E9C02D5B7DA8EC23A22B6985 /* dwarf_error.c in Sources */,
+				F8415F76FA0B3AB4C252862F24396D85 /* dwarf_find_sigref.c in Sources */,
+				EF4BBDDAE45D0DC861DF69DE3104CDF3 /* dwarf_fission_to_cu.c in Sources */,
+				F297184C5F261933B07EC65C2C021DFE /* dwarf_form.c in Sources */,
+				CC90A2F20EE89C147466E03EBE238C17 /* dwarf_form_class_names.c in Sources */,
+				C1584A724BE4945393F7C3E384034A01 /* dwarf_frame.c in Sources */,
+				3070278ECCF483A0B578C193A8366FE0 /* dwarf_frame2.c in Sources */,
+				DD89FCC2C607F1F8BA36C662BE263980 /* dwarf_funcs.c in Sources */,
+				375F7CF0B9E1560BD8A48DF90F03FA74 /* dwarf_gdbindex.c in Sources */,
+				B8E6E9DADB4EDD66CB10D3FED55FFE1F /* dwarf_generic_init.c in Sources */,
+				D9A481323D0BDB38008296212D7B3113 /* dwarf_global.c in Sources */,
+				5F10A9092E812BF85D03D532F4A0CCF7 /* dwarf_gnu_index.c in Sources */,
+				6382883846A7A4689AA73E4F7EED83CB /* dwarf_groups.c in Sources */,
+				B72701AFEB25A33E1D9AFE749C184AA7 /* dwarf_harmless.c in Sources */,
+				019B41B571DDA5D9C1CD4694E331BA4D /* dwarf_init_finish.c in Sources */,
+				FF2F49BD011D74FC4E4E33D1DFE9DD7D /* dwarf_leb.c in Sources */,
+				C376ACA39628A254E01304DABF8AD9F6 /* dwarf_line.c in Sources */,
+				069432364D1950DDAEAA44B8219E7EB6 /* dwarf_loc.c in Sources */,
+				49C276A371FE5E7EEAC35656D87B4282 /* dwarf_locationop_read.c in Sources */,
+				95675D9DCBA7C9F179918A3813A9D523 /* dwarf_loclists.c in Sources */,
+				648B865446255868B08D6B5F538F37E2 /* dwarf_machoread.c in Sources */,
+				C7D49D1F4EEF8EE58848CAEE58165547 /* dwarf_macro.c in Sources */,
+				E46459F43C4E4DAD9D5250B72FBEDF26 /* dwarf_macro5.c in Sources */,
+				63E02336964706A5FE214501AF6197E0 /* dwarf_memcpy_swap.c in Sources */,
+				AD2A3D0A396B2C462E9D56FADDC29AF6 /* dwarf_names.c in Sources */,
+				60C7D08192B9C0E6B5E0C0C293CB586D /* dwarf_object_detector.c in Sources */,
+				66E523D83ECB1F11CA6DD2E7832BF03C /* dwarf_object_read_common.c in Sources */,
+				05D2E21A56C5C85FF5E3BC93BFA1B36B /* dwarf_peread.c in Sources */,
+				E8E905F1DFFEC2EF27946478BB2EAFCC /* dwarf_print_lines.c in Sources */,
+				FFC7952014909B997E4DE806BA8D8A48 /* dwarf_pubtypes.c in Sources */,
+				02CC570A71338DECA9CEBA8F3D98F1C5 /* dwarf_query.c in Sources */,
+				3BC069807ACE0FF8B1237F798E43FC52 /* dwarf_ranges.c in Sources */,
+				9BA0F67C76B7D863AEC8CEA59AC8BFF0 /* dwarf_rnglists.c in Sources */,
+				8A438F75744DFE62E9F137367D26EA8B /* dwarf_safe_strcpy.c in Sources */,
+				0790DDE07FB384F2A4A81F33007F38BB /* dwarf_str_offsets.c in Sources */,
+				26981A549C31A2C1AD4BC0F57545E5C3 /* dwarf_string.c in Sources */,
+				E4E2F82115C01A802D4B13A45067756F /* dwarf_stringsection.c in Sources */,
+				B9B545B68B2BCE919480E7C6DBFD3BB5 /* dwarf_tied.c in Sources */,
+				C9F8C6693A68894D8AA6FF12726DC88A /* dwarf_tsearchhash.c in Sources */,
+				6BFCEAD530CA81CA5FF83A43F6AF46C1 /* dwarf_types.c in Sources */,
+				8E972F81F03465F19036F8F4DB0FB8AF /* dwarf_util.c in Sources */,
+				3BFBD4BA983CC1D731347753133507DA /* dwarf_vars.c in Sources */,
+				B72AB3D6A235F3D3F56463DDB83FEE79 /* dwarf_weaks.c in Sources */,
+				58F6601E843B9A4170F1B191EC322EEF /* dwarf_xu_index.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C9078F7895299B4CD313ACB0C4BE7AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F690A238D684D62CBC084E040636BB0 /* AArch64BaseInfo.c in Sources */,
+				B731827B0DAEA5ED5279439E9EE1958E /* AArch64Disassembler.c in Sources */,
+				70CDAF22C9684B898513910E82C718AF /* AArch64InstPrinter.c in Sources */,
+				AD421916182461A8A33953DED4730B10 /* AArch64Mapping.c in Sources */,
+				CA98AFBFFC4F68237DF3A43754BF845F /* AArch64Module.c in Sources */,
+				A948208F4E908A4263AE000ABFEC94DD /* ARMDisassembler.c in Sources */,
+				81EE10DEAB786678357B36B4D629D920 /* ARMInstPrinter.c in Sources */,
+				67D5F793E8BA816F2B7BF6CC5EEDA59B /* ARMMapping.c in Sources */,
+				3229DD27AB5F6317F610EA9C110B2048 /* ARMModule.c in Sources */,
+				5C7848978067DD41AF09976AC9567A65 /* CDBalanceFormatter.m in Sources */,
+				84847F8B69F1E6C1162C3CCD6A46EDA5 /* CDClassDump.m in Sources */,
+				47AC59697967004531E0E11876535B5A /* CDMethodType.m in Sources */,
+				2281D585E91A2D018B858DCD2214903C /* CDObjectiveCProcessor.m in Sources */,
+				81247456A7C60FE166D11F9659FF07F2 /* CDOCClass.m in Sources */,
+				6DA3D626135AEF1933D03A6525AA008A /* CDOCInstanceVariable.m in Sources */,
+				CBFB468B16FA55FF4E347E4F677E7183 /* CDOCProperty.m in Sources */,
+				8918C99F677784C0E572AE4E328C8F79 /* CDStructureInfo.m in Sources */,
+				44DCFA3FE4A82CEDF6C70F22362F9AEC /* CDStructureTable.m in Sources */,
+				6032A47EDD2A19EAC2B237BF14AB4C77 /* CDTextClassDumpVisitor.m in Sources */,
+				C289BDBFA2A248FEAEB116CA6ECD1CBD /* CDType.m in Sources */,
+				C04E864542079D1A17C946B14F783C7A /* CDTypeController.m in Sources */,
+				8B4542D6D7EDFB0651BB426E2125CFF6 /* CDTypeFormatter.m in Sources */,
+				7F8EC050D2E20E1462B3ABEECEDA2492 /* CDTypeLexer.m in Sources */,
+				C20784EC8817DDCE842DB5C5DE92512B /* CDTypeName.m in Sources */,
+				41DD12E3F79827A43ADE4972099F8486 /* CDTypeParser.m in Sources */,
+				7FAF50F47513A77D3DA50F6CC8EA73A7 /* CDVisitor.m in Sources */,
+				AEDD749073C35AB9816353904C176E6F /* ChainFixUpsHelper.m in Sources */,
+				5269BFA9AE770B3DAD0DCB72B1C4C1E1 /* cs.c in Sources */,
+				9B21028D4C39EE0BE008794A579ED279 /* MCInst.c in Sources */,
+				8E26FDD749CE29B5C096E31701D19F84 /* MCInstrDesc.c in Sources */,
+				B60CCF94260D1CFE41A084E60CA028DD /* MCRegisterInfo.c in Sources */,
+				90F31542C3001C6CA6EAAC6662B3DA43 /* NSData-CDExtensions.m in Sources */,
+				9C05484D9637C1D2CD4544A6B513BDF9 /* NSScanner-CDExtensions.m in Sources */,
+				C2509D361B2275EBE271AAFBB02C9208 /* NSString-CDExtensions.m in Sources */,
+				AC1099CEACE8C9F83E7000248B19E1EE /* PPCDisassembler.c in Sources */,
+				1F7F93F6E28F1941F719AA23E0C91638 /* PPCInstPrinter.c in Sources */,
+				1ACE23EB131C6289001288BECCBAC68A /* PPCMapping.c in Sources */,
+				0268281A02B84E8F46C7022FBBE99705 /* PPCModule.c in Sources */,
+				5195220E4D3BB27F8F012AB364F0C549 /* SStream.c in Sources */,
+				ADA003630FA2ADE128691E67E92A785F /* STPrivilegedTask.m in Sources */,
+				A27BD7FC7A3447044A5935B10C91C2B6 /* utils.c in Sources */,
+				5C49FBCBCE696497A21618288227FE8C /* WBBlades-dummy.m in Sources */,
+				0246E199A797FD9003011D835EBEF2B2 /* WBBladesCMD.mm in Sources */,
+				4F1B943BBDB5FEDC75AA1AFC54F762D6 /* WBBladesFileManager.mm in Sources */,
+				EA906AD0ED932981882AA1A49F4C2205 /* WBBladesFileManager+StaticLibs.mm in Sources */,
+				A8D886C25B423D44D671BA0B6866E4EC /* WBBladesInterface.m in Sources */,
+				8BEEA9E24C20682082EF10697603C655 /* WBBladesLinkManager.mm in Sources */,
+				783AD16CE16F22E4B530488EC5722F1D /* WBBladesObject.m in Sources */,
+				1FE005A4F31DF4FD4AA8CDB598911E7E /* WBBladesObjectHeader.m in Sources */,
+				6DA29932940C341ED4F3DDC64661FC07 /* WBBladesScanManager.mm in Sources */,
+				FF0DA5AE5344C0BC126CA4A62E21AA82 /* WBBladesScanManager+AutoHook.mm in Sources */,
+				108FF625AC241EB015961CB7D08BFDA8 /* WBBladesScanManager+CrashSymbol.mm in Sources */,
+				EBA535EB5F5706ADAEA11AE8C59835E0 /* WBBladesScanManager+StaticLibs.mm in Sources */,
+				BAC79BB737DFDFB5B8960DC661512F63 /* WBBladesScanManager+UnuseClassScan.mm in Sources */,
+				97BB30C2B16833EE8947ACF4B631AB3A /* WBBladesStaticLibraryModel.m in Sources */,
+				A3D6E60EE6632E75267D36AE73712103 /* WBBladesStringTab.m in Sources */,
+				F75BE725DD208C042C294CBCCE09AB32 /* WBBladesSymTab.m in Sources */,
+				0FDF5FEDE6424B3F3E6276876F84278F /* WBBladesTool.mm in Sources */,
+				EE6C24119FDBD128827D88AB9C93B665 /* WBCrashTool.swift in Sources */,
+				1A092FB60DCFE66A689E28E2772C9CA7 /* X86ATTInstPrinter.c in Sources */,
+				486B7ACE05E9B8FC906B31FF743B09A9 /* X86Disassembler.c in Sources */,
+				D65D68CD2F75ACB8688F43C75F441699 /* X86DisassemblerDecoder.c in Sources */,
+				653DE4AF151D199B0F9976B5D1FDED53 /* X86IntelInstPrinter.c in Sources */,
+				3339AA4C41425CB37F0D06411266314D /* X86Mapping.c in Sources */,
+				4EEB13ABF3B0CB839EB2150C2E3C21A6 /* X86Module.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8B87353B31B7A20D7227A74845E6B5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CBDBF8C792F12D0AB0565F49E80F13B /* NSViewController+Extension.swift in Sources */,
+				84AB5197A0C0629BA7B0C5FF64BEA4B7 /* WBBladesCrash-dummy.m in Sources */,
+				3E48A1FA7C2B14402D6B50B64AC758D8 /* WBBladesCrashManager.swift in Sources */,
+				C87F7B1926E889DF410D2DAF583F61B3 /* WBBladesCrashModel.swift in Sources */,
+				A056D45B8F8C5145FC55B13F7B52DE8C /* WBBMLightSymbolTool.swift in Sources */,
+				5378B84750F018E93F5879D40F17E2D9 /* WBBMOutputFile.swift in Sources */,
+				CDB93C50B51613D54292AA8609DEA75A /* WBBMScanBuglyLog.swift in Sources */,
+				A0CD81DC95E5C3E4B18B4F7DC0428CD4 /* WBBMScanHuaweiLog.swift in Sources */,
+				57E922B1BD9AC38D3838FED88E5FD7A8 /* WBBMScanLogManager.swift in Sources */,
+				D10537A476D5981EC022B92A8A6BC920 /* WBBMScanLogModel.swift in Sources */,
+				537773A114EE23D757B6286E96865D7D /* WBBMScanLogTool.swift in Sources */,
+				6FA00AEEC5FCAB31E600D919696463EF /* WBBMScanSystemLog.swift in Sources */,
+				EC09D2528071CF6B803C3BD0E55C0047 /* WBBMShellObject.swift in Sources */,
+				A7E0E9DC9F57F80B5C151B0B7D744124 /* WBBMSymbolSearch.swift in Sources */,
+				14555614E6DFB1D366EC20213E6B55B2 /* WBBMSymbolTake.swift in Sources */,
+				819068CE3ED514DAAA1E30622FD458AD /* WBBMSymbolTool.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6DD3282C88D6A956448E06390BA9659D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WBBladesCrash;
+			target = 0476538A94CBD3DE8CDA74B633333B0D /* WBBladesCrash */;
+			targetProxy = 95222B697E7247DD94495B54B3BEE48D /* PBXContainerItemProxy */;
+		};
+		7193D82A716730462F8480794D14470F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WBBlades;
+			target = A6A142AEB1B8D4431EF8F850124A0910 /* WBBlades */;
+			targetProxy = 63E28F6D8731E54287668FC92802C27B /* PBXContainerItemProxy */;
+		};
+		755F0D7F253605355FD278F9EDF5DD3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WBBladesCrash;
+			target = 0476538A94CBD3DE8CDA74B633333B0D /* WBBladesCrash */;
+			targetProxy = 895ECD78C96065E69A0E9239C15B262E /* PBXContainerItemProxy */;
+		};
+		8FD7615BFEDC8DFEC9A954B96EF191A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ArtilleryOfItaly;
+			target = B378281B801AFD517BEAC3EBC7B6F27B /* ArtilleryOfItaly */;
+			targetProxy = 656CE942210F8937EAEC8E7CF2076EE6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12037C6F63E89C40F76795372D401CF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C28262440E9CECBF585E3867ED82D4A /* ArtilleryOfItaly.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/ArtilleryOfItaly/ArtilleryOfItaly-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = ArtilleryOfItaly;
+				PRODUCT_NAME = ArtilleryOfItaly;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+			};
+			name = Release;
+		};
+		32AC53FC239DA5087B85523F64B64396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D6BE58ECD7E31A07DFC6B17E7A0475E /* WBBladesCrash.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/WBBladesCrash/WBBladesCrash-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MODULEMAP_FILE = Headers/Public/WBBladesCrash/WBBladesCrash.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = WBBladesCrash;
+				PRODUCT_NAME = WBBladesCrash;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.3;
+			};
+			name = Release;
+		};
+		55C82E9F572D50F09F41184A20CD619B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58E8F9DD818577BA4CF0E5E2B4DCCAF0 /* Pods-CYClear.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				EXECUTABLE_PREFIX = lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MODULEMAP_FILE = "Target Support Files/Pods-CYClear/Pods-CYClear.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		67F78B7BFB0D98016FB98C34AEC2EF22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62A2D6E4B8B2D8B8D6A677DA0D918E54 /* WBBlades.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/WBBlades/WBBlades-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MODULEMAP_FILE = Headers/Public/WBBlades/WBBlades.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = WBBlades;
+				PRODUCT_NAME = WBBlades;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6DAA3180A581F741CCA72AA582B08FDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87A0509D67464BC5A0D2ACE952003DDC /* WBBladesCrash.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/WBBladesCrash/WBBladesCrash-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MODULEMAP_FILE = Headers/Public/WBBladesCrash/WBBladesCrash.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = WBBladesCrash;
+				PRODUCT_NAME = WBBladesCrash;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.3;
+			};
+			name = Debug;
+		};
+		9AF8F4A95541488A6FF764489383865B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A5362E39E0A1C0A8F36570B143A4F96B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F508103977D4BED93C3F1B447EA87E1 /* WBBlades.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/WBBlades/WBBlades-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MODULEMAP_FILE = Headers/Public/WBBlades/WBBlades.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = WBBlades;
+				PRODUCT_NAME = WBBlades;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D4172A45E2133A17DB3F9CE901BF014B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72C5EE28275392D74638E22C706B16B0 /* Pods-CYClear.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				EXECUTABLE_PREFIX = lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MODULEMAP_FILE = "Target Support Files/Pods-CYClear/Pods-CYClear.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		DEB2B1C4A069D4F6E3FC5EE82219233B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		EE68C9104FC92945E16DC951A019452E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10E24B349743FA5C741A72C125294DF2 /* ArtilleryOfItaly.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/ArtilleryOfItaly/ArtilleryOfItaly-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = ArtilleryOfItaly;
+				PRODUCT_NAME = ArtilleryOfItaly;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		326EB3605C66417AEA059E1A6085ACCE /* Build configuration list for PBXNativeTarget "ArtilleryOfItaly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE68C9104FC92945E16DC951A019452E /* Debug */,
+				12037C6F63E89C40F76795372D401CF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEB2B1C4A069D4F6E3FC5EE82219233B /* Debug */,
+				9AF8F4A95541488A6FF764489383865B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70DA3D4750028D9FDDD471652CAFA3F8 /* Build configuration list for PBXNativeTarget "Pods-CYClear" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55C82E9F572D50F09F41184A20CD619B /* Debug */,
+				D4172A45E2133A17DB3F9CE901BF014B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87727CBEB9A773BA2D810C63283E1B62 /* Build configuration list for PBXNativeTarget "WBBlades" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67F78B7BFB0D98016FB98C34AEC2EF22 /* Debug */,
+				A5362E39E0A1C0A8F36570B143A4F96B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8C1097AC2A087BC5A6743D826CBC2CC /* Build configuration list for PBXNativeTarget "WBBladesCrash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DAA3180A581F741CCA72AA582B08FDF /* Debug */,
+				32AC53FC239DA5087B85523F64B64396 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

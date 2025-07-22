@@ -1,0 +1,6 @@
+module Pods_CYClear {
+  umbrella header "Pods-CYClear-umbrella.h"
+
+  export *
+  module * { export * }
+}

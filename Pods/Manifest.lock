@@ -1,0 +1,45 @@
+PODS:
+  - ArtilleryOfItaly (1.0)
+  - WBBlades (11.2.0):
+    - WBBlades/Capstone (= 11.2.0)
+    - WBBlades/ClassDump (= 11.2.0)
+    - WBBlades/Link (= 11.2.0)
+    - WBBlades/Model (= 11.2.0)
+    - WBBlades/Scan (= 11.2.0)
+    - WBBlades/Tools (= 11.2.0)
+    - WBBladesCrash
+  - WBBlades/Capstone (11.2.0):
+    - WBBladesCrash
+  - WBBlades/ClassDump (11.2.0):
+    - WBBladesCrash
+  - WBBlades/Link (11.2.0):
+    - WBBladesCrash
+  - WBBlades/Model (11.2.0):
+    - WBBladesCrash
+  - WBBlades/Scan (11.2.0):
+    - WBBladesCrash
+  - WBBlades/Tools (11.2.0):
+    - WBBladesCrash
+  - WBBladesCrash (1.0)
+
+DEPENDENCIES:
+  - ArtilleryOfItaly (from `./ArtilleryOfItaly`)
+  - WBBlades (from `./WBBlades`)
+  - WBBladesCrash (from `./WBBladesCrash`)
+
+EXTERNAL SOURCES:
+  ArtilleryOfItaly:
+    :path: "./ArtilleryOfItaly"
+  WBBlades:
+    :path: "./WBBlades"
+  WBBladesCrash:
+    :path: "./WBBladesCrash"
+
+SPEC CHECKSUMS:
+  ArtilleryOfItaly: d2dee0039f638396206bf4a36776e373433888bc
+  WBBlades: ed0745cea46f127acb85c6a104e179485aad9dc5
+  WBBladesCrash: 4ea4ef821e8de2e2b2da6a6f56af0df7ec9e0281
+
+PODFILE CHECKSUM: 33c7a6aeb65baf0ad26aa5e84d9f2b328fe07e40
+
+COCOAPODS: 1.16.2
