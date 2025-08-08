@@ -116,7 +116,7 @@
 				C0E0AC9C2E2F25CA00E8F8EA /* Sources */,
 				C0E0AC9D2E2F25CA00E8F8EA /* Frameworks */,
 				C0E0AC9E2E2F25CA00E8F8EA /* Resources */,
-				16FD57858AF487A301579BE8 /* [CP] Copy Pods Resources */,
+				658B52763EFC1F91048DD156 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -174,7 +174,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		16FD57858AF487A301579BE8 /* [CP] Copy Pods Resources */ = {
+		658B52763EFC1F91048DD156 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -182,13 +182,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CYClear/Pods-CYClear-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CYClear/Pods-CYClear-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

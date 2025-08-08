@@ -36,16 +36,21 @@
         }
     }
     
+    // filepath = ../Build/Products/Debug-iphoneos/引力盐.app/引力盐
+    // 如果 filepath 存在 引力盐_copy 那么移动到 自己创建的文件夹 重新生成一份
     removeCopyFile(filePath);
     
+    // 在 filepath 复制一份 引力盐_copy
     copyFile(filePath);
     
+    // 引力盐_copy 瘦身
     thinFile(filePath);    // Remove architectures which are not arm64.
     
     NSURL *tmpURL = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@_copy", filePath]];
     NSData *fileData = [NSMutableData dataWithContentsOfURL:tmpURL
                                                     options:NSDataReadingMappedIfSafe
                                                       error:NULL];
+    // 将文件 引力盐_copy 复制到桌面
     removeCopyFile(filePath);
     uint32_t cputype = *(uint32_t*)((uint8_t *)[fileData bytes] + 4);
     if (!fileData || cputype != CPU_TYPE_ARM64 ) {
@@ -255,3 +260,4 @@ static NSMutableArray *_usefulCrashLine = nil;
 }
 
 @end
+

@@ -120,17 +120,28 @@ void copyFile(NSString *filePath) {
     cmd(cpCmd);
 }
 
+// 从 “胖二进制文件”（包含多个 CPU 架构的 Mach-O 文件）中提取出 arm64 架构
 void thinFile(NSString *filePath) {
     filePath = [filePath stringByReplacingOccurrencesOfString:@" " withString:@"\\ "];
+    // 读取二进制文件的内容
     NSData *fileData = [NSData dataWithContentsOfFile:filePath];
     if (fileData.length < sizeof(uint32_t) ) {
         return;
     }
+    /*
+     FAT_MAGIC 和 FAT_CIGAM 是 “FAT 格式胖二进制” 的标识（前者是大端字节序，后者是小端字节序）。胖二进制文件是包含多个 CPU 架构代码的集合（如同时支持 arm64 和 x86_64）。
+     如果文件不是 FAT 格式，直接返回（无需处理，因为单架构文件不需要 “瘦身”）。
+     */
     uint32_t magic = *(uint32_t*)((uint8_t *)[fileData bytes]);
     if (magic != FAT_MAGIC && magic != FAT_CIGAM) {
         return;
     }
 
+    /*
+     lipo 是 macOS 上处理多架构二进制文件的工具，lipo -archs <文件> 用于查看文件包含的所有 CPU 架构（如输出 arm64 x86_64）。
+     这里操作的是 filePath_copy（原文件的副本，避免直接修改原文件），通过之前定义的 cmd 函数执行 shell 命令，获取架构列表。
+     将命令输出的字符串按空格分割为数组 archs，得到具体的架构名称（如 @[@"arm64", @"x86_64"]）。
+     */
     NSString *thinCmd = [NSString stringWithFormat:@"lipo -archs %@_copy",filePath];
     NSArray *archs = [[[NSString alloc] initWithData:cmd(thinCmd) encoding:NSUTF8StringEncoding] componentsSeparatedByString:@" "];
     if (archs.count >= 1) {
@@ -186,4 +197,5 @@ void colorPrint(NSString *info) {
 
     [task launch];
 }
+
 

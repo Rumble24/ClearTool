@@ -108,16 +108,70 @@ static section_64 classList = {0};
     mach_header_64 mhHeader;
     [fileData getBytes:&mhHeader range:NSMakeRange(0, sizeof(mach_header_64))];
     
+  
+//     #define    MH_OBJECT    0x1        /* .o/.a 文件 relocatable object file */
+//     #define    MH_EXECUTE    0x2        /* 可执行文件 demand paged executable file */
+//     #define    MH_DYLIB    0x6        /* 动态库文件 dynamically bound shared library */
+//     #define    MH_DYLINKER    0x7        /* 动态链接器 dynamic link editor */
+    
+//     #define    MH_FVMLIB    0x3        /* fixed VM shared library file */
+//     #define    MH_CORE        0x4        /* core file */
+//     #define    MH_PRELOAD    0x5        /* preloaded executable file */
+
+//     #define    MH_BUNDLE    0x8        /* dynamically bound bundle file */
+//     #define    MH_DYLIB_STUB    0x9        /* shared library stub for static
+//                            linking only, no section contents */
+//     #define    MH_DSYM        0xa        /* companion file with only debug
+//                            sections */
+//     #define    MH_KEXT_BUNDLE    0xb        /* x86_64 kexts */
+//     #define MH_FILESET    0xc        /* a file composed of other Mach-Os to
+//                            be run in the same userspace sharing
+//                            a single linkedit. */
+//     #define    MH_GPU_EXECUTE    0xd        /* gpu program */
+//     #define    MH_GPU_DYLIB    0xe        /* gpu support functions */
+     
     if (mhHeader.filetype != MH_EXECUTE && mhHeader.filetype != MH_DYLIB) {
         NSLog(@"参数异常，-unused 参数不是可执行文件");
         ScanUnusedClassLogInfo(@"参数异常，传入的不是可执行文件");
         return nil;
     }
+    /*
+     __DATA.__objc_classlist    Objective-C 所有类集合
+     __DATA.__objc_classrefs    Objective-C 所有使用类的集合
+
+     __DATA.__objc_selrefs    Objective-C 使用方法的集合
+     
+     __DATA.__objc_protolist    Objective-C 原型
+     __DATA.__objc_imginfo    Objective-C 镜像信息
+     __DATA.__objc_protorefs    Objective-C 原型引用
+     __DATA.__objc_superrefs    Objective-C 超类引用
+
+     __DATA_CONST,__objc_catlist
+     
+     __objc_nlclslist  // 非懒加载类（Non-lazy Class）的列表  类实现了 +load 方法：Objective-C 规定，带有 +load 方法的类必须在程序启动时初始化，因此会被加入 __objc_nlclslist
+     __objc_nlcatlist  // Non-lazy Category List（非懒加载类别列表） 类别中实现了 +load 方法：与类的 +load 方法类似，类别中的 +load 会强制该类别在程序启动时初始化，因此会被加入 __objc_nlcatlist
+     
+     
+     __swift5_typeref
+     __swift5_capture
+     __swift5_fieldmd
+     __constg_swiftt
+     __swift5_reflstr
+     __swift5_protos
+     __swift5_types
+     __swift5_builtin
+     __swift5_assocty
+     __swift5_proto
+     __swift5_mpenum
+     __swift_as_entry
+     __swift_as_ret
+     */
     section_64 classrefList= {0};
     section_64 nlclsList= {0};
     section_64 nlcatList= {0};
-    section_64 cfstringList= {0};
-    section_64 cstringList= {0};
+    section_64 cfstringList= {0}; // 全称：Core Foundation String Section（Core Foundation 字符串节）。
+    section_64 cstringList= {0};  // 全称：C String Section（C 风格字符串节）。
+
     
     segment_command_64 linkEdit = {0};
     
@@ -1868,4 +1922,5 @@ __vmAddress = (__vmAddress>(2*vm))?(__vmAddress-vm):__vmAddress;
 }
 
 @end
+
 

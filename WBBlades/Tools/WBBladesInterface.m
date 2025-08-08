@@ -286,6 +286,7 @@ static BOOL isResource(NSString *type) {//resource type
 
 + (NSArray<NSDictionary<NSString *, NSNumber *> *> *)scanUnusedClassWithAppPath:(NSString *)appFilePath fromLibs:(NSArray<NSString *> *)fromLibsPath {
     s_classSet = [NSMutableSet set];
+    NSString *outputPath = [[NSUserDefaults standardUserDefaults] stringForKey:@"o"];
     [self shareInstance].unusedClassInfos = [NSString stringWithFormat:@"开始分析文件---%@", [appFilePath lastPathComponent]];
     if (fromLibsPath.count > 0) {
         //enumerate all libs and all classes
@@ -295,11 +296,14 @@ static BOOL isResource(NSString *type) {//resource type
             enumLibFiles(obj);
         }];
     }
-
+    
+    // ../Build/Products/Debug-iphoneos/引力盐.app
     NSString *appPath = getAppPathIfIpa(appFilePath);
 
     //read binary files, scan all libs and classes to find unused classes
     [self shareInstance].unusedClassInfos = [NSString stringWithFormat:@"%@\n%@", [self shareInstance].unusedClassInfos, @"正在提取arm64架构"];
+    
+    // 获取到 ../Build/Products/Debug-iphoneos/引力盐.app/引力盐 的 mach-o 数据
     NSData *appData = [WBBladesFileManager readArm64FromFile:appPath];
     
     [self shareInstance].unusedClassInfos = [NSString stringWithFormat:@"%@\n%@", [self shareInstance].unusedClassInfos, @"开始读取可执行文件..."];
@@ -308,16 +312,15 @@ static BOOL isResource(NSString *type) {//resource type
     }];
 
     //write results to file
-    //NSString *outputPath = [[NSUserDefaults standardUserDefaults] stringForKey:@"o"];
-//    if (outputPath.length == 0) {
-//        outputPath = resultFilePath();
-//        outputPath = [outputPath stringByAppendingPathComponent:@"UnusedClass.plist"];
-//        [classset writeToFile:outputPath atomically:YES];
-//    }else{
-//        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:classset options:0 error:nil];
-//        NSString *strJson = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
-//        [strJson writeToFile:outputPath atomically:YES encoding:NSUTF8StringEncoding error:NULL];
-//    }
+    if (outputPath.length == 0) {
+        outputPath = resultFilePath();
+        outputPath = [outputPath stringByAppendingPathComponent:@"UnusedClass.plist"];
+        [classset writeToFile:outputPath atomically:YES];
+    }else{
+        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:classset options:0 error:nil];
+        NSString *strJson = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+        [strJson writeToFile:outputPath atomically:YES encoding:NSUTF8StringEncoding error:NULL];
+    }
 
     rmAppIfIpa(appFilePath);
     
@@ -442,3 +445,4 @@ static BOOL isResource(NSString *type) {//resource type
     return [staticLibs copy];
 }
 @end
+
