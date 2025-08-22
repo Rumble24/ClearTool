@@ -348,12 +348,20 @@ struct SwiftClassTypeNoMethods {
 
 
 struct SwiftStructType {
+    // 存储在任何上下文描述符的第一个公共标记
     uint32_t Flag;
+    //  父级上下文，如果是顶级上下文则为null。获得的类型为InProcess，里面存放的应该是一个指针，测下来结构体里为0，相当于null了
     uint32_t Parent;
+    // 获取Struct的名称
     int32_t  Name;
+    // 这里的函数类型是一个替身，需要调用getAccessFunction()拿到真正的函数指针（这里没有封装），会得到一个MetadataAccessFunction元数据访问函数的指针的包装器类，
+    // 该函数提供operator()重载以使用正确的调用约定来调用它（可变长参数），意外发现命名重整会调用这边的方法（目前不太了解这块内容）。
     int32_t  AccessFunction;
+    // 一个指向类型的字段描述符的指针(如果有的话)。类型字段的描述，可以从里面获取结构体的属性。
     int32_t  FieldDescriptor;
+    // 结构体属性个数
     uint32   NumFields;
+    // 存储这个结构的字段偏移向量的偏移量（记录你属性起始位置的开始的一个相对于metadata的偏移量，具体看metadata的getFieldOffsets方法），如果为0，说明你没有属性
     uint32   FieldOffsetVectorOffset;
 };
 

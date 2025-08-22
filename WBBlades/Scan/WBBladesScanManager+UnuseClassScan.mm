@@ -136,13 +136,15 @@ static section_64 classList = {0};
         return nil;
     }
     /*
-     __DATA.__objc_classlist    Objective-C 所有类集合
+     __TEXT,__objc_methname
+     
+     __DATA.__objc_classlist    Objective-C 所有类集合 OC类 以及 Swift类
      __DATA.__objc_classrefs    Objective-C 所有使用类的集合
 
-     __DATA.__objc_selrefs    Objective-C 使用方法的集合
+     __DATA.__objc_selrefs      Objective-C 使用方法的集合
      
      __DATA.__objc_protolist    Objective-C 原型
-     __DATA.__objc_imginfo    Objective-C 镜像信息
+     __DATA.__objc_imginfo      Objective-C 镜像信息
      __DATA.__objc_protorefs    Objective-C 原型引用
      __DATA.__objc_superrefs    Objective-C 超类引用
 
@@ -193,6 +195,7 @@ static section_64 classList = {0};
                 for (int j = 0; j < segmentCommand.nsects; j++) {
                     
                     section_64 sectionHeader;
+                    // 用于从 NSData 对象中指定范围提取字节数据，并复制到指定的缓冲区。
                     [fileData getBytes:&sectionHeader range:NSMakeRange(currentSecLocation, sizeof(section_64))];
                     NSString *secName = [[NSString alloc] initWithUTF8String:sectionHeader.sectname];
                     
@@ -277,6 +280,7 @@ static section_64 classList = {0};
     //read swift5Types
     ScanUnusedClassLogInfo(@"开始读取swift5Types section...");
     ScanUnusedClassLogInfo(@"在反汇编指令中查找Swift的accessfunc...");
+    // 获取到 swiftGenericTypes 范型类
     NSArray *swiftGenericTypes = [self readSwiftTypes:swift5Types set:classrefSet fileData:fileData];
     
     //read classlist - OBJC
@@ -712,6 +716,7 @@ static section_64 classList = {0};
             if ([className hasPrefix:@"_TtC6"] && [className hasSuffix:@"ResourceBundleClass"]) {
                 break;
             }
+            // NSLog(@"__objc_classlist 类名： %@", className);
             if (className)[classSet addObject:className];
             
             
@@ -1008,6 +1013,7 @@ static section_64 classList = {0};
     vm = vm ? vm : 0x100000000;
     NSUInteger textTypesSize = swift5Types.size;
     
+    // swift‘范型类
     NSMutableArray *genericTypes = [NSMutableArray array];
     //    NSMutableDictionary *accessFcunDic = @{}.mutableCopy;
     for (int i = 0; i < textTypesSize / 4 ; i++) {

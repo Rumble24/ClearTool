@@ -4,7 +4,10 @@
 //
 //  Created by jingwei on 2025/7/22.
 //
-
+/*
+ 相关底层知识
+ Swift结构体底层StructMetadata： https://juejin.cn/post/6919717099619221517
+ */
 #import "ViewController.h"
 #import "ClassNameTool.h"
 #import "Tools.h"
