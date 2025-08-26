@@ -7,7 +7,10 @@
 /*
  相关底层知识
  Swift结构体底层StructMetadata： https://juejin.cn/post/6919717099619221517
+ 具体实现：https://juejin.cn/post/7176441132447399993
  */
+
+// TODO: - 无法检测 Struct、Enum
 #import "ViewController.h"
 #import "ClassNameTool.h"
 #import "Tools.h"

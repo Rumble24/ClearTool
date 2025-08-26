@@ -995,6 +995,17 @@ static section_64 classList = {0};
 
 #pragma mark Swift
 /**
+ 先要遍历出【所有】Swift类的AccessFunction集合，
+ 然后 检测所有函数【通过符号表-反编译出bl指令】 是否调用了 AccessFunction 如果不是自己调用 那么就是 使用过了
+ 
+ 整体实现方案是
+ 1.先要遍历出【所有】Swift类的AccessFunction集合，
+ 2.再遍历符号表，对每个函数的起始地址进行排序，定位出每个函数的开始和结束地址，
+ 3.然后通过对函数实现进行反汇编得到函数的汇编指令，
+ 4.最后通过每个函数的起始和结束位置，结合函数的汇编指令，查找函数范围内的bl指令地址，
+ 5.和前面AccessFunction集合进行匹配，能匹配上的并且当前函数不是AccessFunction所在的Swift类，即可将该Swift类加入到classrefs集合中
+ */
+/**
  功能：查找被使用到的Swift类。主要流程如下：
  （1）获取类型，如果是类的话继续获取name；
  （2）获取到swift 类的访问函数acccessfunc;

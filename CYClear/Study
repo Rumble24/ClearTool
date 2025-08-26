@@ -1,0 +1,31 @@
+
+主要是使用了：ArtilleryOfItaly
+Artillery.readDwarf(dsymTmpPath+"/Contents/Resources/DWARF/\(processName)", outputPath: outputPath)
+
+# Mach-O 文件各个段的含义
+
+## __TEXT - 用于存储只读数据（包括代码和常量）
+
+### __text__ 是真正存放函数机器码的地方。所有编译后的函数实现（如 C 函数、Objective-C 方法、Swift 函数等）都会被汇编成机器码，最终存储在这里。
+所有函数的二进制机器指令（如加法、跳转、函数调用等操作的底层编码）。
+函数之间的指令是连续存储的（按符号表中函数的地址顺序排列）。
+
+### __stubs__ - 是通用的动态链接桩，主要用于调用外部动态库（如系统框架）中的函数（不限于 Objective-C）。
+
+### __stubs_helper__ - 包含更复杂的动态链接辅助逻辑，是桩代码与动态链接器之间的中间层。
+
+### __objc_stubs__ - 是专门针对 Objective-C 方法调用 的桩，仅用于 Objective-C 动态消息机制。。
+Objective-C 方法调用是动态的（通过 objc_msgSend 实现），编译期无法确定方法的具体实现地址，需要运行时根据类和方法名查找。__objc_stubs__ 的作用是为 Objective-C 方法调用提供一个 “临时跳转点”，简化动态消息发送的过程：
+
+### __cstring__ - 专门用于存储以 null 结尾的 C 风格字符串（即 C string）
+### __ustring__ - 是一个用于存储Unicode 字符串的段（section），主要存放以 Unicode 编码（通常是 UTF-16 或 UTF-32）表示的常量字符串，常见于需要处理多语言字符的场景。
+### __const__ - 专门用于存储编译期确定的常量数据
+
+### __objc_methname__ - 所有方法的名称都集中存储在这里，是运行时识别和调用方法的基础。
+### __objc_classname__ - 所有类和类别的名称都存储在这里，是运行时识别类、进行类操作（如 NSClassFromString）的基础
+### __objc_methtype__ - 所有方法的参数和返回值类型信息都存储在这里，是运行时实现动态类型处理和安全调用的基础。
+
+### __gcc_except_tab__ - C++ 的异常处理（如 try/catch 语句）需要在编译时生成额外的元数据，用于在运行时定位异常处理代码（即 catch 块）。
+__gcc_except_tab__ 段的作用就是存储这些元数据，帮助程序在抛出异常时快速找到对应的处理逻辑，或在异常未被处理时正确终止程序。
+
+### __objc_methtype__

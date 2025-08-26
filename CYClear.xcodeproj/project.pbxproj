@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		25988796880F632E983FBA31 /* libPods-CYClear.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1B336BE639FBDAF3D34758 /* libPods-CYClear.a */; };
+		C06894442E586D1100016F6F /* Study in Resources */ = {isa = PBXBuildFile; fileRef = C06894432E586D1100016F6F /* Study */; };
+		C06894A12E5C483300016F6F /* SymbolTable.png in Resources */ = {isa = PBXBuildFile; fileRef = C06894A02E5C483300016F6F /* SymbolTable.png */; };
+		C06894A32E5D4A2700016F6F /* Dynamic Loader Info.md in Resources */ = {isa = PBXBuildFile; fileRef = C06894A22E5D4A2700016F6F /* Dynamic Loader Info.md */; };
+		C06894A52E5D4B8700016F6F /* Mach-O.md in Resources */ = {isa = PBXBuildFile; fileRef = C06894A42E5D4B8700016F6F /* Mach-O.md */; };
+		C06894A72E5D4D7500016F6F /* Load Commands.md in Resources */ = {isa = PBXBuildFile; fileRef = C06894A62E5D4D7500016F6F /* Load Commands.md */; };
+		C06894A92E5D4EC300016F6F /* __TEXT.md in Resources */ = {isa = PBXBuildFile; fileRef = C06894A82E5D4EC300016F6F /* __TEXT.md */; };
+		C06894AB2E5D4F0400016F6F /* __DATA_CONST.md in Resources */ = {isa = PBXBuildFile; fileRef = C06894AA2E5D4F0400016F6F /* __DATA_CONST.md */; };
+		C06894AD2E5D4F1800016F6F /* __DATA.md in Resources */ = {isa = PBXBuildFile; fileRef = C06894AC2E5D4F1800016F6F /* __DATA.md */; };
+		C06894AF2E5D5BDA00016F6F /* __DATA.png in Resources */ = {isa = PBXBuildFile; fileRef = C06894AE2E5D5BDA00016F6F /* __DATA.png */; };
+		C06894B22E5D5C1F00016F6F /* __TEXT.png in Resources */ = {isa = PBXBuildFile; fileRef = C06894B02E5D5C1F00016F6F /* __TEXT.png */; };
+		C06894B32E5D5C1F00016F6F /* __DATA_CONST.png in Resources */ = {isa = PBXBuildFile; fileRef = C06894B12E5D5C1F00016F6F /* __DATA_CONST.png */; };
 		C0E0ACC52E2F360300E8F8EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E0ACBA2E2F360300E8F8EA /* AppDelegate.m */; };
 		C0E0ACC62E2F360300E8F8EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E0ACBD2E2F360300E8F8EA /* main.m */; };
 		C0E0ACC72E2F360300E8F8EA /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E0ACC12E2F360300E8F8EA /* Tools.m */; };
@@ -22,6 +33,17 @@
 		2B1B336BE639FBDAF3D34758 /* libPods-CYClear.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CYClear.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75326C395E96B303811320BD /* Pods-CYClear.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYClear.debug.xcconfig"; path = "Target Support Files/Pods-CYClear/Pods-CYClear.debug.xcconfig"; sourceTree = "<group>"; };
 		9F6AED4A8F3D2D946851106A /* Pods-CYClear.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYClear.release.xcconfig"; path = "Target Support Files/Pods-CYClear/Pods-CYClear.release.xcconfig"; sourceTree = "<group>"; };
+		C06894432E586D1100016F6F /* Study */ = {isa = PBXFileReference; lastKnownFileType = text; path = Study; sourceTree = "<group>"; };
+		C06894A02E5C483300016F6F /* SymbolTable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SymbolTable.png; sourceTree = "<group>"; };
+		C06894A22E5D4A2700016F6F /* Dynamic Loader Info.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Dynamic Loader Info.md"; sourceTree = "<group>"; };
+		C06894A42E5D4B8700016F6F /* Mach-O.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Mach-O.md"; sourceTree = "<group>"; };
+		C06894A62E5D4D7500016F6F /* Load Commands.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Load Commands.md"; sourceTree = "<group>"; };
+		C06894A82E5D4EC300016F6F /* __TEXT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = __TEXT.md; sourceTree = "<group>"; };
+		C06894AA2E5D4F0400016F6F /* __DATA_CONST.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = __DATA_CONST.md; sourceTree = "<group>"; };
+		C06894AC2E5D4F1800016F6F /* __DATA.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = __DATA.md; sourceTree = "<group>"; };
+		C06894AE2E5D5BDA00016F6F /* __DATA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = __DATA.png; sourceTree = "<group>"; };
+		C06894B02E5D5C1F00016F6F /* __TEXT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = __TEXT.png; sourceTree = "<group>"; };
+		C06894B12E5D5C1F00016F6F /* __DATA_CONST.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = __DATA_CONST.png; sourceTree = "<group>"; };
 		C0E0ACA02E2F25CA00E8F8EA /* CYClear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CYClear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E0ACB92E2F360300E8F8EA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C0E0ACBA2E2F360300E8F8EA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -93,6 +115,17 @@
 				C0E0ACC02E2F360300E8F8EA /* Tools.h */,
 				C0E0ACC12E2F360300E8F8EA /* Tools.m */,
 				C0E0ACCE2E2F46E700E8F8EA /* whitelist.txt */,
+				C06894432E586D1100016F6F /* Study */,
+				C06894A02E5C483300016F6F /* SymbolTable.png */,
+				C06894B02E5D5C1F00016F6F /* __TEXT.png */,
+				C06894B12E5D5C1F00016F6F /* __DATA_CONST.png */,
+				C06894AE2E5D5BDA00016F6F /* __DATA.png */,
+				C06894A42E5D4B8700016F6F /* Mach-O.md */,
+				C06894A62E5D4D7500016F6F /* Load Commands.md */,
+				C06894A82E5D4EC300016F6F /* __TEXT.md */,
+				C06894AA2E5D4F0400016F6F /* __DATA_CONST.md */,
+				C06894AC2E5D4F1800016F6F /* __DATA.md */,
+				C06894A22E5D4A2700016F6F /* Dynamic Loader Info.md */,
 			);
 			path = CYClear;
 			sourceTree = "<group>";
@@ -165,9 +198,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C06894B22E5D5C1F00016F6F /* __TEXT.png in Resources */,
+				C06894B32E5D5C1F00016F6F /* __DATA_CONST.png in Resources */,
 				C0E0ACC92E2F360300E8F8EA /* Assets.xcassets in Resources */,
+				C06894A52E5D4B8700016F6F /* Mach-O.md in Resources */,
+				C06894AB2E5D4F0400016F6F /* __DATA_CONST.md in Resources */,
 				C0E0ACCA2E2F360300E8F8EA /* Main.storyboard in Resources */,
+				C06894442E586D1100016F6F /* Study in Resources */,
+				C06894AF2E5D5BDA00016F6F /* __DATA.png in Resources */,
+				C06894A12E5C483300016F6F /* SymbolTable.png in Resources */,
+				C06894AD2E5D4F1800016F6F /* __DATA.md in Resources */,
 				C0E0ACCF2E2F46E700E8F8EA /* whitelist.txt in Resources */,
+				C06894A92E5D4EC300016F6F /* __TEXT.md in Resources */,
+				C06894A32E5D4A2700016F6F /* Dynamic Loader Info.md in Resources */,
+				C06894A72E5D4D7500016F6F /* Load Commands.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,9 +226,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CYClear/Pods-CYClear-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CYClear/Pods-CYClear-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
