@@ -167,7 +167,7 @@ struct category64
 typedef NS_ENUM(NSInteger, SwiftKind) {
     SwiftKindUnknown        = -1,    // UnKnown
     SwiftKindModule         = 0,     // Module
-    SwiftKindAnonymous      = 2,     // Anonymous
+    SwiftKindAnonymous      = 2,     // Anonymous 表示匿名实体，如匿名闭包或匿名枚举成员等
     SwiftKindProtocol       = 3,     // Protocol
     SwiftKindOpaqueType     = 4,     // OpaqueType
     SwiftKindClass          = 16,    // Class

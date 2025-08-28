@@ -509,6 +509,7 @@
     return address;
 }
 
+// 虚拟地址 - 映射为真实文件中的地址
 + (unsigned long long)getOffsetFromVmAddress:(unsigned long long )address fileData:(NSData *)fileData{
 
     mach_header_64 mhHeader;

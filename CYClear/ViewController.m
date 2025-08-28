@@ -47,6 +47,10 @@
             [weakSelf.unUsedFilesTextView scrollRectToVisible:NSMakeRect(0, 0, 0, 0)];
         });
     }];
+    
+    
+    self.projectPath.stringValue = @"/Users/meta/Desktop/CYPlatformIOS/CYNext.xcodeproj";
+    self.debugIpa.stringValue = @"/Users/meta/Library/Developer/Xcode/DerivedData/CYNext-apjixbvznkvlmnaqscihwtqgefwv/Build/Products/Debug-iphoneos/引力盐.app";
 }
 
 - (IBAction)startSearchAction:(id)sender {

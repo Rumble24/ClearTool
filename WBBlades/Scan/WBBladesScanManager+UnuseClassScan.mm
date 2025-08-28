@@ -136,37 +136,42 @@ static section_64 classList = {0};
         return nil;
     }
     /*
-     __TEXT,__objc_methname
-     
-     __DATA.__objc_classlist    Objective-C 所有类集合 OC类 以及 Swift类
-     __DATA.__objc_classrefs    Objective-C 所有使用类的集合
-
-     __DATA.__objc_selrefs      Objective-C 使用方法的集合
-     
-     __DATA.__objc_protolist    Objective-C 原型
-     __DATA.__objc_imginfo      Objective-C 镜像信息
-     __DATA.__objc_protorefs    Objective-C 原型引用
-     __DATA.__objc_superrefs    Objective-C 超类引用
-
-     __DATA_CONST,__objc_catlist
-     
-     __objc_nlclslist  // 非懒加载类（Non-lazy Class）的列表  类实现了 +load 方法：Objective-C 规定，带有 +load 方法的类必须在程序启动时初始化，因此会被加入 __objc_nlclslist
-     __objc_nlcatlist  // Non-lazy Category List（非懒加载类别列表） 类别中实现了 +load 方法：与类的 +load 方法类似，类别中的 +load 会强制该类别在程序启动时初始化，因此会被加入 __objc_nlcatlist
-     
-     
-     __swift5_typeref
-     __swift5_capture
-     __swift5_fieldmd
-     __constg_swiftt
-     __swift5_reflstr
-     __swift5_protos
-     __swift5_types
-     __swift5_builtin
-     __swift5_assocty
-     __swift5_proto
-     __swift5_mpenum
-     __swift_as_entry
-     __swift_as_ret
+     __got
+     __mod_init_func
+     __const
+     __cfstring
+     __objc_classlist__DATA_CONST
+     __objc_nlclslist__DATA_CONST
+     __objc_catlist
+     __objc_nlcatlist__DATA_CONST
+     __objc_protolist__DATA_CONST
+     __objc_imageinfo__DATA_CONST
+     __la_symbol_ptr
+     __objc_const
+     __objc_selrefs
+     __objc_protorefs__DATA
+     __objc_classrefs__DATA
+     __objc_superrefs__DATA
+     __objc_ivar
+     __objc_data
+     __llvm_prf_cnts
+     __llvm_prf_data
+     __data
+     __objc_clsrolist__DATA
+     __objc_stublist
+     __swift51_hooks
+     __s_async_hook
+     __swift56_hooks
+     __thread_vars
+     __llvm_prf_bits
+     __llvm_prf_names__DATA
+     __llvm_prf_vnds
+     __llvm_prf_vns
+     __llvm_prf_vtab
+     __thread_data
+     __thread_bss
+     __bss
+     __common
      */
     section_64 classrefList= {0};
     section_64 nlclsList= {0};
@@ -186,6 +191,7 @@ static section_64 classList = {0};
             
             segment_command_64 segmentCommand;
             [fileData getBytes:&segmentCommand range:NSMakeRange(currentLcLocation, sizeof(segment_command_64))];
+            // __DATA __TEXT 
             NSString *segName = [NSString stringWithFormat:@"%s",segmentCommand.segname];
             
             //enumerate classlist、selref、classref、nlcls、cfstring section
@@ -280,7 +286,7 @@ static section_64 classList = {0};
     //read swift5Types
     ScanUnusedClassLogInfo(@"开始读取swift5Types section...");
     ScanUnusedClassLogInfo(@"在反汇编指令中查找Swift的accessfunc...");
-    // 获取到 swiftGenericTypes 范型类
+    // 获取到 swiftGenericTypes 范型类  合并到 所有类里面
     NSArray *swiftGenericTypes = [self readSwiftTypes:swift5Types set:classrefSet fileData:fileData];
     
     //read classlist - OBJC
@@ -1018,7 +1024,7 @@ static section_64 classList = {0};
  */
 + (NSArray *)readSwiftTypes:(section_64)swift5Types set:(NSMutableSet *)swiftUsedTypeSet fileData:(NSData *)fileData{
     
-    //计算vm
+    //计算vm：虚拟内存基地址（运行时地址 = 虚拟基地址 + 文件偏移）文件的虚拟内存的地址
     unsigned long long vm = swift5Types.addr - swift5Types.offset;
     //解决动态库中vm从零开始的问题
     vm = vm ? vm : 0x100000000;
@@ -1033,15 +1039,15 @@ static section_64 classList = {0};
 #define CORRECT_ADDRESS(__vmAddress)\
 __vmAddress = (__vmAddress>(2*vm))?(__vmAddress-vm):__vmAddress;
         
-        BOOL isGenericType = NO;
-        unsigned long long typeAddress = swift5Types.addr + i * 4;
-        uintptr_t offset = [WBBladesTool getOffsetFromVmAddress:typeAddress fileData:fileData];
-        NSRange range = NSMakeRange(offset, 4);
-        unsigned long long content = 0;
-        [fileData getBytes:&content range:range];
-        unsigned long long vmAddress = content + typeAddress;
-        CORRECT_ADDRESS(vmAddress)
-        unsigned long long typeOffset = [WBBladesTool getOffsetFromVmAddress:vmAddress fileData:fileData];
+        BOOL isGenericType = NO; // 标记当前类型是否为泛型类型
+        unsigned long long typeAddress = swift5Types.addr + i * 4; // 当前类型条目的虚拟地址（段起始虚拟地址 + 偏移量（i*4字节））
+        uintptr_t offset = [WBBladesTool getOffsetFromVmAddress:typeAddress fileData:fileData]; // 虚拟地址转文件偏移（工具类方法：根据 Mach-O 加载规则，将运行时虚拟地址转换为磁盘文件中的字节偏移）
+        NSRange range = NSMakeRange(offset, 4); // 定义文件中读取的范围：从偏移量开始，读取4字节（单个类型条目的基础数据）
+        unsigned long long content = 0; // 存储读取到的4字节内容（通常是下一级地址的偏移或索引）
+        [fileData getBytes:&content range:range]; // 从文件数据中读取4字节到 content
+        unsigned long long vmAddress = content + typeAddress; // 计算目标虚拟地址（content 是相对偏移，加当前类型虚拟地址得到绝对虚拟地址）
+        CORRECT_ADDRESS(vmAddress) // 调用宏修正跨段地址
+        unsigned long long typeOffset = [WBBladesTool getOffsetFromVmAddress:vmAddress fileData:fileData]; // 修正后的虚拟地址转文件偏移（后续用于读取 Swift 类型元数据）
         
         //        static dispatch_once_t onceToken;
         //        dispatch_once(&onceToken, ^{
@@ -1049,24 +1055,24 @@ __vmAddress = (__vmAddress>(2*vm))?(__vmAddress-vm):__vmAddress;
         textConst = [WBBladesTool getTEXTConst:vmAddress fileData:fileData];
         //        });
         
-        SwiftType type = {0};
-        if (typeOffset > vm) typeOffset -= vm;
-        range = NSMakeRange(typeOffset, sizeof(SwiftType));
-        [fileData getBytes:&type range:range];
+        SwiftType type = {0}; // 初始化 SwiftType 结构体（存储 Swift 类型的完整元数据，如类型标志、父类型偏移等，需提前定义结构体字段）
+        if (typeOffset > vm) typeOffset -= vm; // 修正文件偏移：若偏移超过虚拟基地址，减 vm 确保在当前段范围内
+        range = NSMakeRange(typeOffset, sizeof(SwiftType)); // 读取范围：从 typeOffset 开始，读取整个 SwiftType 结构体大小的字节
+        [fileData getBytes:&type range:range]; // 从文件中读取 SwiftType 元数据到 type 结构体
+
+        SwiftBaseType swiftType = {0}; // 初始化 SwiftBaseType 结构体（存储 Swift 类型的基础元数据，如名称偏移、父类型偏移等，是 SwiftType 的简化版）
+        range = NSMakeRange(typeOffset, sizeof(SwiftBaseType)); // 读取范围：同 SwiftType 的起始偏移，读取 SwiftBaseType 大小的字节
+        [fileData getBytes:&swiftType range:range]; // 读取基础元数据到 swiftType 结构体
         
-        SwiftBaseType swiftType = {0};
-        range = NSMakeRange(typeOffset, sizeof(SwiftBaseType));
-        [fileData getBytes:&swiftType range:range];
-        
-        isGenericType = isGenericType | [WBBladesTool isGenericType:swiftType];
+        isGenericType = isGenericType | [WBBladesTool isGenericType:swiftType]; // 工具类方法：判断当前基础类型是否为泛型，更新 isGenericType 标志（按位或确保只要有泛型特征就标记）
         //获取名字基本都在同一个section 进行跳转，因此不会跨段
-        UInt32 nameOffsetContent;
-        range = NSMakeRange(typeOffset + 2 * 4, sizeof(UInt32));
-        [fileData getBytes:&nameOffsetContent range:range];
-        unsigned long long nameOffset = typeOffset + 2 * 4 + nameOffsetContent;
-        if (nameOffset > vm) nameOffset -= vm;
-        range = NSMakeRange(nameOffset, 0);
-        NSString *name = [WBBladesTool readString:range fixlen:150 fromFile:fileData];
+        UInt32 nameOffsetContent; // 存储类型名的相对偏移（4字节）
+        range = NSMakeRange(typeOffset + 2 * 4, sizeof(UInt32)); // 读取范围：从 typeOffset 偏移 8 字节（2*4）处，读取4字节（类型名的相对偏移字段）
+        [fileData getBytes:&nameOffsetContent range:range]; // 读取名字偏移到 nameOffsetContent
+        unsigned long long nameOffset = typeOffset + 2 * 4 + nameOffsetContent; // 计算类型名的绝对文件偏移（基础偏移 + 8字节 + 相对偏移）
+        if (nameOffset > vm) nameOffset -= vm; // 修正偏移（超过 vm 则减 vm）
+        range = NSMakeRange(nameOffset, 0); // 读取范围：从 nameOffset 开始，0表示“读取到字符串结束符”（Swift 类型名是 C 风格字符串，以 \0 结尾）
+        NSString *name = [WBBladesTool readString:range fixlen:150 fromFile:fileData]; // 工具类方法：从文件中读取字符串（fixlen=150 是最大长度限制，避免读取越界），得到当前类型的名称
         
         unsigned long long parentOffset = typeOffset + 1 * 4 + swiftType.Parent;
         if (parentOffset > vm) parentOffset = parentOffset - vm;
@@ -1136,6 +1142,7 @@ __vmAddress = (__vmAddress>(2*vm))?(__vmAddress-vm):__vmAddress;
         unsigned long long accessFunc = [WBBladesTool getOffsetFromVmAddress:accessFuncAddr fileData:fileData];
         if (isGenericType)[genericTypes addObject:name];
         if (![name hasPrefix:@"__C."]) {
+            NSLog(@"swift name: %@   accessFunc: %llu", name, accessFunc);
             NSArray *arr = [name componentsSeparatedByString:@"."];
             // 这里只添加class，过滤掉struct和enum
             if (arr.count == 2) {
@@ -1502,42 +1509,53 @@ __vmAddress = (__vmAddress>(2*vm))?(__vmAddress-vm):__vmAddress;
     // 遍历符号表中的函数，定位各函数的起始和结束地址
     symbols = [self getSortedSymbolList:fileData];
     
-    //查找access调用
-    NSLock *locker = [[NSLock alloc] init];
-    NSArray *allKeys = accessFcunDic.allKeys;
-    NSMutableDictionary *accfunNameList = [NSMutableDictionary dictionary];
+    //查找access调用（通过分析函数调用，确认哪些 Swift 类型被实际使用）
+    NSLock *locker = [[NSLock alloc] init]; // 初始化锁（并行处理时保证线程安全）
+    NSArray *allKeys = accessFcunDic.allKeys; // 获取“类型名-访问函数”字典的所有键（类型名）
+    NSMutableDictionary *accfunNameList = [NSMutableDictionary dictionary]; // 存储“访问函数地址-类型名”映射（用于反汇编时匹配）
+    // 并行处理所有类型（GCD dispatch_apply：高效遍历，适合CPU密集型任务）
     dispatch_apply(allKeys.count, dispatch_get_global_queue(0, 0), ^(size_t index) {
-        @autoreleasepool {
-            NSString *name = allKeys[index];
+        @autoreleasepool { // 自动释放池：避免并行处理时内存泄漏
+            NSString *name = allKeys[index]; // 类名 - CYNext.CYMyAnswerDetailModel
+            // 获取 函数地址 
             unsigned long long accessFunc = [accessFcunDic[name] unsignedLongLongValue];
+            // 若有缓存的 Metadata 地址，优先使用缓存（部分类型直接存储 Metadata 地址，无需访问函数）
             unsigned long long cache = [cacheMetaDic[name] unsignedLongLongValue];
             if (cache > 0) {
                 accessFunc = cache;
             }
+            // 修正访问函数偏移（超过 vm 则减 vm）
             accessFunc = accessFunc > vm ? accessFunc - vm : accessFunc;
+            // 反混淆类型名（将混淆的名称转成可读名称）
             NSString *demangleName = [WBBladesTool getDemangleName:name];
-            //target address
+            // 目标访问函数地址（格式：#0x12345678，小写）
             NSString *targetAccf = [[NSString stringWithFormat:@"#0x%llX",accessFunc] lowercaseString];
+            // 确定存储的类型名（反混淆失败则用原名称）
             NSString *valueStr = demangleName;
             if (demangleName.length == 0) {
                 valueStr = name;
             }
-            [locker lock];
-            accfunNameList[targetAccf] = valueStr;
-            [locker unlock];
+            [locker lock]; // 加锁：避免多线程同时修改字典导致崩溃
+            accfunNameList[targetAccf] = valueStr; // 存储“地址-类型名”映射
+            [locker unlock]; // 解锁
         }
     });
+    // 反汇编 Mach-O 的 __TEXT 段：获取所有指令地址，并匹配访问函数地址对应的类型名（工具类方法）
     s_cs_insn_address_array = [WBBladesTool disassemWithMachOFile:fileData from:textList.offset length:textList.size accfunDic:accfunNameList];
+    // 遍历所有符号（函数），扫描函数中的 BL 指令（ARM 架构的函数调用指令）
     for (int i = 0; i < symbols.count; i++) {
-        WBBladesSymbolRange *symRanObj = (WBBladesSymbolRange*)symbols[i];
+        WBBladesSymbolRange *symRanObj = (WBBladesSymbolRange*)symbols[i]; // 符号范围对象（存储函数的起始/结束地址）
         if (symRanObj.symbol.length == 0 ) {
-            continue;
+            continue; // 无符号名的函数，跳过
         }
+        // 扫描函数范围内的所有 BL 指令，获取调用的目标地址列表
         NSArray *blList = [self scanSELCallerWithBegin:symRanObj.begin end:symRanObj.end];
-        // 函数实现中有bl指令
+        // 函数实现中有 BL 指令（存在函数调用）
         if (blList) {
             for (NSString *addr in blList) {
+                // 根据调用地址匹配对应的类型名（从 accfunNameList 中获取）
                 NSString *symName = accfunNameList[addr];
+                // 若匹配到类型名，且当前函数名不是该类型名（避免自调用重复统计），加入已使用类型集合
                 if (symName && ![symRanObj.symbol hasPrefix:symName]) {
                     [swiftUsedTypeSet addObject:symName];
                 }
@@ -1545,11 +1563,11 @@ __vmAddress = (__vmAddress>(2*vm))?(__vmAddress-vm):__vmAddress;
         }
     }
     
-    s_cs_insn_address_array = nil;
-    symbols = nil;
-    accessFcunDic = nil;
-    //    free(s_cs_insn);
-    return genericTypes.copy;
+    s_cs_insn_address_array = nil; // 释放反汇编指令数组（全局变量）
+    symbols = nil; // 释放符号列表（全局变量）
+    accessFcunDic = nil; // 释放“类型名-访问函数”字典
+    //    free(s_cs_insn); // 注释：若有手动分配的内存，需释放（此处可能后续补充）
+    return genericTypes.copy; // 返回泛型类型数组的不可变拷贝（避免外部修改内部数据）
 }
 
 /**

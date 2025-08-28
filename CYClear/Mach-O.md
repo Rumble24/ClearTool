@@ -51,6 +51,11 @@ dyld 加载二进制时，会按顺序解析 Load Commands：
 dyld（Dynamic Link Editor）是 iOS 动态链接的核心，负责将应用的可执行文件、依赖的动态库（.dylib/.framework）链接起来，并准备好运行环境。这一阶段是 Pre-main 阶段耗时的主要来源，具体步骤如下：
     1. 加载应用可执行文件与依赖库
         解析 Mach-O 头部：dyld 首先读取应用可执行文件的 Mach-O Header 和 Load Commands（加载命令），确定可执行文件的结构（如段 Segment、段区 Section 的分布）。
+        
+        段映射到内存：dyld 会将 Mach-O 中的所有段（包括 `__TEXT`）映射到进程的虚拟内存空间。
+        其中，__TEXT,__text 作为代码段，会被映射到具有 “只读 + 可执行” 权限的内存页（防止意外修改代码）。
+        按需分页（Lazy Loading）：现代操作系统（如 iOS 的 Darwin 内核）采用 “内存映射（mmap）” 机制，__TEXT,__text 虽然被映射到虚拟内存，但物理内存可能在首次执行代码时才真正加载（即 “按需分页”，减少启动初期的内存占用）。
+        
         加载依赖库：根据 Load Commands 中的 LC_LOAD_DYLIB 命令，递归加载应用依赖的所有动态库（包括系统库如 UIKit.framework、Foundation.framework，以及第三方库如 Alamofire）。
         优化：系统库通常被打包在 dyld 共享缓存（dyld shared cache）中，这是一个预编译的缓存文件，包含常用系统库，加载时直接映射到内存，避免重复解析，提升速度。
     2. 重定位（Rebase）与绑定（Binding）
